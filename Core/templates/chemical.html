@@ -1,0 +1,614 @@
+{% load staticfiles %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/vendor.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/vendor.css' %}">
+<script src="{% static 'js/pace.min.js' %}" type="text/javascript" ></script>
+<script src="{% static 'js/modernizr.js' %}" type="text/javascript" ></script>
+<script src="{% static 'js/jquery-2.1.3.min.js' %}" type="text/javascript" ></script>
+<script src="{% static 'js/main.js' %}" type="text/javascript" ></script>
+<script src="{% static 'js/plugins.js' %}" type="text/javascript" ></script>
+<!DOCTYPE html>
+<head>
+
+   <!--- basic page needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>Pharmosome</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+   <!-- mobile specific metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+ 	<!-- CSS
+   ================================================== -->
+   <link rel="stylesheet" href="/database/static/css/base.css">
+   <link rel="stylesheet" href="/database/static/css/vendor.css">
+   <link rel="stylesheet" href="/database/static/css/main.css">
+
+   <!-- script
+   ================================================== -->
+	<script src="/database/static/js/modernizr.js"></script>
+	<script src="/database/static/js/pace.min.js"></script>
+
+   <!-- favicons
+	================================================== -->
+	<link rel="icon" type="image/png" href="/database/static/1.jpg">
+
+</head>
+
+<body id="top">
+
+	<!-- header
+   ================================================== -->
+  
+	<!-- header
+   ================================================== -->
+   <header class="main-header">
+
+
+	   <!DOCTYPE html>
+		<html>
+		<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+		body {
+		  margin: 0;
+		  font-family: Arial, Helvetica, sans-serif;
+		}
+		.topnav {
+		  overflow: hidden;
+		  background-color: #333;
+		}
+		.topnav a {
+		  float: left;
+		  color: #f2f2f2;
+		  text-align: center;
+		  padding: 14px 16px;
+		  text-decoration: none;
+		  font-size: 17px;
+		}
+		.topnav a:hover {
+		  background-color: #ddd;
+		  color: black;
+		}
+		.topnav a.active {
+		  background-color: #4CAF50;
+		  color: white;
+		}
+		</style>
+		</head>
+		<body>
+
+		<div class="topnav">
+			<a href="/" title="">Home</a>
+			<a href="/snp" title="">SNP</a>
+			<a href="/disease" title="">Disease</a>
+			<a href="/chemical" title="">Chemical</a>
+			<a href="/genes" title="">Genes</a>
+			<a href="/srange" title="">SNP Collector</a>
+			<a href="/primer" title="">Pick Primer</a>
+			<a href="/pathway" title="">Gene-Gene Interaction</a>
+			<a href="/phy" title="">SNP Phylogenetic</a>
+		</div>
+		<div style="padding-left:16px">
+
+		</div>
+
+		</body>
+		</html>
+
+
+
+
+   </header>
+
+
+   <!-- main navigation
+   ================================================== -->
+   <nav id="menu-nav-wrap">
+
+   	<h3>Menu</h3>
+		<ul class="nav-list">
+			<li><a href="/" title="">Home</a></li>
+			<li><a href="/snp" title="">SNP</a></li>
+			<li><a href="/disease" title="">Disease</a></li>
+			<li><a href="#stats" title="">Population</a></li>
+			<li><a href="#pricing" title="">Drug</a></li>
+			<li><a href="/primer" title="">Pick Primer</a></li>
+			<li><a href="#download" title="">Download</a></li>
+			<li><a href="#subscribe" title="">About</a></li>
+		</ul>
+
+		<h3>We Recommend Dreamhost</h3>
+		<p class="sponsor-text">
+			Looking for an awesome and reliable webhosting? Try <a href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT">DreamHost</a>.
+			Get <span>$50 off</span> when you sign up with the promocode <span>styleshout</span>.
+			<!-- Simply type	the promocode in the box labeled “Promo Code” when placing your order. -->
+		</p>
+
+		<div class="action">
+			<a class="button" href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT">Sign Up Now</a>
+		</div>
+
+	</nav> <!-- /menu-nav-wrap -->
+
+
+	<!-- main content wrap
+   ================================================== -->
+   <div id="main-content-wrap">
+
+
+		<!-- main content wrap
+   	================================================== -->
+   	<section id="intro">
+
+		   <!-- <div class="shadow-overlay"></div> -->
+
+		   <div class="row intro-content">
+		   	<div class="col-twelve">
+
+		   		<h3 class="animate-intro">Pharmosome</h3>
+
+					<h1 class="animate-intro">
+						Personalized Medicine Database
+					</h1>
+
+					<div class="buttons">
+						<a class="button stroke smoothscroll animate-intro" href="#features" title="">Features</a>
+					</div>
+
+
+			  	</div> <!-- /twelve -->
+		   </div> <!-- /row -->
+
+		</section> <!-- /intro -->
+
+
+		<!-- features
+   	================================================== -->
+		<section id="features">
+			          <style>
+
+              * {
+                box-sizing: border-box;
+              }
+
+              #myInput {
+                background-image: url('/css/searchicon.png');
+                background-position: 10px 10px;
+                background-repeat: no-repeat;
+                width: 100%;
+                font-size: 16px;
+                padding: 12px 20px 12px 40px;
+                border: 1px solid #ddd;
+                margin-bottom: 12px;
+              }
+
+              #myTable {
+                border-collapse: collapse;
+                width: 100%;
+                border: 1px solid #ddd;
+                font-size: 18px;
+              }
+
+              #myTable th, #myTable td {
+                text-align: left;
+                padding: 12px;
+              }
+
+              #myTable tr {
+                border-bottom: 1px solid #ddd;
+              }
+
+              #myTable tr.header, #myTable tr:hover {
+                background-color: #f1f1f1;
+              }
+			  .collapsible {
+				background-color: #0898B8;
+				  color: white;
+				  cursor: pointer;
+				  padding: 18px;
+				  width: 100%;
+				  border: none;
+				  text-align: left;
+				  outline: #0000 solid 10px;
+				  font-size: 15px;
+			  }
+
+			  .active, .collapsible:hover {
+				  background-color: #0898B8;
+				  text-align: center;
+			  }
+
+			  .collapsible:after {
+				  content: '\002B';
+				  color: #0898B8;
+				  font-weight: bold;
+				  float: right;
+				  margin-left: 5px;
+			  }
+
+			  .active:after {
+				  content: "\2212";
+
+			  }
+
+			  .content {
+				  padding: 0 18px;
+				  max-height: 0;
+				  overflow: hidden;
+				  transition: max-height 0.2s ease-out;
+				  background-color: #f1f1f1;
+			  }
+
+		  </style>
+              </head>
+              <body>
+
+
+
+
+				<form action="" method="get" autocomplete="on">
+					<div class="autocomplete" style="width:300px;">
+					<label>SNP.ID</label>
+					<input id="myInput" type="text" name="chemical" placeholder="Chemical Name....">
+					</div>
+					<input type="submit">
+
+				</form>
+
+			   {% for PharmGKB_Accession_Id, Name, Generic_Names, Trade_Names, Brand_Mixtures, Type, Cross_references, SMILES, InChI, Dosing_Guideline, External_Vocabulary, Clinical_Annotation_Count, Variant_Annotation_Count, Pathway_Count, VIP_Count, Dosing_Guideline_Sources, Top_Clinical_Annotation_Level, Top_FDA_Label_Testing_Level, Top_Any_Drug_Label_Testing_Level, Label_Has_Dosing_Info, Has_Rx_Annotation , num in drug %}
+			   <div class="media animate-this"  data-animate="fadeInLeft">
+			   <button class="collapsible">{{Name}}</button>
+				<div class="content">
+					<ul style="list-style-type:disc">
+						<li class="animate-this" data-animate="fadeInRight"><h4>Name: {{Name}}</h4></li>
+				  		<li class="animate-this" data-animate="fadeInLeft"><h4>Generic Names: {{Generic_Names}}</h4></li>
+						<li class="animate-this" data-animate="fadeInRight"><h4>Trade Names: {{Trade_Names}}</h4></li>
+						<li class="animate-this" data-animate="fadeInLeft"><h4>Brand Mixtures: {{Brand_Mixtures}}</h4></li>
+						<li class="animate-this" data-animate="fadeInRight"><h4>Type: {{Type}}</h4></li>
+						<li class="animate-this" data-animate="fadeInLeft"><h4>Cross references: {{Cross_references}}</h4></li>
+						<li class="animate-this" data-animate="fadeInRight"><h4>SMILES: <a href="http://www.chemspider.com/Search.aspx?q={{SMILES}}">{{SMILES}}</h4></a></h4></li>
+						<li class="animate-this" data-animate="fadeInLeft"><h4>InChI: <a href="http://www.chemspider.com/Search.aspx?q={{InChI}}">{{InChI}}</h4></a></h4></li>
+						<li class="animate-this" data-animate="fadeInRight"><h4>Dosing Guideline: {{Dosing_Guideline}}</h4></li>
+						<li class="animate-this" data-animate="fadeInLeft"><h4>Dosing Guideline Sources: {{Dosing_Guideline_Sources}}</h4></li>
+						<li class="animate-this" data-animate="fadeInRight"><h4>External Vocabulary: {{External_Vocabulary}}</h4></li>
+						<li class="animate-this" data-animate="fadeInLeft"><h4>Clinical Annotation Count: {{Clinical_Annotation_Count}}</h4></li>
+						<li class="animate-this" data-animate="fadeInRight"><h4>Variant Annotation Count: {{Variant_Annotation_Count}}</h4></li>
+						<li class="animate-this" data-animate="fadeInLeft"><h4>Pathway Count: {{Pathway_Count}}</h4></li>
+						<li class="animate-this" data-animate="fadeInRight"><h4>VIP Count: {{VIP_Count}}</h4></li>
+						<li class="animate-this" data-animate="fadeInLeft"><h4>Top Clinical Annotation Level: {{Top_Clinical_Annotation_Level}}</h4></li>
+						<li class="animate-this" data-animate="fadeInRight"><h4>Top FDA Label Testing Level: {{Top_FDA_Label_Testing_Level}}</h4></li>
+						<li class="animate-this" data-animate="fadeInLeft"><h4>Top Any Drug Label Testing Level: {{Top_Any_Drug_Label_Testing_Level}}</h4></li>
+						<li class="animate-this" data-animate="fadeInRight"><h4>Label Has Dosing Info: {{Label_Has_Dosing_Info}}</h4></li>
+						<li class="animate-this" data-animate="fadeInLeft"><h4>Has Rx Annotation: {{Has_Rx_Annotation}}</h4></li>
+					</ul>
+				</div>
+			   </div>
+			  {% endfor %}
+
+			  <script>
+              function myFunction() {
+                var input, filter, table, tr, td, i;
+                input = document.getElementById("myInput");
+                filter = input.value.toUpperCase();
+                table = document.getElementById("myTable");
+                tr = table.getElementsByTagName("tr");
+                for (i = 0; i < tr.length; i++) {
+                  td = tr[i].getElementsByTagName("td")[0];
+                  if (td) {
+                    if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                      tr[i].style.display = "";
+                    } else {
+                      tr[i].style.display = "none";
+                    }
+                  }
+                }
+              }
+				var coll = document.getElementsByClassName("collapsible");
+				var i;
+
+				for (i = 0; i < coll.length; i++) {
+				  coll[i].addEventListener("click", function() {
+					this.classList.toggle("active");
+					var content = this.nextElementSibling;
+					if (content.style.maxHeight){
+					  content.style.maxHeight = null;
+					} else {
+					  content.style.maxHeight = content.scrollHeight + "px";
+					}
+				  });
+				}
+
+				function autocomplete(inp, arr) {
+				  /*the autocomplete function takes two arguments,
+				  the text field element and an array of possible autocompleted values:*/
+				  var currentFocus;
+				  /*execute a function when someone writes in the text field:*/
+				  inp.addEventListener("input", function(e) {
+					  var a, b, i, val = this.value;
+					  /*close any already open lists of autocompleted values*/
+					  closeAllLists();
+					  if (!val) { return false;}
+					  currentFocus = -1;
+					  /*create a DIV element that will contain the items (values):*/
+					  a = document.createElement("DIV");
+					  a.setAttribute("id", this.id + "autocomplete-list");
+					  a.setAttribute("class", "autocomplete-items");
+					  /*append the DIV element as a child of the autocomplete container:*/
+					  this.parentNode.appendChild(a);
+					  /*for each item in the array...*/
+					  for (i = 0; i < arr.length; i++) {
+						/*check if the item starts with the same letters as the text field value:*/
+						if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
+						  /*create a DIV element for each matching element:*/
+						  b = document.createElement("DIV");
+						  /*make the matching letters bold:*/
+						  b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
+						  b.innerHTML += arr[i].substr(val.length);
+						  /*insert a input field that will hold the current array item's value:*/
+						  b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
+						  /*execute a function when someone clicks on the item value (DIV element):*/
+						  b.addEventListener("click", function(e) {
+							  /*insert the value for the autocomplete text field:*/
+							  inp.value = this.getElementsByTagName("input")[0].value;
+							  /*close the list of autocompleted values,
+							  (or any other open lists of autocompleted values:*/
+							  closeAllLists();
+						  });
+						  a.appendChild(b);
+						}
+					  }
+				  });
+				  /*execute a function presses a key on the keyboard:*/
+				  inp.addEventListener("keydown", function(e) {
+					  var x = document.getElementById(this.id + "autocomplete-list");
+					  if (x) x = x.getElementsByTagName("div");
+					  if (e.keyCode == 40) {
+						/*If the arrow DOWN key is pressed,
+						increase the currentFocus variable:*/
+						currentFocus++;
+						/*and and make the current item more visible:*/
+						addActive(x);
+					  } else if (e.keyCode == 38) { //up
+						/*If the arrow UP key is pressed,
+						decrease the currentFocus variable:*/
+						currentFocus--;
+						/*and and make the current item more visible:*/
+						addActive(x);
+					  } else if (e.keyCode == 13) {
+						/*If the ENTER key is pressed, prevent the form from being submitted,*/
+						e.preventDefault();
+						if (currentFocus > -1) {
+						  /*and simulate a click on the "active" item:*/
+						  if (x) x[currentFocus].click();
+						}
+					  }
+				  });
+				  function addActive(x) {
+					/*a function to classify an item as "active":*/
+					if (!x) return false;
+					/*start by removing the "active" class on all items:*/
+					removeActive(x);
+					if (currentFocus >= x.length) currentFocus = 0;
+					if (currentFocus < 0) currentFocus = (x.length - 1);
+					/*add class "autocomplete-active":*/
+					x[currentFocus].classList.add("autocomplete-active");
+				  }
+				  function removeActive(x) {
+					/*a function to remove the "active" class from all autocomplete items:*/
+					for (var i = 0; i < x.length; i++) {
+					  x[i].classList.remove("autocomplete-active");
+					}
+				  }
+				  function closeAllLists(elmnt) {
+					/*close all autocomplete lists in the document,
+					except the one passed as an argument:*/
+					var x = document.getElementsByClassName("autocomplete-items");
+					for (var i = 0; i < x.length; i++) {
+					  if (elmnt != x[i] && elmnt != inp) {
+						x[i].parentNode.removeChild(x[i]);
+					  }
+					}
+				  }
+				  /*execute a function when someone clicks in the document:*/
+				  document.addEventListener("click", function (e) {
+					  closeAllLists(e.target);
+				  });
+				}
+
+				/*An array containing all the country names in the world:*/
+				var countries = ['Specific Antirheumatic Agents', 'insulin-glulisine', 'Typhus (exanthematicus) vaccines', 'posaconazole', 'sorafenib M2', 'Ethers, chemically close to antihistamines', 'pyrilamine', 'cilazapril', 'gepirone hydrochloride', 'ondansetron 8-glucuronide', 'Other Respiratory System Products', 'goserelin', 'lubiprostone', 'Thyroid', 'Antihypertensives', 'melphalan', 'empagliflozin', 'pipazethate', 'Drugs used in erectile dysfunction', 'Sensitizers used in photodynamic/radiation therapy', 'carprofen', 'naftifine', 'pefloxacin', 'Iodine (131I) compounds', 'Streptogramins', 'XR9051', 'acetone', 'hydroxymethyl ivacaftor', 'norgestimate', 'Other antiglaucoma preparations', 'argatroban', 'ivacaftor carboxylate', 'npc', 'Amino acids and derivatives', 'terbutaline', 'salsalate', 'dopamine', 'Other psychostimulants and nootropics', 'ortho-o-sulfate rosiglitazone', 'pyrethrins and piperonyl butoxide', 'digitoxin', 'difluorodeoxyuridine', 'hydroxyphenytoin-o-glucuronide', 'tinzaparin', 'Other capillary stabilizing agents', 'benzphetamine', 'Agents Against Amoebiasis And Other Protozoal Diseases', 'Plasters', 'Antibiotics For Topical Use', 'Indifferent preparations', 'almotriptan', 'teriparatide', 'Other opioids', 'Brucellosis vaccines', 'entecavir', 'Various diagnostic radiopharmaceuticals', 'hexafluronium bromide', 'methyl-CCNU', 'cefonicid', 'Serotonin antagonists and diuretics', 'ganciclovir', 'n-(2-carboxymethyl)-morpholine', 'antrafenine', 'dibucaine', 'flibanserin', 'Belladonna alkaloids, semisynthetic, quaternary ammonium compounds', 'Dantrolene and derivatives', 'Cremophor EL', 'Electrolytes With Carbohydrates', 'fusidic acid', 'atazanavir M3', 'opioids', 'n-desmethyl-ortho-o-sulfate rosiglitazone', 'hydroxyphenytoin glucuronide', 'Other diagnostic radiopharmaceuticals for tumour detection', 'bnp-32', 'ibuprofen', 'imatinib inactive metabolites', 'cisapride', 'Other Systemic Drugs For Obstructive Airway Diseases', 'solifenacin', 'Other specific antirheumatic agents', 'acetaminophen', 'enoxacin', 'dichlorphenamide', 'nateglinide M4/M5/M6', 'ondansetron 6-sulfate', 'camptothecin', 'Corticosteroids, potent (group III)', 'n-oxide ponatinib', 'diphenylpyraline', 'Corticosteroids and mydriatics in combination', 'iron(2+)', 'Corticosteroids, Dermatological Preparations', 'cyclopentolate', 'gabapentin', 'lacosamide', 'agalsidase beta', 'butalbital', 'tipiracil hydrochloride', 'chlorpropamide', 'pravastatin', 'estramustine', 'cellulose', 'formaldehyde', 'phenindamine', 'chloral hydrate', 'atracurium', 'fluoro-beta-alanine', 'telithromycin', 'roflumilast', 'ursodeoxycholic acid', 'zafirlukast', 'difluorodeoxyuridine monophosphate', 'enzalutamide', 'Tests for bile duct patency', 'Incontinence equipment', 'Lincosamides', 'Throat Preparations', 'paromomycin', 'Sympathomimetics used as decongestants', "5'o-desmethylomeprazole", 'nelfinavir', '1,4-benzenediyl diradical', 'Benserazide', 'Fibrates', 'insulin-glargine', 'Colouring agents', 'Other irrigating solutions', 'dihydro-sirolimus', 'cavosonstat', 'trihexyphenidyl', 'ethiodized oil', 'Iron in combination with folic acid', 'Other cardiac combination products', 'gemfibrozil', '(R)-methadone', 'combinations of sulfonamides and trimethoprim, incl. derivatives', 'polyethylene glycol 6000', 'aprindine', 'saxagliptin', 'electrolytes', 'Muscle Relaxants, Directly Acting Agents', 'sodium selenite', 'alpha-1-proteinase inhibitor', 'Monoclonal antibodies', 'arverapamil', 'furazolidone', 'Retinoids for treatment of psoriasis', 'n,o-didesmethyl venlafaxine glucuronide', 'oxaprozin', 'saprisartan', 'loteprednol etabonate', 'ACE inhibitors and diuretics', 'chymotrypsin', 'ridogrel', 'taxane metabolite', 'Thiazides, plain', '12-hydroxy-sirolimus', 'Muscle Relaxants, Centrally Acting Agents', 'Tests for thyreoidea function', 'metyrosine', 'dutasteride', 'calcipotriol', 'valproate glucuronide', '3-oxo-valproic acid-coenzyme A', 'azelaic acid', 'Tertiary amines', 'perindopril', 'citalopram-n-oxide', 'acetic acid', 'Natural and semisynthetic estrogens, plain', 'fluorescein', 'anisindione', 'Beta blocking agents, selective, thiazides and other diuretics', 'valaciclovir', 'antimetabolites', 'aceclofenac', 'somatropin recombinant', 'carbinoxamine', 'phenazepam', 'Immune Sera And Immunoglobulins', 'Substituted ethylene diamines', 'Avermectines', 'l-methyldopa', 'clobazam', 'clobetasol', 'dipyridamole', 'imatinib', 'calcitriol', 'phendimetrazine', 'guanosine diphosphate', 'Antigout Preparations', '8-hydroxynevirapine', 'gefitinib', 'tamoxifen metabolite Y', 'diatrizoate', '3-hydroxycotinine', 'Methanolquinolines', 'Antibiotics And Chemotherapeutics, Combinations', 'sulfonamides', 'terodiline', 'Antiinflammatory agents, non-steroids and antiinfectives in combination', 'folic acid analogues', '2-chloroethylamine', 'fluticasone/salmeterol', 'Hepatitis vaccines', 'pyridoxal phosphate', 'minaprine', 'liver extract', 'rostafuroxin', 'valdecoxib', 'mecamylamine', 'tipranavir', 'nandrolone decanoate', 'Vasopressin antagonists', 'N2-methyl lamotrigine', 'celecoxib glucuronide', 'quinacrine', 'tannic acid', 'Xanthine derivatives', 'morphine-6-glucuronide', 'Vitamin B-complex, Incl. Combinations', 'Adamantane derivatives', 'nystatin', 'Other antiobesity drugs', 'omega-3 polyunsaturated fatty acids', 'minoxidil', 'atazanavir M4', 'sorafenib M1', '3-methoxytyramine', 'diethylstilbestrol', 'flufenamic acid', 'Diphtheria vaccines', 'nicotine', 'benzylpenicilloyl polylysine', 'neostigmine', 'triazolam', 'terfenadine', 'tioconazole', 'Quinolines', 'capreomycin', 'sirolimus', '4-hydroxy valproic acid', 'elvitegravir', 'chlorpromazine', 'hydroxy celecoxib', 'terutroban', 'budesonide', 'cefoxitin', 'ergotamine', 'miglustat', 'nelarabine', 'dexrazoxane', 'Acid preparations', 'Insulins and analogues for inhalation', 'para-o-sulfate rosiglitazone', 'propofol', 'Selective Calcium Channel Blockers With Direct Cardiac Effects', 'scopolamine', 'testolactone', 'cefotetan', 'methohexital', 'nicergoline', 'Other antithyroid preparations', 'Drugs Used In Benign Prostatic Hypertrophy', 'procaine', 'sorafenib', 'n-desmethyl tamoxifen', 'Androgen, progestogen and estrogen in combination', 'Medicated dressings with antiinfectives', '6-hydroxy r-warfarin', 'sulfamoxole', 'butabarbital', 'Typhoid vaccines', 'Mucolytics', 'Thiazides, combinations with other drugs', 'hydroxyvoriconazole o-glucuronide', 'gramicidin d', 'memantine', 'Alpha-adrenoreceptor antagonists and diuretics', 'idoxuridine', 'Vicodin', 'dichloroacetic acid', 'n-desmethyl clarithromycin', 'other beta-lactam antibacterials', 'sofosbuvir / velpatasvir', 'iminoquinone', 'piperaquine', 'Triazole derivatives', 'zuclopenthixol', 'divalproex sodium', 'Selective serotonin (5HT1) agonists', 'benzodiazepine derivatives', 'Pneumococcal vaccines', 'Parasympathomimetics', 'docetaxel', 'metharbital', 'lincomycin', 'nilutamide', 'orciprenaline', 'Salicylic acid derivatives', 'alitretinoin', 'chlorpheniramine', 'Ethylene imines', 'asunaprevir', 'loratadine', 'stanozolol', 'candicidin', 'Oral rehydration salt formulations', 'cinalukast', 'hydroxystilbamidine isethionate', 'tetracaine', 'meticillin', 'Antipsoriatics For Topical Use', 'd-xylitol', '8,9-anhydroerythronolide b 6,9-hemiketal', 'dalteparin', '7-deoxydoxorubicinone', '3-(4-fluorobenzoyl)propionic acid', 'Gangliosides and ganglioside derivatives', 'flurazepam', 'biotin', 'sevoflurane', 'perifosine', 'Mercurial products', 'gallamine triethiodide', 'paroxetine catechol', 'pirenzepine', 'Butyrophenone derivatives', 'hexocyclium', 'belimumab', 'colchicine', 'lomustine', 'sulfadimethoxine', 'angiotensin 1-5', 'velaglucerase alfa', '5-acetylamino-6-formylamino-3-methyluracil', 'ibutilide', 'ethinyl estradiol / norelgestromin', 'cefixime', 'motesanib', 'Peroxides', 'Corticosteroids For Systemic Use, Combinations', 'naproxen glucuronide', 'Corticosteroids, very potent, combinations with antiseptics', 'Other anterior pituitary lobe hormones and analogues', 'amlexanox', 'hydroflumethiazide', 'l-arginine', 'Progestogens and estrogens, fixed combinations', 'thioinosine triphosphate', 'cefadroxil', 'cholestyramine', 'Thiocarbamide derivatives', 'Other antiinflammatory/antirheumatic agents in combination with other drugs', 'naltrexone', 'flunisolide', 'Beta blocking agents, non-selective, thiazides and other diuretics', 'antidepressants', 'cephalexin', 'phenobarbital', 'amyl nitrite', 'Low-ceiling diuretics and potassium-sparing agents', 'econazole', 'Other central nervous system diagnostic radiopharmaceuticals', 'brentuximab vedotin', 's-adenosylhomocysteine', 'vinblastine', 'Other Antianemic Preparations', 'trospium', 'vidarabine', 'Antihemorrhagics', 'Tilarginine Acetate', 'deoxy-thioguanosine diphosphate', 'Antiinfectives', 'Actinomycines', '2-oxo-clopidogrel', 'Oxytocics', 'inulin', 'Iron bivalent, oral preparations', 'l-lysine', 'gadoteridol', 'Hypnotics and sedatives in combination, excl. barbiturates', 'Tissue adhesives', 'pazopanib M26', 'mecasermin', 'cisplatin', 'Drugs For Peptic Ulcer And Gastro-oesophageal Reflux Disease (gord)', 'pegvisomant', 'Anticholinesterases', 'paritaprevir', 'Purine derivatives', 'zopiclone', 'clonidine', 'lamotrigine 5-n-glucuronide', 'alfuzosin', '2-dechloroethyl cyclophosphamide', 'sulfoxone', 'phentolamine', 'anhydroerythromycin', 'gadobutrol', 'spectinomycin', 'Retinoids for treatment of acne', 'Diphenylbutylpiperidine derivatives', 'neratinib', 'clomocycline', 'l-glutamine', 'fosinopril', 'Other cardiac glycosides', 'edrophonium', 'triprolidine', 'n,n-didesmethyl-tramadol', 'Barbiturates in combination with other drugs', 'Watersoluble, hepatotropic X-ray contrast media', 'losigamone', 'doxorubicin semiquinone', 'All Other Therapeutic Products', 'iophendylate', 'High-ceiling diuretics and potassium-sparing agents', 'Other non-selective calcium channel blockers', 'busulfan', 'ethanol', 'remifentanil', 'potassium phosphate, incl. comb. with other potassium salts', 'Other Plain Vitamin Preparations', 'Contrast Media', 'voxilaprevir', 'insulin lyspro recombinant', 'brigatinib', 'myclobutanil', "5'-hydroxyphenyl carvedilol", 'ketotifen', 'calcium gluceptate', 'Blood And Blood Forming Organs', 'fluoxetine', 'isonicotinic acid', 'idursulfase', 'diethylpropion', 'amiodarone', 'cefacetrile', 'phenindione', 'oxycodone', '4-hydroxyifosfamide', 'doxepin-n-oxide', 'glimepiride', 'dextrothyroxine', 'oxprenolol', 'podofilox', 'Proton pump inhibitors', 'donepezil', 'Other antipsoriatics for systemic use', 'doxycycline', 'pseudoephedrine', 'homovanillic acid', 'n-acetylated cysteine conjugate', 'osimertinib', 'Zosuquidar', 'Beta blocking agents, selective', 'sulfolane', 'sitamaquine', 'cannabidiol', 'dehydrowarfarin', 'Nitroferricyanide derivatives', 'highly active antiretroviral therapy (haart)', 'noroxymorphone', 'acebutolol', 'amino acids', 'Agents Acting On The Renin-angiotensin System', 'Liver Therapy, Lipotropics', '6beta-oxycodol hydrochloride', 'flucytosine', 'propericiazine', 'sodium citrate', 'Yttrium (90Y) compounds', 'anandamide', 'dasatinib carboxylic acid', 'Antiinfectives for treatment of acne', 'hydroxy-doxepin', 'teniposide', 'vincristine', 'chlorophyll', 'diethylcarbamazine', 'foscarnet', 'Phenylpiperidine derivatives', 'Corticosteroids, moderately potent, other combinations', '1-o-phosphonohex-2-ulose', 'PHA-665752', 'acitretin', 'Detoxifying agents for antineoplastic treatment', '4-carboxynevirapine', 'onartuzumab', 'Ocular Vascular Disorder Agents', 'Solutions producing osmotic diuresis', 'clozapine n-oxide', 'nimesulide', 'ticarcillin', 'repaglinide M4', 'olaparib', 'alseroxylon', 'Androstan derivatives', 'ajmaline', 'cangrelor', 'hydrazine', 'oxaliplatin', 'trichlormethiazide', 'pyridoxal', 'nalidixic acid', 'Anabolic Steroids', 'prazosin', 'forskolin', 'dienestrol', 'paramethoxymethamphetamine', 'Other cough suppressants', 'fluoride', 'isoxicam', '3-hydroxy valproic acid', 'dodecane-trimethylamine', 'benoxaprofen', 'prostaglandin G2', 'Salicylic acid and derivatives', 'Solutions for parenteral nutrition', 'paroxetine', 'Antiarrhythmics, class Ic', 'ibandronate', 'acetohydroxamic acid', 'botulinum toxin type b', 'durvalumab', 'digitalis glycosides', 'oxyphencyclimine', 'sn-38 glucuronide', 'xanomeline', 'n, n-didesmethyl tamoxifen', 'Sympathomimetics excl. antiglaucoma preparations', 'Thiouracils', 'Beta blocking agents, non-selective, and other antihypertensives', 'amoxapine', 'riboflavin', 'Appetite Stimulants', 'silver nitrate', 'Drugs For Functional Bowel Disorders', 'leukotriene E4', 'Pyrazolones', 'hypoxanthine', 'secobarbital', 'phenprocoumon', 'Macrolides, Lincosamides And Streptogramins', '(3s,4r)4(4-fluorophenyl)3(hydroxymethyl)piperidine)', 'Sclerosing agents for local injection', 'urea', 'Anticholinergic Agents', 'phosphatidylethanolamine', 'reboxetine', 'zinc acetate', 'Caries prophylactic agents', 'Iron in other combinations', 'gadopentetate dimeglumine', 'propionic acid derivatives', 'Antiinflammatory Agents', 'Diphenylpropylamine derivatives', 'Other Diagnostic Radiopharmaceuticals', 'abemaciclib', 'hydroxyurea', 'cerliponase alfa', 'pemirolast', 'Washing agents etc.', 'topiramate', 'isoflurophate', 'Insulins and analogues for injection, long-acting', 'Antiseptics and corticosteroids', 'dapiprazole', 'adalimumab', 'Other antidepressants', 'l-glutamic acid', 'Ascorbic acid (vitamin C), combinations', 'papaverine', 'Antihidrotics', 'X-ray Contrast Media, Non-iodinated', 'thiazide derivatives', 'Interleukin inhibitors', 'Yellow fever vaccines', 'ipratropium', 'isoproterenol', 'Topical Products For Joint And Muscular Pain', 'cetirizine', 'Agents For Treatment Of Hemorrhoids And', 'ethynodiol diacetate', 'phosphatidylinositol diphosphate', 'apomorphine', 'isoniazid hydrazones', 'muraglitazar', 'Other potassium-sparing agents', 'polyethylene glycol 400', 'tositumomab', 'Psychostimulants in combination with psycholeptics', 'cyclosporine am4n', 'Vitamin B-complex, other combinations', 'formoterol', 'cimetidine', 'latanoprost', 'mexiletine', 'sulfanilamide', 'Monoamine oxidase A inhibitors', 'glucuronide', 'Quinine and derivatives', 'doxorubicin seminquinone radical', 'Other antihypertensives and diuretics', 'Other aminoglycosides', 'acetyldigitoxin', 'Vitamin A and D in combination', 'Urine Tests', 'phenelzine', 'natalizumab', 'Adrenergic and dopaminergic agents', 'Insecticides And Repellents', 'Blood Glucose Lowering Drugs, Excl. Insulins', 'caspofungin', 'androgens and estrogens', 'natamycin', 'pentagastrin', 'Peripherally acting antiobesity products', 'fluvoxamine acid', 'pemoline', 'butenafine', 'rescinnamine', 'chenodeoxycholic acid', 'defibrotide', 'Beta blocking agents, selective, and thiazides', 'Tumor necrosis factor alpha (TNF-alpha) inhibitors', 'deferasirox m6', 'tenecteplase', '129722-25-4', 'tiotropium', 'methacholine', 'gemcitabine', 'thiouric acid', 'palonosetron', 'adrenergics, inhalants', 'dornase alfa', 'Antiadrenal Preparations', 'aldesleukin', 'tapentadol', 'Pregnen (4) derivatives', 'Butylpyrazolidines', 'hydrocodone', 'maraviroc', 'carfilzomib', 'clomifene', 'hmg coa reductase inhibitors', 'verteporfin', 'n,n,o-tridesmethyl-tramadol', 'dasatinib M20', 'potassium', 'drotaverine', 'estradiol', '7-hydroxy s-warfarin', 'tranexamic acid', 'iptakalim', 'misoprostol', 'flumazenil', 'carisoprodol', 'Expectorants, Excl. Combinations With Cough Suppressants', 'artemisinin', 'riluzole', 'Cough Suppressants, Excl. Combinations With Expectorants', '3-hydroxysulfolane', 'estradiol-3-sulfate', 'miroprofen', 'bivalirudin', 'chlormezanone', 'carbamazepine glucuronide', 'adenosine diphosphate', 'sodium fluoride', 'hemin', 'pergolide', 'orphenadrine', 'divicine', 'Anticholinergics', 'Skeleton', 'satumomab pendetide', 'radiotherapy', 'acrylic acid', 'Polymyxins', 'Blood transfusion, auxiliary products', 'Hemofiltrates', 'thiopental', 'cladribine', 'Capsaicin and similar agents', 'bradykinin', 'mesalazine', 'antiinflammatory and antirheumatic products, non-steroids', 'mannitol', 'tropisetron 6-sulfate', 'dimethindene', 'phenazopyridine', 'carbohydrates', 'physostigmine', 'Beta blocking agents, non-selective, and other diuretics', 'Bismuth preparations', 'alpha-hydroxymetoprolol', 'Choline derivatives', 'procyclidine', 'risedronate', 'ritodrine', 'zinc77291522', 'mechlorethamine', 'insulin peglispro', 'eculizumab', 'methoxsalen', 'Posterior Pituitary Lobe Hormones', 'Antineoplastic And Immunomodulating Agents', 'alpha-ketoglutarate', 'ceftizoxime', 'ethopropazine', 'phenolsulfonphthalein', 'Enzymes', 'atazanavir M5', 'spirapril', 'nabilone', 'nesiritide', 'chloroethyl aziridine', 'evolocumab', 'zomepirac', 'porfimer', 'aztreonam', 'cinnarizine', 'chlorprothixene', 'cobimetinib', 'glycodiazine', 'alvimopan', 'Psoralens for topical use', 'Cicatrizants', 'X-ray Contrast Media, Iodinated', 'Medicated Dressings', 'dobutamine', 'fosphenytoin', 'deferasirox', 'l-histidine', 'tropisetron', 'Corticosteroids For Systemic Use', 'helium', 'Vitamin B1, plain', 'Ethers', 'brivanib', 'desflurane', 'abatacept', 'Other blood glucose lowering drugs, excl. insulins', 'Nervous System', 'mepenzolate', 'sodium tetradecyl sulfate', 'Other general anesthetics', 'etoposide', 'Other quaternary ammonium compounds', 'pentamidine isethionate', 'nafcillin', 'Urinary concrement solvents', 'lamivudine', 'isosorbide mononitrate', 'Other antivirals', 'Insulins and analogues for injection, intermediate-acting', 'cyproterone', 'tetrahydrothiophene', "(-)-carbovir 5'-diphosphate", 'Glycogenolytic Hormones', 'framycetin', 'fleroxacin', 'promethazine', 'glycineamide ribonucleotide', 'l-valine', 'Esters of benzoic acid', 'Decongestants And Antiallergics', 'SJG-136', 'desmethylastemizole', 'chromium', 'glucose-6-phosphate', 'XK469', 'Thyroid Therapy', 'Other insecticides and repellents', 'rofecoxib', 'leflunomide', 'Gadoxetic acid', 'salvianolic acid b', 'eptifibatide', 'anisotropine methylbromide', 'Contact laxatives', 'Immunostimulants', 'fludrocortisone', 'norendoxifen', '2-hydroxydesipramine glucuronide', 'Other anti-acne preparations for systemic use', 'simvastatin', 'hydroxyflurazepam', 'sulfonamides, plain', 'ACE inhibitors and calcium channel blockers', 'phosphoramide mustard', 'felodipine', 'carbamazepine 10,11-epoxide', 'methacycline', 'Intestinal Antiinflammatory Agents', 'etomidate', 'doxorubicinol', 'vinca alkaloids and analogues', 'iodixanol', 'quinestrol', 'anacetrapib', 'Other antimycotics for systemic use', 'apixaban', 'interferon alfa-2b, recombinant', 'Preparations containing sulfur', 'lidocaine / prilocaine', 'mefloquine', 'Bacterial And Viral Vaccines, Combined', 'tazobactam', 'Antibacterials For Systemic Use', 'Other drugs affecting bone structure and mineralization', 'Imidazole derivatives and corticosteroids', 'Medicated shampoos', 'cocaine', 'didanosine', 'Drugs for embolisation', 'ofatumumab', 'sodium nitrite', 'granisetron', 'telcyta', 'zoledronate', 'Other antifungals for topical use', 'paclitaxel', 'Other sclerosing agents', 'phentermine', '4-hydroxyestradiol', 's-adenosylmethionine', 'Anti-acne Preparations For Topical Use', 'Centrally acting antiobesity products', 'olsalazine', 'liotrix', 'Other chemotherapeutics', 'Psycholeptics', 'prednisone', 'saquinavir', 'l-serine', 'Xanthines', 'tocilizumab', '3-hydroxy-3-methylglutaryl coenzyme A', 'zileuton', 'Vitamin B-complex with anabolic steroids', 'Quaternary ammonium compounds', 'trometamol', 'Beta blocking agents, selective, and other diuretics', 'Imidazole derivatives', 'Other antipruritics', 'maprotiline', 'tocainide', 'Quinoline derivatives and related substances', 'hydrocortisone', 'Oripavine derivatives', 'Choline esters', '4-methylumbelliferone', 'sematilide', 'temsirolimus', 'toremifene', 'zidovudine', 'acetophenazine', 'ciprofloxacin', 'eszopiclone', 'egfr inhibitors', 'talotrexin', 'itraconazole', 'melarsoprol', 'alcophosphamide', 'Other agents against leishmaniasis and trypanosomiasis', 'oxycodone-glucuronide', 'ivacaftor', 'dipivefrin', 'n-acetyl serotonin', 'lovastatin', 'Corticosteroids/antiinfectives/mydriatics in combination', 'Other hormone antagonists and related agents', 'fludarabine', 'adenosine', 'carglumic acid', 'brostallicin', 'vecuronium', 'sodium succinate', 'Other magnetic resonance imaging contrast media', 'tolbutamide', 'rimexolone', 'Other Diuretics', 'fluorometholone', 'non-selective monoamine reuptake inhibitors', 'Antibiotics', 'doxazosin', 'crystal-7', '1-methyl uric acid', '2,3-diene valproic acid-coenzyme A', 'Alimentary Tract And Metabolism', 'gemcitabine triphosphate ditriethylamine', 'silibinin', 'bisoprolol', 'valinomycin', 'pravastatin active metabolites; pravastatin inactive metabolites', 'taxanes', 'rituximab', 'Bacterial Vaccines', 'l-asparagine', 'acetoacetyl coenzyme A', 'dexmethylphenidate', 'Phenol and derivatives', 'Salt solutions', 'iloperidone', 'scutellarin', 'Solvents and diluting agents, incl. irrigating solutions', 'lamivudine diphosphate choline', 'esmolol', 'levosimendan', 'dextroamphetamine', 'perhexiline', 'menthol', 'oxacillin', 'Antimycobacterials', 'etoposide catechol', 'pesticides', 'sulfacetamide', 'enflurane', 'nateglinide M7', 'Other hem products', 'chloramphenicol', 'denosumab', 'Other vasodilators used in cardiac diseases', 'hydromorphone', 'lipase', 'trimethaphan', 'Name', 'tripelennamine', 'Hydroxyquinoline derivatives', 'carbamazepine catechol', 'aminophenazone', 'Other low-ceiling diuretics', 'Aldose reductase inhibitors', 'Drugs For Bile Therapy And Lipotropics In Combination', 'Other cephalosporins', 'theophylline', 'thienopyridine active metabolite', 'nabumetone', 'Testosterone-5-alpha reductase inhibitors', 'cefradine', 'bretylium', 'Psychostimulants, Agents Used For Adhd And Nootropics', 'Tyrosine hydroxylase inhibitors', 'Silver compounds', 'Iron Preparations', 'sumatriptan', 'Tests for gastric secretion', 'tigecycline', 'octreotide', 'Bioflavonoids', 'desmopressin', '5-hydroxy valproic acid', 'barium sulfate', 'Antivertigo Preparations', 'magnesium gluconate', 'candoxatril', 'sargramostim', '2-oxazolidone', '4-hydroxytamoxifen-n-glucuronide', 'hexobarbital', 'neomycin', 'ibritumomab', 'calcium gluconate', 'Anti-parathyroid Agents', 'interferons', 'Antiinfectives And Antiseptics, Excl. Combinations', 'Vasoprotectives', 'dapsone', '4-oh tamoxifen sulfate', 'butorphanol', 'alox5-pathway modifiers', 'disulfiram', 'dapoxetine', '4-hydroxyatomoxetine-O-glucuronide', 'NAPQI', 'Benzomorphan derivatives', 'Zinc products', 'Antacids with sodium bicarbonate', 'Other nasal preparations', 'thyroid preparations', 'pyrimethamine', '4-ketoifosfamide', 'norfluoxetine glucuronide', '6-phosphogluconolactone', 'buspirone', 'somatostatin', 'Combinations of vitamins', 'dexibuprofen', 'enoxaparin', '3-hydroxycotinine glucuronide', 'glucocorticoids', 'methylmercaptopurine', 'Antidepressants in combination with psycholeptics', '4-ene valproic acid-coenzyme A', 'cystathionine', 'oxandrolone', 'Fibrinogen', '4-methoxyestradiol', 'fosamprenavir', 'glycine', 'metoclopramide', 'phenformin', 'protamine', 'tropisetron 6-glucuronide', 'Mumps vaccines', 'penbutolol', 'methylphenobarbital', 'desmethylbosutinib', 'spironolactone', 'SR144528', 'reduced haloperidol', 'Dopaminergic Agents', 'rasburicase', 'sertraline', 'proflavine', 'amitriptyline', 'dinoprost tromethamine', 'magnesium sulfate', 'Hydrazinophthalazine derivatives and diuretics', 'vitamin e', 'Phenylalkylamine derivatives', 'Calcitonin preparations', 'bepridil', 'fospropofol', 'phospholipids', '13-o-demethyl-tacrolimus', 'alcoifosfamide', 'vandetanib', 'demecarium bromide', 'Dopa and dopa derivatives', 'Other antimigraine preparations', 'anistreplase', 'Antiinflammatory Agents And Antiinfectives In Combination', 'panitumumab', 'guaifenesin', 'Tests for allergic diseases', 'isotretinoin', 'isophosphoramide mustard', 'Other antiseptics and disinfectants', 'Acridine derivatives', 'methadyl acetate', '6-oxo-ritalinic acid', 'ceftriaxone', 'diphenoxylate', 'propoxyphene', 'Estren derivatives', 'Mineral Supplements', 'deutetrabenazine', 'catecholamines', 'icatibant', 'farnesyl diphosphate', 'atorvastatin', 'Drugs Used In Diabetes', 'Urinary antispasmodics', 'Preparations For Treatment Of Wounds And Ulcers', 'Dopamine agonists', 'axitinib', 'antimony potassium tartrate', 'Dabigatran', 'droperidol', 'rosuvastatin lactone', 'nitisinone', 'Ultrasound Contrast Media', 'mefenamic acid', 'Antibiotics and corticosteroids', 'nordazepam', 'Other antiinflammatory therapeutic radiopharmaceuticals', 'mezlocillin', 'rufinamide', 'Noscapine', 'ethoxzolamide', 'Other Agents Acting On The Renin-angiotensin System', 'Stomi equipment', 'azelastine', 'bifonazole', 'chloroquine', 'ibufenac', 'lornoxicam', 'pitrakinra', 'quinidine barbiturate', 'insulin-detemir', 'propranolol glucuronide', 'tetanus vaccines', 'Aminosalicylic acid and similar agents', 'dorzolamide', "4'-hydroxyclobazam", 'Tests for fat absorption', 'Drugs used in nicotine dependence', 'flurbiprofen', 'parecoxib', 'tanespimycin', 'alosetron', 'deoxy-artemisinin', 'capromab', 'josamycin', 'clomipramine', 'evodiamine', 'mephenytoin', 'tetracycline', 'tizanidine', 'Antigrowth hormones', 'ethambutol', 'interferon beta-1a', 'imiquimod', 'peginterferon alfa-2b', 'adapalene', 'Allergens', 'gefitinib M523595', 'levomefolic acid', 'codeine-6-glucuronide', 'carbenicillin', '3-aminopyridine-2-carboxaldehyde thiosemicarbazone', 'ticagrelor', 'triflusal', 'Preparations increasing uric acid excretion', 'progestogens and estrogens in combination', 'omalizumab', 'lurbinectedin', 'rasagiline', 'erythromycin ethylsuccinate / sulfisoxazole acetyl', 'hydroxytriazolam', 'p-hydroxy-ritalinic acid glucuoronide', 'fenoprofen', 'Antiarrhythmics, class Ib', 'Elacridar', 'eslicarbazepine', 'cefmetazole', 'lumefantrine', 'NS-398', 'pridopidine', 'pyruvate', 'thioinosine monophosphate', 'cationic xenobiotics', 'Multivitamins with minerals', 'rabeprazole', 'ammonium lactate', 'Antiparasitic Products, Insecticides And Repellents', 'androstenedione', '4-oh tamoxifen-o-glucuronide', 'allylestrenol', '10-hydroxy r-warfarin', 'xenobiotics', 'ropivacaine', 'losartan M4', "5'-glucuronyl zidovudine", 'alemtuzumab', 'Colchicine derivatives', 'abacavir glucuronide', 'betaxolol', 'Ascorbic acid (vitamin C), plain', 'alpha-hydroxytamoxifen', 'cefdinir', 'flutamide', 'inositol 1,4,5-trisphosphate', 'hesperetin', 'coptisine', '1-methyluric acid', 'benzydamine', '3-hydroxycarbamazepine free radical', 'Specific immunoglobulins', 'agomelatine', 'deferoxamine', 'aminophylline', 'edoxaban', 'Antiemetics And Antinauseants', 'Other anticestodals', 'coumarin', 'valproic acid-coenzyme A', 'Quinolone Antibacterials', 'levomethadyl acetate', 'voriconazole n-oxide', 'dl-mevalonic acid', 'Antihistamines For Systemic Use', 'nortriptyline', 'Antispasmodics In Combination With Psycholeptics', 'Beta Blocking Agents, Thiazides And Other Diuretics', 'Other selective calcium channel blockers with mainly vascular effects', 'tolazoline', 'butylated hydroxytoluene', '(s)-norverapamil', 'Hypertonic solutions', 'Vitamin B-complex with minerals', 'primaquine', 'vitamin c', 'caffeine', 'Leukotriene receptor antagonists', 'chloropyramine', 'chlorthalidone', 'fosaprepitant', 'Combinations and complexes of aluminium, calcium and magnesium compounds', 'Isotonic solutions', 'Musculo-skeletal System', 'levetiracetam', 'Lipid Modifying Agents, Combinations', 'etonogestrel', 'Vitamin A And D, Incl. Combinations Of The Two', 'tretinoin', 'Lipid Modifying Agents', 'trichloroethylene', 'sodium phosphate', 'uric acid', 'atazanavir', 'Agents Against Leishmaniasis And Trypanosomiasis', 'ecabet', 'iobenguane (131i)', 'Iron trivalent, oral preparations', 'icotinib', 'ryanodine', 'Other antispasmodics in combination with psycholeptics', 'polystyrene sulfonate', 'desmethyl clomipramine', 'sulodexide', 'prostaglandin I2', 'Parathyroid Hormones And Analogues', 'abarelix', 'beclomethasone', 'gadobenate dimeglumine', 'castor oil', 'gemcitabine monophosphate', 'Milk substitutes', 'magnesium acetate', 'thiabendazole', 'Sympathomimetics, plain', 'alcaftadine', 'Amino acids/carbohydrates/minerals/vitamins, combinations', 'isoniazid / pyrazinamide / rifampin', 'piperidine-hydroxy-sirolimus', 'prednicarbate', 'febuxostat', 'Platinum compounds', 'Preparations inhibiting uric acid production', 'doxacurium', 'Allergen extracts', 'Corticosteroids, weak, combinations with antiseptics', 'aliskiren', 'galantamine', 'panobinostat', 'tazarotene', 'cyanocobalamin', 'iron dextran', 'dezocine', 'Electrolyte solutions', 'Vitamins, other combinations', 'miglitol', 'pivmecillinam', 'Imidazoline receptor agonists in combination with diuretics', 'lamotrigine glutathione adduct', 'zolpidem', 'arbekacin', 'vitamin b12 and folic acid', 'oseltamivir', 'dronabinol', 'Beta Blocking Agents And Thiazides', 'SN-38', 'l-isoleucine', 'Opium alkaloids and derivatives', 'Dichloroacetamide derivatives', 'oxytetracycline', 'arachidonic acid', 'morphine-3-glucuronide', 'o-desmethyl venlafaxine glucuronide', 'rabies immunoglobulin', 'formic acid', 'lidoflazine', 'Hemodialytics, concentrates', 'n-acetyl fluvoxamine acid', 'ropinirole', 'deoxythymidine monophosphate', 'norepinephrine', 'trilostane', 'levodopa', 'Corticosteroids, weak, other combinations', 'aminocaproic acid', 'gonadorelin', 'iohexol', 'Other Antineoplastic Agents', 'ar c124910xx', 'ketoprofen', 'sorafenib M5', 'trametinib', 'Antiandrogens', 'metipranolol', 'talinolol', 'Other i.v. solution additives', 'boceprevir', 'doxorubicin deoxyaglycone', 'levamisole', 'Other antiepileptics', 'Tetracycline and derivatives', 'pamidronate', 'prostaglandin D2', 'sulfamerazine', 'sodium chloride', 'Capillary Stabilizing Agents', 'Other antiemetics', 'raltitrexed', '(3s,4r)4(4-fluorophenyl)3(4-hydroxy-3-methoxyphenoxymethyl)piperidine)', 'nitric oxide', 'olmesartan', 'triadimefon', 'Sulfonamides and potassium in combination', 'n-desethyl-amodiaquine', 'barbiturates, plain', 'Technical disinfectants', 'imiglucerase', 'albendazole', 'sertindole', 'rotigaptide', 'Various pain palliation radiopharmaceuticals', 'ilaprazole', 'fructose-6-phosphate', 'iron', 'blinatumomab', 'e 7010', 'thiamylal', 'Valspodar', '6-hydroxytropisetron', 'desmethylnortriptyline', 'nafarelin', 'norcodeine', 'enasidenib', 'alizapride', 'Endocrine Therapy', 'Other plant alkaloids and natural products', '2-methoxyestradiol', 'ortho-o-glucuronide rosiglitazone', 'prilocaine', 'amobarbital', 'gentian violet', 'forasartan', 'non-nucleoside reverse transcriptase inhibitors', 'Papillomavirus vaccines', 'hydroxy-doxepin glucuronide', 'Drugs for treatment of hypoglycemia', 'acemetacin', 'Antiinfectives/antiseptics In Combination With Corticosteroids', 'drospirenone', 'celecoxib', 'megestrol', 'sulfacytine', 'Bisphosphonates', 'Beta-lactamase resistant penicillins', 'selenium sulfide', '2-hydroxyimipramine', 'selenium supplements', 'LY686017', 'Organic acids', 'ritalinic acid', 'Tuberculosis diagnostics', 'progesterone', 'Synthetic anticholinergic agents in combination with analgesics', 'fludiazepam', 'Antiprotozoals', 'sulfonamides, urea derivatives', 'fenoterol', 'gliclazide', 'colony stimulating factors', 'levonordefrin', 'diloxanide', 'flumethasone pivalate', 'metronidazole', 'olanzapine 4-n-glucuronide', 'Rota virus diarrhea vaccines', 'valsartan', 'Blood substitutes and plasma protein fractions', 'thiotepa', 'conivaptan', 'tropisetron 7-sulfate', 'haemophilus b conjugate vaccine (prp-d-diphtheria toxoid conjugate)', '2-hydroxyibuprofen', 'prazepam', 'flunarizine', 'hexoprenaline', 'moviprep', 'prostaglandin F2', 'carphenazine', 'fatty acid', 'quazepam', 'efavirenz / emtricitabine / tenofovir disoproxil', 'Synthetic anticholinergics, esters with tertiary amino group', 'dexmedetomidine', 'pyrazinamide', 'Combinations of drugs for treatment of tuberculosis', 'ergoloid mesylate', 'pancrelipase', 'desmethylsertraline', 'Vasopressin and analogues', 'Intermediate-acting sulfonamides', 'vincristine M4', 'nitroprusside', 'Ophthalmologicals', 'n-desmethyl glucuronide rosiglitazone', 'zinc oxide', '4-ketocyclophosphamide', 'Hydrazides', 'Respiratory System', 'Third-generation cephalosporins', 'cefpodoxime', 'gefitinib M387783', 'Gonadotropin releasing hormone analogues', 'Other antinematodals', 'trandolapril', 'lepirudin', 'Selective immunosuppressants', 'valganciclovir', 'flecainide', 'amiloride', 'Vitamin K And Other Hemostatics', 'n-acetyl-d-glucosamine', 'Fourth-generation cephalosporins', 'pantoprazole', 'suxibuzone', 'bismuth subsalicylate', 'Other Analgesics And Antipyretics', 'Therapeutic Radiopharmaceuticals', 'tegafur', 'glutathione-etoposide quinone adduct', 'methotrimeprazine', 'staurosporine', 'Low-ceiling Diuretics, Thiazides', 'propranolol', 'quercetin', 'Benzamides', 'fluocinonide', 'dronedarone', 'pentolinium', 'anakinra', 'didesmethylcitalopram', 'methimazole', 'tubercidin', 'Intestinal Adsorbents', 'micafungin', 'Cod-liver oil ointments', 'Digestives, Incl. Enzymes', 'Iodine (125I) compounds', 'Monoamine oxidase inhibitors, non-selective', 'oxymorphone', 'Various alimentary tract and metabolism products', 'Salicylic acid preparations', 'Other antiinfectives and antiseptics', 'dinutuximab', 'salicylate-sodium', 'yohimbine', 'diflorasone', 'glisoxepide', 'nicotine glucuronide', 'elosulfase alfa', 'Beta blocking agents, non-selective, and vasodilators', 'Nitrosoureas', 'bethanidine', 'carboxyibuprofen glucuronide', 'Other systemic hemostatics', 'DPCPX', 'Cardiovascular System', 'etoposide glucuronide', '5-HPETE', 'carbidopa', 'gold preparations', 'aminohippurate', 'loxapine', 'acetaminophen-glucuronide', 'anidulafungin', 'thyroxine', 'human serum albumin', 'Lipid Modifying Agents, Plain', 'dapagliflozin', 'serum albumin iodonated', '4-hydroxyvoriconazole', 'nimodipine', 'Antithyroid Preparations', 'daclatasvir', 'Other anti-acne preparations for topical use', 'Watersoluble, nephrotropic, low osmolar X-ray contrast media', 'fluorouridine', 'tetrahydrobiopterin', 'succinylmonocholine', 'cyclizine', 'hydroxy clomipramine', 'mestranol', 'penicillamine', 'Other respiratory system diagnostic radiopharmaceuticals', 'tofisopam', 'NAPSQI', 'Other agents against amoebiasis and other protozoal diseases', 'fluticasone propionate', 'nalmefene', 'Beta blocking agents, selective, and other antihypertensives', '6,7-dihydroxybergamottin', 'afatinib dimaleate', 'Secondary and tertiary amines', 'plicamycin', 'propantheline', 'betahistine', 'oxygen', 'cidofovir', 'acetylcholine', 'fasudil', 'geranylgeranyl diphosphate', 'Antacids with antispasmodics', 'Dipeptidyl peptidase 4 (DPP-4) inhibitors', 'Expectorants', 'digoxin', 'o-demethylmetoprolol', 'Belladonna and derivatives in combination with psycholeptics', 'Indium (111In) compounds', 'rolipram', 'dalfopristin', 'norethindrone', 'eletriptan', 'lamivudine diphosphate ethanolamine', 'Blood Substitutes And Perfusion Solutions', 'amitriptylinoxide', 'demethylated sirolimus metabolites', 'Other drugs for bile therapy', 'Beta Blocking Agents And Vasodilators', 'bevacizumab', 'cosyntropin', 'nemonapride', 'sulfaphenazole', 'desoxycorticosterone pivalate', 'Scilla glycosides', 'brimonidine', 'papain', 'nedocromil', 'alpha-methyl-para-tyrosine', 'dofetilide', 'varenicline', 'metixene', 'salicylamide', 'ciclesonide', 'garlic oil', 'azatadine', 'tetanus antitoxin', 'pentobarbital', 'Androgens and female sex hormones in combination with other drugs', 'antihemophilic factor', 'ergocalciferol', 'timolol', 'bacampicillin', 'thrombin', 'trimethobenzamide', 'tacrolimus', 'fluorodeoxyuridine diphosphate', 'olanzapine n-oxide', 'Tariquidar', 'genistein', 'testosterone', 'molybdenum', 'l-carnitine', 'normetanephrine', 'Wart and anti-corn preparations', 'serum albumin', 'n,o-didesmethyl-tramadol conjugates', 'sodium sulfate', 'halofantrine', 'Other Dermatological Preparations', 'colistin', 'tamsulosin', 'Ascorbic Acid (vitamin C), Incl. Combinations', 'idraparinux', 'sevelamer', 'sulthiame', 'balsalazide', 'Aldehydes and derivatives', 'Intestinal Antiinfectives', 'Pain Palliation (bone Seeking Agents)', 'lamotrigine 2-n-glucuronide', 'levonorgestrel', 'mesoridazine', 'Antitrematodals', 'Alpha- and beta-adrenoreceptor agonists', 'Calcium Homeostasis', 'estazolam', 'aripiprazole', 'elbasvir', 'naringenin', 'aripiprazole lauroxil', 'magnesium chloride', 'oxybutynin', 'pitavastatin', 'dexfenfluramine', 'hormonal contraceptives for systemic use', 'pindolol', 'droxicam', 'alglucosidase alfa', 'Non-watersoluble X-ray contrast media', 'Bone morphogenetic proteins', 'gadodiamide', 'busulfan glutathione conjugate', 'propiconazole', 'gonadotropin,chorionic', 'Other urologicals', 'malathion', 'Antiseptics And Disinfectants', 'Influenza vaccines', 'Analgesics and anesthetics', 'tacrine', 'grapefruit juice', 'carboxyphosphamide', 'procarbazine', 'Oxicams', 'glucose', 'hydroxy-desmethyldoxepin', 'efavirenz', 'tranilast', 'pemetrexed', 'Corticosteroids, potent, combinations with antibiotics', 'trastuzumab emtansine', 'Ectoparasiticides, Incl. Scabicides', 'Insulins and analogues for injection, fast-acting', 'carvedilol', 'atezolizumab', 'desmethyldoxepin', 'ketoconazole', 'low density lipoprotein', 'mitotane', 'Antidiarrheals, Intestinal Antiinflammatory/antiinfective', '2-ene valproic acid', 'Other antipsychotics', 'thymalfasin', 'O6-(4-Bromothenyl)guanine', '6-o-desmethylnaproxen 6-glucuronide', 'fluorodeoxyuridine monophosphate', 'cycloserine', 'losartan M5', 'High-ceiling Diuretics', 'hemophilus influenzae b vaccines', 'arformoterol', 'mometasone', 'Hypnotics And Sedatives', 'Antinematodal Agents', 'erlotinib', 'simvastatin acid', 'Long-acting sulfonamides', 'Other class I antiarrhythmics', 'Arsenic compounds', 'xanthine', 'ribosylthioguanine', "(-)-carbovir 5'-triphosphate", 'codeine', 'Other viral vaccines', 'Nitrofuran derivatives', 'deoxyuridine monophosphate', 'Gonadotropins', 'Opioids in combination with antispasmodics', 'Antispasmodics, psycholeptics and analgesics in combination', 'zalcitabine', 'Anthrax vaccines', 'abacavir', 'cyclic adenosine monophosphate', 'fluphenazine', 'pramlintide', 'tropisetron 7-glucuronide', 'polythiazide', 'nitrazepam', 'gelatin agents', 'sulfapyridine', 'nifedipine', 'azidocillin', 'dicloxacillin', 'mibefradil', 'I.v. Solutions', 'HMG CoA reductase inhibitors in combination with other lipid modifying agents', 'Genito Urinary System And Sex Hormones', 'levorphanol', 'benzoic acid', 'phosphatidylcholine', 'podophyllum', 'Antiadrenergic Agents, Centrally Acting', 'sermorelin', 'thiol conjugates of valproic acid', 'Tests for liver functional capacity', 'Antipsoriatics', 'salmon calcitonin', 'N-desmethyl-4-hydroxyatomoxetine', 'Diet Formulations For Treatment Of Obesity', 'Inflammation And Infection Detection', 'ertapenem', 'normorphine', 'gemtuzumab ozogamicin', 'pralidoxime', 'Intrauterine contraceptives', 'Analgesics', 'succinic acid', 'Drugs for treatment of hypercalcemia', 'molindone', 'Belladonna alkaloids, tertiary amines', 'Beta blocking agents, non-selective, and thiazides', 'deoxy-thioguanosine monophosphate', 'galsulfase', 'colistimethate', 'isoniazid diazene metabolite', 'difluprednate', 'lenalidomide', 'Pituitary And Hypothalamic Hormones And Analogues', 'Celiprolol', 'Magnesium', 'Immunoglobulins', 'Pyrimidine analogues', 'amfenac', 'anagrelide', 'Carboxamide derivatives', 'nitrogen', 'Drugs For Acid Related Disorders', 'artemisinin and derivatives', 'tamoxifen', '7-hydroxyefavirenz glucuronide', 'Viral Vaccines', 'Nitrogen mustard analogues', 'Fenamates', 'phenytoin dihydrodiol', 'cerivastatin', '3-hydroxyibuprofen glucuronide', 'succimer', 'Angiotensin II antagonists and diuretics', 'melatonin', 'benzocaine', "Lorenzo's oil", 'cotinine n-oxide', 'ethionamide', 'mazindol', 'Nasal Decongestants For Systemic Use', 'Other local anesthetics', 'hydralazine', 'daptomycin', 'cyclothiazide', 'aziridine', 'Multivitamins, other combinations', 'ketanserin', 'Iodine products', 'Other renal system diagnostic radiopharmaceuticals', 'pivampicillin', 'Blood tests, auxiliary products', 'chloride', 'fenbufen', 'methotrexate polyglutamate', 'bentoquatam', 'carbachol', 'n-(2-hydroxyethyl)-morpholine', 'hyaluronidase', 'moxifloxacin', 'isradipine', "abacavir 5'-monophosphate", 'oxybuprocaine', 'Macrolides', 'buclizine', 'l-tyrosine', 'beta-lactam antibacterials, penicillins', 'reduced nicotinamide adenine dinucleotide', 'Other Cardiac Preparations', 'Iron trivalent, parenteral preparations', 'heptabarbital', 'Selective estrogen receptor modulators', 'felbamate', 'astemizole', 'rimantadine', '4-methylthioamphetamine', 'Antianemic Preparations', 'corr-4a', 'vitamin K hydroquinone', 'colesevelam', 'methadone', 'dasatinib', 'Combinations Of Antibacterials', 'gentamicin', '8-hydroxyefavirenz glucuronide', 'Antiinflammatory/antirheumatic Agents In Combination', 'liothyronine', 'taurine', '3,5-dimethyl-2-(3-pyridyl)thiazolidin-4-one', 'Sensitivity tests, discs and tablets', 'thiothixene', 'gemcitabine triphosphate', 'entacapone', 'carbamazepine 2,3-epoxide', 'Antiarrhythmics, class III', 'hydrogen peroxide', 'halazepam', 'desmethylerythromycin', 'Combinations of antineoplastic agents', 'Vitamin K', '3-cyano-7-ethoxycoumarin', 'abciximab', 'copper', 'cyclosporine am1', 'dihydroxyvoriconazole', 'miconazole', 'Melatonin receptor agonists', 'aminoglycoside antibacterials', 'indomethacin', 'ridaforolimus', 'trazodone', 'Drugs used in alcohol dependence', 'encorafenib', 'histamine phosphate', 'Other Ophthalmologicals', 'efavirenz-n-glucuronide', 'Phosphonic acid derivatives', 'Various thyroid diagnostic radiopharmaceuticals', 'bupranolol', 'cefotiam', 'dextromethorphan', 'digoxin immune fab', 'Antiinflammatory And Antirheumatic Products', 'fluoro-beta-ureidopropionate', 'methacholine chloride', 'cefazolin', 'Tests for pituitary function', 'chlorproguanil', 'drospirenone / ethinyl estradiol', 'p-hydroxy-methylphenidate', 'inotuzumab ozogamicin', 'cyclosporine', 'aluminum chloride', 'tamoxifen metabolite E sulfate', 'norelgestromin', 'n-desmethyl venlafaxine', 'Beta-lactamase sensitive penicillins', 'praziquantel', 'Other Otologicals', 'isopropamide', 'phenol', 'Strophantus glycosides', 'Quinoline derivatives', 'Oxazolidine derivatives', 'nilotinib', 'kunecatechins', 'diphemanil methylsulfate', 'lanthanum carbonate', 'pioglitazone', 'flavin adenine dinucleotide', 'tropisetron n-oxide', 'vindesine', '7-hydroxy r-warfarin', 'Synthetic anticholinergic agents in combination with psycholeptics', '6-hydroxyondansetron', 'avatrombopag', 'Other Antibacterials', 'muromonab', 'CBLB502', 'Barbiturates, combinations', 'laropiprant', 'tropisetron 5-glucuronide', 'Other immunostimulants', 'tadalafil', 'Nicotinic acid and derivatives', 'Oxytocin and analogues', 'chlorocresol', 'technetium (99mtc) mertiatide', 'acetaminophen glucuronide', 'volatile anesthetics', 'Other Nutrients', 'vatalanib', 'Other estrogens', 'Neuraminidase inhibitors', 'ximelagatran', 'androgens for topical use', 'Protectives Against Uv-radiation', 'tobramycin', 'pentamidine', 'droxidopa', 'Paramagnetic contrast media', 'hydroxymethyl dasatinib', 'moexipril', 'methsuximide', 'Rupatadine', 'cyclobenzaprine', 'Cholera vaccines', 'Blood And Related Products', 'bupivacaine', 'carbetocin', 'l-tryptophan', 'Anti-acne Preparations For Systemic Use', 'isoniazid metabolic intermediates', 'mercaptopurine riboside', 'benzyl alcohol', 'buserelin', 'potassium chloride', 'kanamycin', 'Multivitamins, Plain', 'antineoplastic agents', 'clenbuterol', 'serotonin', 'photodynamic therapy', 'sulfamethoxazole', 'brompheniramine', 'zanamivir', 'decamethonium', 'losartan', 'Muscle Relaxants', 'Acth', 'starch', 'chlormerodrin', 'H2-receptor antagonists', "2'-deoxy-2',2'-difluorouridine monophosphate", 'aldosterone', 'N-desmethyl-4-hydroxyatomoxetine glucuronide', 'Drugs Affecting Bone Structure And Mineralization', 'Peritoneal Dialytics', 'telbivudine', 'Tuberculosis vaccines', 'methotrexate', 'Non-selective Calcium Channel Blockers', 'chlorphenesin', 'Serotonin antagonists', 'clofarabine', 'Emollients And Protectives', 'benzthiazide', "4'-hydroxy atomoxetine", 'iloprost', 'oxytocin', 'Antiobesity Preparations, Excl. Diet Products', 'Corticosteroids, Combinations With Antiseptics', 'metformin', 'Antivirals For Systemic Use', 'Other Cold Combination Preparations', 'phosphates', 'Benzimidazole derivatives', 'Fat/carbohydrates/proteins/minerals/vitamins, combinations', "4'-hydroxy-n-desmethylclobazam", 'Benzothiazepine derivatives', 'metoprolol acid', 'vitamin a', '6-o-phosphoryl inosine monophosphate', 'ombitasvir', 'ether', 'loperamide', 'salicylic acid', 'Drugs for treatment of hyperkalemia and hyperphosphatemia', 'guanosine triphosphate', 'allopregnanolone', 'buprenorphine', 'Antiinflammatory products for vaginal administration', 'hydroxylated sirolimus metabolites', 'Thiazides, combinations with psycholeptics and/or analgesics', 'Ophthalmological And Otological Preparations', 'Magnesium compounds', '3-oxoandrosten (4) derivatives', 'interferon alfa-2a, recombinant', 'temazepam', 'tenofovir', 'Enzyme and acid preparations, combinations', 'cycrimine', "4'-hydroxyphenyl carvedilol", 'nutlin-3', 'Non-selective beta-adrenoreceptor agonists', 'abiraterone', 'epirubicin', 'hetacillin', 'latamoxef', 'levocabastine', 'epoetin alfa', 'Rauwolfia alkaloids and diuretics in combination', 'aspirin', 'ruxolitinib', 'Imidazothiazole derivatives', 'Monoamine oxidase B inhibitors', 'elbasvir / grazoprevir', 'sulfadiazine', 'netilmicin', 'clofazimine', 'sulfisoxazole', 'Other Gynecologicals', 'Lung surfactants', 'tenoxicam', 'Corticosteroids, Other Combinations', 'Other hepatic and reticulo endothelial system diagnostic radiopharmaceuticals', 'sodium bisulfite', 'fentanyl', 'brinzolamide', 'indocyanine green', 'tolfenamic acid', 'nitrile', 'Hydrazinophthalazine derivatives', 'cabozantinib', 'imidapril', 'domperidone', 'fluconazole', 'thalidomide', 'pheniramine', 'heparin', '8-hydroxynevirapine glucuronide', 'Vitamins with minerals', 'antithrombotic agents', 'Fatty acid derivatives', 'atazanavir M7', 'cabazitaxel', 'methotrexate glutamate', 'risperidone', 'Anti-parkinson Drugs', 'Tumour Detection', 'acetazolamide', 'Adrenergics and other drugs for obstructive airway diseases', 'dolutegravir', 'clonazepam acetylated metabolites', 'clorazepate', 'hydroxy desmethyl clomipramine glucuronide', '3-beta-hydroxy-5-androsten-17-one', 's 1 (combination)', 'pazopanib', 'ABT-751', 'citalopram', 'Tests for fertility disturbances', 'paraformaldehyde', 'fluoxetine inactive metabolites', 'Drugs Used In Addictive Disorders', 'meglitinides', 'canakinumab', 'prenylamine', 'selegiline', 'Pertussis vaccines', 'menadione', 'ebselen', 'vortioxetine', '5,10-methenyltetrahydrofolate', 'tamoxifen-n-oxide', 'pegaspargase', 'bosutinib', 'Morphinan derivatives', 'n-desmethyltamoxifen', 'Other antiinflammatory and antirheumatic agents, non-steroids', 'hydroxy clomipramine glucuronide', 'levobupivacaine', 'fluorouracil', 'nebivolol', 'orbofiban', 'sacubitril', 'Imidazole and triazole derivatives', 'Drugs For Treatment Of Tuberculosis', 'Sulfonium derivatives', 'fluvoxamine', '6alpha-oxycodol', 'Selective Calcium Channel Blockers With Mainly Vascular Effects', 'encainide', 'cefoperazone', 'aprepitant', 'thyroid hormones', 'Antiinflammatory/antirheumatic agents in combination with corticosteroids', 'OC144-093', 'acetylisoniazid', 'phenytoin catechol', 'metaraminol', 'sitagliptin', 'tamoxifen metabolite E', 'iguratimod', 'sodium benzoate', '2-hydroxyiminostilbene', 'thioguanosine diphosphate', 'griseofulvin', 'choriogonadotropin alfa', 'daniquidone', 'temozolomide', 'cisatracurium besylate', '9,10-dihydrodeoxy-artemisinin', 'dextran', 'vitamin K1 2,3-epoxide', 'Diagnostic Radiopharmaceuticals', 'adenine', 'glycerin', 'bromazepam', 'methyl aminolevulinate', 'Enzyme inhibitors', 'testosterone propionate', 'zonisamide', 'triflupromazine', 'PIP3', 'epinephrine', 'stavudine', 'lymecycline', 'Psycholeptics And Psychoanaleptics In Combination', 'desmethylnaproxen', 'methylphenidate', 'pancuronium', 'phenytoin', 'potassium gluconate', 'levothyroxine', 'tubocurarine', 'enoximone', 'Cough Suppressants And Expectorants, Combinations', 'gliquidone', 'indacaterol', 'lovastatin acid', 'ethinyl estradiol', 'Corticosteroids, moderately potent, combinations with antibiotics', 'rhodamine 123', 'ivabradine', 'sulfasalazine', 'noroxycodone-glucuronide', 'marimastat', 'Piperazine derivatives', 'alglucerase', 'demethylcitalopram', 'colestipol', 'tamoxifen metabolite E glucuronide', 'lithium', 'Anticestodals', 'Technetium (99mTc), particles for injection', 's-norfluoxetine', 'triamcinolone', '1,3-dimethyl uric acid', 'mimosine', 'Other Vaccines', 'Pyrethrines, incl. synthetic compounds', 'Tonics', 'cinolazepam', 'estropipate', 'gatifloxacin', 'oxcarbazepine', 'suprofen', 'acetaminophen/propoxyphene napsylate', 'palifermin', 'theobromine', 'Diazepines, oxazepines and thiazepines', 'sodium bicarbonate', 'cortisone acetate', 'glycyl-sarcosine', '2-dechloroethyl ifosfamide', 'guanethidine', 'ponatinib M14', 'bentiromide', 'deserpidine', 'lipoic acid', 'Antiinflammatory agents, non-steroids', 'Hepatic And Reticulo Endothelial System', "5'-hydroxytegafur", 'doxapram', 'glibenclamide', 'probenecid', 'tipifarnib', 'venlafaxine', 'sparteine', '4-oh tamoxifen', 'Somatropin and somatropin agonists', 'etanercept', 'pregabalin', 'Other cardiac stimulants', 'pyruvic acid', 'l-cysteine', 'medroxyprogesterone', 'r-omeprazole', '2-hydroxymethyl olanzapine', 'isonicotinyl glycine', 'oxatomide', 'clindamycin', 'Epoxides', 'fluvastatin', 'Antiandrogens, plain', 'Chemotherapeutics For Topical Use', 'hydroxocobalamin', 'grazoprevir', 'Selective serotonin reuptake inhibitors', 'lutropin alfa', 'hydroxyflunitrazepam', 'alisertib', 'acrolein', 'lofexidine', 'olanzapine 10-n-glucuronide', 'paramethadione', 'topoisomerase I inhibitors', 'trastuzumab', 'phenoxyacetic acid derivative', 'leukotriene A4', 'opipramol', 'Ergot alkaloids and oxytocin incl. analogues, in combination', 'guanidine', 'norclobazam', 'Platelet aggregation inhibitors excl. heparin', 'r-norfluoxetine', 'Anticorticosteroids', '3,4-dihydroxyphenylacetic acid', 'Sulfonamides and corticosteroids', 'losartan P1', 'beryllium', 'sunitinib n-oxide', 'paliperidone', 'carboxyifosfamide', 'hydroquinidine', 'ramelteon', '2-hydroxydesipramine', 'trimetrexate', '8,14-dihydroxyefavirenz', '2-hydroxy-desethyl-amodiaquine', 'Nitroimidazole derivatives', 'cinoxacin', 'hydroxypropyl cellulose', 'oxidized nicotinamide adenine dinucleotide', 'pentazocine', 'sulfamethizole', 'Other antiallergics', 'meclofenamic acid', 'almokalant', '3-hydroxyibuprofen', 'phenylbutazone', 'Drugs For Treatment Of Bone Diseases', 'tetanus toxoid', 'bucillamine', 'desmethylcitalopram', 'echinacea', 'minocycline', 'dimenhydrinate', 'xenon', 'n-desmethyl-ortho-hydroxy rosiglitazone', 'metyrapone', 'rabies vaccines', 'epinastine', 'polysorbate 80', 'faldaprevir', 'reteplase', 'didesmethyldoxepin', 'pactimibe', 'sorafenib M4', 'Technetium (99mTc), inhalants', '5-hydroxy diclofenac benzoquinone', 'tolazamide', 'Pyrimidine derivatives', 'Drugs acting on serotonin receptors', 'gadofosveset trisodium', 'bisantrene', 'follitropin beta', 'phosphatidylserine', 'ledipasvir', 'Medical gases', 'Nutrients without phenylalanine', 'amrinone', 'cefalotin', '3-hydroxyomeprazole', 'streptokinase', 'chlorothiazide', 'bilirubin', 'ibrutinib', 'Other Drugs For Obstructive Airway Diseases, Inhalants', 'glutaraldehyde', '581-05-5', 'lurasidone', 'vapreotide', 'Antiseptics', "5'-deoxy-5-fluorocytidine", 'cholecalciferol', 'diclofenac', 'fondaparinux sodium', 'leukotriene C4', 'hyoscyamine', 'ethacrynic acid', '6-beta-noroxycodol', 'arsenite', 'dirithromycin', 'Alpha glucosidase inhibitors', 'remoxipride', 'glatiramer acetate', 'vincristine M2', 'furafylline', 'Other quinolones', 'paricalcitol', 'Diphenylmethane derivatives', 'troleandomycin', 'lenvatinib', 'citric acid', 'Immunosuppressants', 'Combinations of antihistamines', 'eprosartan', 'Tests for diabetes', 'copper sulfate', 'Centrally acting sympathomimetics', 'nefazodone', 'tolterodine', 'phenytoin methylcatechol', 'alverine', '3,4-methylenedioxymethamphetamine', 'floxuridine', 'pipotiazine', 'meclizine', 'cefprozil', 'ginkgo biloba extract', 'alpha-hydroxy sertraline ketone glucuronide', 'conjugated estrogens', 'ribociclib', '4-ene valproic acid', 'deoxydihydro-artemisinin', 'galactose', 'reserpine', 'felbinac', 'peroxynitrite anion', '12-hydroxynevirapine glucuronide', 'cysteamine', 'trichloroacetic acid', 'torasemide', 'Antiadrenergic Agents, Peripherally Acting', 'Carbamic acid esters', '3-hydroxynevirapine', 'clavulanate', 'hydroxy desmethyl clomipramine', 'rivastigmine', 'Rauwolfia alkaloids', 'picrotoxin', 'ezetimibe', 'carmustine', 'valbenazine', 'db-289', 'phencyclidine', 'angiotensin I', 'l-aspartic acid', 'probucol', 'capecitabine', 'r,s-hydrobupropion', 'Vitamin A, plain', 'Antispasmodics in combination with other drugs', 'estriol', '3-ene valproic acid-coenzyme A', 'niacin', 'lercanidipine', 'ranitidine', 'Beta Blocking Agents And Other Antihypertensives', 'hydroxyprogesterone', '2-hydroxycarbamazepine', 'Vitamin B-complex with vitamin C', 'verapamil PR-25', 'antazoline', 'fenofibrate', 'dicyclomine', 'oxamniquine', 'Biricodar', 'beta carotene', 'flucloxacillin', 'ivacaftor / tezacaftor', 'perospirone', 'Other Nervous System Drugs', 'fenfluramine', 'phosphoribosyl pyrophosphate', 'n-desmethyl rosuvastatin', 'evacetrapib', 'isometheptene', 'pirbuterol', 'tridihexethyl', 'pci-24781', 'Other drugs used in benign prostatic hypertrophy', 'nevirapine', 'endoxifen o-glucuronide', 'plerixafor', 'desmethyl olanzapine', 'tetrabenazine', 'cholic acid', 'methoxyflurane', 'pentostatin', 'tymazoline', '31-o-demethyl-tacrolimus', 'fructose', 'Arteriolar Smooth Muscle, Agents Acting On', 'acethydrazide', 'coagulation factor viia', 'Other immunoglobulins', 'fesoterodine', 'n,n,o-tridesmethyl venlafaxine', 'Barium sulfate containing X-ray contrast media', 'palbociclib', 'phenoxybenzamine', 'Guanidine derivatives', 'Local hemostatics', 'Other Drugs For Disorders Of The Musculo-skeletal System', 'fomepizole', 's-methadone', 'doxorubicin', 'doxepin-n-oxide glucuronide', 'secretin', 'ethchlorvynol', 'interferon alfa-n3', 'olanzapine', 'alpha-linolenic acid', 'haloperidol', 'Surgical Aids', 'basiliximab', 'I.v. Solution Additives', 'butethal', 'bucindolol', 'benztropine', 'Sympathomimetics', 'fenoldopam', 'quinidine', 'orlistat', 'Steroid antibacterials', 'Carbamates', 'Antiarrhythmics, class Ia', 'Mydriatics And Cycloplegics', 'Technetium (99mTc) compounds', 'didesmethyl clomipramine', 'apc', 'dactinomycin', 'Other cough suppressants and expectorants', 'Opioid anesthetics', "4,6,4'-trimethylangelicin", 'perphenazine', 'sertraline carbamoyl-O-glucuronide', 'mycophenolate mofetil', 'antiepileptics', 'n,n-dimethylacetamide', 'Angiotensin II Antagonists, Combinations', 'ketazolam', 'seco-sirolimus', 'squalene', 'phenacemide', 'Ixabepilone', 'Piperidinedione derivatives', 'phenothiazines with aliphatic side-chain', 'iodipamide', 'Curare alkaloids', 'phosphorus', 'peginterferon alfa-2a', 'tamoxifen-n-glucuronide', 'dolasetron', 'carrageenan', 'isothipendyl', 'ivacaftor / lumacaftor', 'Tars', 'piroxicam', 'Alkylating Agents', 'nicotinamide adenine dinucleotide phosphate', 'Sulfonamides (heterocyclic)', 'escitalopram', 'carbimazole', 'dihydroxycarbazepine', 'hyaluronan', 'xylometazoline', 'angiotensin 1-7', 'creatine', 'irbesartan', 'anileridine', 'MPP+', 'fosfomycin', 'flavoxate', 'Corticosteroids, weak, combinations with antibiotics', 'clotiazepam', 'methylergonovine', 'Phenothiazine derivatives', 'Iron chelating agents', 'Stomatological Preparations', 'Other alkylating agents', '3-((6-amino-(4-chlorobenzenesulfonyl)-2-methyl-5,6,7,8-tetrahydronapht)-1-yl)propionic acid', 'clodronate', 'deslanoside', 'proparacaine', '4-(4-chlorophenyl)piperidin-4-ol', 'capsaicin', 'pyridostigmine', 'treprostinil', 'Antiprogestogens', 'Alkaloids, excl. rauwolfia, in combination with diuretics', 'sorafenib M3', 'nizatidine', 'tafluprost', 'montelukast', 'fluorouridine monophosphate', 'PP2', 'prostaglandin H2', 'sugar', 'levallorphan', 'dihydroergotamine', 'exemestane', 'cabergoline', 'Drugs For Treatment Of Lepra', 'darapladib', 'paramethasone', 'rosoxacin', 'Other oxytocics', 'bromocriptine', 'cholesterol ester', 'telatinib', 'vardenafil', 'vorinostat', 'aciclovir', '5-hydroxyisourate', 'Cosmetics', 'sildenafil', 'oxyphenbutazone', 'Contraceptives For Topical Use', 'mycophenolic acid-acyl glucuronide', 'Interleukins', 'diuretics', 'Propulsives', 'esomeprazole', '6alpha-oxymorphol', 'lamotrigine-arene-oxide', 'Viscoelastic substances', 'imipramine', 'ribavirin', "5'-deoxy-5-fluorouridine", 'p-hydroxy-ritalinic acid', 'quinupristin', 'benzyl benzoate', 'irinotecan M4', 'homoharringtonine', 'cytarabine', 'Combinations of penicillins, incl. beta-lactamase inhibitors', 'naphazoline', 'pimozide', 'tropicamide', 'trimeprazine', 'Drugs used in opioid dependence', 'vitamin d and analogues', '2-hydroxynevirapine', 'hydroxyvoriconazole', 'Other topical products for joint and muscular pain', 'Other antihistamines for systemic use', 'fluvastatin active metabolites; fluvastatin inactive metabolites', 'thioguanine', 'Prolactine inhibitors', 'cyclosporine am9', 'Glucarpidase', 'Preparations for biliary tract therapy', 'Other antispasmodics in combination with analgesics', 'Alpha-adrenoreceptor antagonists', '4-hydroxypropranolol glucuronide', 'vegetable oil', 'mivacurium chloride', 'Other therapeutic products', 'n-desethyl sunitinib', 'Rubella vaccines', 'lidocaine', 'n-desmethyl-tramadol', 'eteplirsen', 'l-alanine', 'terazosin', 'ceritinib', 'Corticosteroids, very potent, combinations with antibiotics', 'quinethazone', 'Mercurial diuretics', 'medroxyprogesterone/conjugated estrogens', 'bromfenac', 'rimonabant', 'ritonavir', 'thiethylperazine', 'diphenhydramine', 'mafenide', 'ramipril', 'erythromycin', 'ondansetron 7-sulfate', 'losartan E-3174', 'Corticosteroids, Combinations With Antibiotics', 'triglycerides', 'Heparins or heparinoids for topical use', 'cilostazol', 'Natural opium alkaloids', 'antivirals', 'antithymocyte globulin', 'cevimeline', 'Alpha and beta blocking agents and other diuretics', 'crizotinib M10', 'insulin-lispro', 'n-(2-hydroxyethyl)-morpholine-n-oxide', 'oxymetazoline', 'Iodine (123I) compounds', 'pertuzumab', 'ribose phosphate', 'dromostanolone', 'Drugs For Obstructive Airway Diseases', 'Trimethoprim and derivatives', 'certolizumab pegol', 'endoxifen sulfate', 'Antiinflammatory preparations, non-steroids for topical use', 'ofloxacin', 'homovanillin', 'Vismodegib', 'Other intestinal adsorbents', 'interferon alfa-n1', 'gestodene', 'Gonadotropin-releasing hormones', 'rosuvastatin', 'ivermectin', 'streptomycin', 'midodrine', 'regorafenib', 'Papaverine and derivatives', 'becaplermin', 'Other emollients and protectives', 'dihydroergotoxine', 'trichostatin A', 'fencamfamine', 'carboprost tromethamine', 'metaxalone', 'Liquid plasters', 'Other cicatrizants', 'Other immunosuppressants', 'romidepsin', '7-hydroxyefavirenz', 'corticosteroids', 'cinacalcet', 'Other Therapeutic Radiopharmaceuticals', 'Imidazoline receptor agonists', 'ginkgo biloba', 'Sympathomimetics in glaucoma therapy', 'Carbapenems', 'Acetic acid derivatives and related substances', 'Other antipsoriatics for topical use', 'ethanolamine oleate', 'fluvoxamine m3', 'mizolastine', 'trifluoperazine', 'N-desmethyl atomoxetine', 'dexamethasone', 'nicardipine', 'Other Antihypertensives', 'Antipropulsives', 'glipizide', 'para-hydroxy rosiglitazone', '4-beta-hydroxycholesterol', 'zolmitriptan', '2-ene valproic acid-coenzyme A', "3'-amino-3'-deoxythymidine glucuronide", 'aprotinin', '5-hydroxycotinine', 'c3-coenzyme A', 'isoniazid', 'mipomersen', '1-hydroxyibuprofen', 'Potassium-sparing Agents', '2-hydroxyibuprofen glucuronide', 'afutuzumab', '3-dechloroethyl ifosfamide', 'Infant Formulas', 'kaolin', 'Antivaricose Therapy', 'nitazoxanide', 'Various therapeutic radiopharmaceuticals', 'Other cytotoxic antibiotics', 'deferasirox m3', 'gefitinib M537194', 'sergliflozin', 'medrysone', 'Nerve depressants', 'fluorouridine triphosphate', 'indecainide', 'desonide', 'SC-560', 'sunitinib', 'Methyldopa and diuretics in combination', '4-hydroxywarfarin', 'atovaquone', 'amikacin', 'Heparin group', 'pegademase bovine', 'lisinopril', 'aminolevulinic acid', 'Combinations of adrenergics', 'sorafenib M7', 'fampridine', 'sodium carbonate', 'Nucleoside and nucleotide reverse transcriptase inhibitors', 'artesunate', 'Bisquaternary ammonium compounds', 'trimethadione', 'cyclophosphamide', 'n-acetyl-gamma-calicheamicin dimethyl hydrazide', 'menadione sodium bisulfite', 'Hemodialytics And Hemofiltrates', 'trimipramine', 'Beta Blocking Agents And Other Diuretics', 'Corticosteroids And Antiinfectives In Combination', 'metocurine', 'daclizumab', 'Streptomycins', 'thioridazine', 'regadenoson', 'farnesyltransferase inhibitors', 'chlorzoxazone', 'preotact', 'selumetinib', 'Local Anesthetics', 'rocuronium', 'oxypurinol', 'imipenem', 'Other lipid modifying agents', 'Sulfur-containing imidazole derivatives', 'phenylpropanolamine', 'semaxanib', "st. john's wort", 'Mineralocorticoids', 'cannabinoids', '4-hydroxyvoriconazole 4-o-glucuronide', 'aprobarbital', 'arsenic trioxide', 'hydroxybromezepam', 'diazepam', 'sodium benzoate / sodium phenylacetate', 'sertaconazole', 'vigabatrin', 'ombitasvir / paritaprevir / ritonavir', 'Other intestinal antiinfectives', 'Biguanides', 'artemether', 'paroxetine polar metabolites', 'polymyxin b sulfate', 'rosiglitazone', 'butoconazole', 'Chlorine containing products', 'amcinonide', 'clidinium', 'Aryloxyacetic acid derivatives', 'Central Nervous System', 'vildagliptin', 'Antifungals For Systemic Use', 'deferasirox m4', 'emtricitabine', 'indapamide', 'Bile And Liver Therapy', 'Measles vaccines', 'amodiaquine M2', 'Calcium Channel Blockers And Diuretics', 'Ethers of tropine or tropine derivatives', 'aldoifosfamide', 'berberine', 'lactulose', 'trypsin', 'spermine', 'sorafenib M8', 'Other laxatives', 'polyethylene glycol 8000', 'haloperidol pyridinium', 'dantrolene', 'chloroacetaldehyde', 'infliximab', 'Folic acid and derivatives', 'haloperidol n-oxide', 'Alpha and beta blocking agents and thiazides', 'modafinil', '(S)-EDDP', 'piperazine', 'labetalol', 'reduced nicotinamide adenine dinucleotide phosphate', 'Other peripheral vasodilators', '1-methylxanthine', 'Vitamins', 'alprostadil', 'anthracyclines and related substances', 'nisoldipine', 'Aminoalkyl ethers', 'dabigatran etexilate', 'pegaptanib', 'desoximetasone', 'silicone products', 'Calcium compounds', 'tafenoquine', 'nalbuphine', 'Antipruritics, Incl. Antihistamines, Anesthetics, Etc.', '6-oxo-methylphenidate', 'Cyclic amines', 'chlorcycloguanil', 'bevantolol', 'antipyrine', 'urofollitropin', 'Methylhydrazines', 'sufentanil', 'interferon gamma-1b', 'Other antibiotics for topical use', 'lactose', 'calcium', 'ertumaxomab', 'ponatinib', 'abacavir carboxylate', 'betazole', 'thioproperazine', 'terconazole', 'demeclocycline', 'polyethylene glycol', 'Carbohydrates/proteins/minerals/vitamins, combinations', 'Opium derivatives and expectorants', 'Unclassified', 'o-desmethyl carvedilol', 'calcium channel blockers', 'gluconic acid', 'ouabain', 'rifabutin', 'Proteolytic enzymes', 'Surgical Dressings', 'mupirocin', 'amlodipine', 'Multivitamins, Combinations', '3-methylxanthine', 'cotinine', 'fexofenadine', '1,3,7-trimethyluric acid', 'Tests for pancreatic function', 'penciclovir', 'ledipasvir / sofosbuvir', 'EKB-569', 'Indole derivatives', 'Meningococcal vaccines', 'epipodophyllotoxin', 'arcitumomab', 'ondansetron', 'repaglinide', 'Urologicals', 'salicylate-magnesium', 'Xanthines and adrenergics', 'erythrityl tetranitrate', 'thiamine', 'c5-coenzyme A', 'mesna', 'bimatoprost', 'Other ectoparasiticides, incl. scabicides', 'n,n-didesethyl sunitinib', '39-o-desmethyl sirolimus', 'l-proline', 'lafutidine', 'methazolamide', 'diacylglycerol', 'repaglinide M0-OH', "3'-hydroxydiclofenac", 'rizatriptan', 'attapulgite', 'hydrochlorothiazide', 'hydroxytryptamine', 'Other antithrombotic agents', 'desipramine', 'Quinoline derivatives and corticosteroids', 'ammonium chloride', 'nadroparin', 'protriptyline', 'Other Antidiarrheals', 'carboxyibuprofen', 'pramipexole', 'Aluminium agents', 'isocarboxazid', 'glutathione conjugate', 'icodextrin', 'arbutamine', 'acamprosate', 'nicotinamide adenine dinucleotide', 'First-generation cephalosporins', 'lisuride', 'acenocoumarol', '1,7-dimethyluric acid', 'Ace Inhibitors, Plain', 'MK-7246', 'amprenavir', 'cholesterol', 'deferiprone', 'Preparations with salicylic acid derivatives', 'atazanavir M2', 'CP-800,569', 'alpha-hydroxy sertraline ketone', 'azapropazone', 'Gonadotropins And Other Ovulation Stimulants', 'Short-acting sulfonamides', 'nitroxoline', 'travoprost', 'Other Sex Hormones And Modulators Of The Genital System', 'tiagabine', 'mycophenolic acid', 'Hypothalamic Hormones', 'n des-alkylflurazepam', 'hydroxyzine', 'Other Drugs Used In Diabetes', 'Antidiarrheal Microorganisms', 'carbamazepine epoxide glucuronide', 'fluindione', 'Blood coagulation factors', 'dimercaprol', 'nucleosides and nucleotides excl. reverse transcriptase inhibitors', 'phenylacetic acid', 'Other agents for treatment of hemorrhoids and anal fissures for topical use', 'aflatoxin b1', 'Antispasmodics In Combination With Analgesics', 'gallium nitrate', 'acetylcysteine', 'prasugrel', 'valproic acid-dephosphocoenzyme A', 'benzonatate', 'tezacaftor', 'NG-monomethyl-l-arginine', '1,7-dimethylxanthine', 'nitrofurazone', 'Magnetic Resonance Imaging Contrast Media', 'telmisartan', 'ferrous sulfate', 'aspartame', 'hydralazine / isosorbide dinitrate', 'loracarbef', 'altretamine', 'methylcholanthrene', 'nonoxynol-9', 'norfentanyl', 'almitrine', 'cilomilast', '7-hydroxytropisetron', 'dasatinib M4', 'Serotonin (5HT3) antagonists', 'captopril', 'laronidase', 'sulfamethoxazole / trimethoprim', 'Aluminium compounds', 'clotrimazole', 'Carbamide products', 'lesinurad', 'vinyl chloride', 'alirocumab', 'uracil mustard', 'ambenonium', 'qt-prolonging drugs', 'Other high-ceiling diuretics', 'Gynecological Antiinfectives And Antiseptics', 'sulpiride', 'osi 420', '14-hydroxyclarithromycin', 'angiotensin II', 'alendronate', 'ondansetron 7-glucuronide', 'diacetylhydrazine', 'valrubicin', 'hydroxymidazolam', 'Antiinfectives For Systemic Use', 'ranibizumab', 'desogestrel', 'leukomethylene blue', 'uridine', 'Antiadrenergic Agents, Ganglion-blocking', 'estrogens', 'verapamil PR-22', 'hydroxide', 'otamixaban', 'dihydroxyaluminium', 'water', 'Diagnostic Agents', 'methamphetamine', 'icosapent', 'sodium', 'Varicella zoster vaccines', '3-hydroxycarbamazepine', 'Anabolic Agents For Systemic Use', 'protein supplements', 'botulinum toxin type a', 'silodosin', 'dihydrotachysterol', 'raloxifene', 'pipecuronium', 'niflumic acid', 'Antimony compounds', 'hdl cholesterol', 'sodium lauryl sulfate', 'Tetrahydropyrimidine derivatives', 'carbamazepine', 'moricizine', 'zinc77291520', 'bepotastine', 'clopidogrel inactive metabolite', 'duloxetine', 'pentoxifylline', 'methyltestosterone', 'MI-63', 'hyperforin', 'binimetinib', 'atazanavir M1', 'n-desmethylclozapine', 'ranolazine', 'isoflurane', 'halobetasol propionate', 'ketorolac', 'n-desmethyl rosiglitazone', '8,14-dihydroxyefavirenz glucuronide', 'vaniprevir', 'cefuroxime', 'soft paraffin dressings', 'ospa lipoprotein', 'sulfinpyrazone', 'topotecan', 'Sulfonamides, combinations with other drugs', 'Insulins and analogues for injection, intermediate-acting combined with fast-acting', 'deoxy-thioguanosine triphosphate', 'lomefloxacin', 'rotigotine transdermal patch', 'rifaximin', 'd-sorbitol', 'pargyline', 'hydroxyphenytoin', 'losartan M2', 'rotigotine', 'sulfathiazole', 'hydrocortamate', 'Renin-inhibitors', 'acetanilide', 'thioxanthine monophosphate', 'n-despyridinyl rosiglitazone', 'nornicotine', 'indinavir', 'furosemide', 'corticotropin', 'ceruletide', 'Penicillins with extended spectrum', 'edetic acid', 'sotalol', 'gamma-homolinolenic acid', '(3s,4r)4(4-fluorophenyl)3(3-hydroxy-4-methoxyphenoxymethyl)piperidine)', 'trisalicylate-choline', 'vancomycin', 'alprazolam', 'fluoxymesterone', 'Acidifiers', 'masoprocol', 'MAO inhibitors', 'norcotinine', 'dasatinib n-oxide', 'leucovorin', 'cobicistat', 'Other ophthalmological diagnostic agents', 'carbamazepine o-quinone', '2-hydroxymethyl atomoxetine', 'Tests for renal function', 'drotrecogin alfa', 'liraglutide', 'amisulpride', 'sulfametopyrazine', 'velpatasvir', 'crizotinib', 'Corticosteroids, weak (group I)', 'alclometasone', 'ara-CTP', 'Alkaloids, excl. rauwolfia', 'cinitapride', 'simeprevir', 'Dihydropyridine derivatives', 'ortho-hydroxy rosiglitazone', '8-hydroxy r-warfarin', 'darbepoetin alfa', 'Perchlorates', 'alfentanil', 'Corticosteroids, moderately potent, combinations with antiseptics', 'cefaclor', 'alprenolol', 'sulfamethazine', 'Thiazides and potassium in combination', 'Pyrazolone derivatives', 'repaglinide M5', 'meperidine', 'phenytoin arene-oxide', 'fluvoxaminoalcohol', 'lansoprazole', 'rilpivirine', 'kyotorphin', 'succinylcholine', 'carbonic anhydrase inhibitors', 'ibudilast', '3,4-dihydroxyphenylacetaldehyde', 'betaine', 'pamaquine', 'cgp 74588', 'dasabuvir', 'doxepin', 'Corticosteroids, combinations for treatment of acne', 'homatropine methylbromide', 'chloroprocaine', 'potassium iodide', 'retapamulin', 'Antibiotics And Chemotherapeutics For Dermatological Use', 'Aminoquinolines', 'Anterior Pituitary Lobe Hormones And Analogues', 'Peripheral Vasodilators', 'cloxacillin', 'Antacids with antiflatulents', 'sodium ascorbate', 'fluorodeoxyuridine triphosphate', 'isonicotinyl glucuronate', 'mianserin', 'norgestrel', 'terlipressin', 'Anti-acne Preparations', 'Anilides', '4-hydroxypropranolol', '5-androstanon (3) derivatives', 'Corticosteroids, potent, combinations with antiseptics', 'eltrombopag', 'Other muscle relaxants, peripherally acting agents', 'acepromazine', 'mercaptopurine', 'pranlukast', 'halothane', 'antiarrhythmics, class i and iii', 'clocortolone', 'eliglustat', 'Psychoanaleptics', 'oxybenzone', 'Irrigating Solutions', 'oprelvekin', 'superoxide', 'tiaprofenic acid', 'tyloxapol', 'hesperidin', 'oxonortriptyline', 'Beta blocking agents, non-selective', 'Osmotically acting laxatives', 'Immunoglobulins, normal human', 'o-desmethyl-tramadol glucuronide', 'ondansetron 8-sulfate', 'sucrose', 'glutathione', 'lomitapide', 'zaleplon', 'aflibercept', 'cephaloglycin', 'iodine', '2-hydroxynevirapine glucuronide', 'neuropsychiatric medications', 'nivolumab', 'calcium phosphate', 'oxazepam', 'adefovir dipivoxil', 'benzbromarone', 'Alkyl sulfonates', 'Alpha and beta blocking agents', 'linezolid', 'Combinations of oral blood glucose lowering drugs', 'meropenem', 'repaglinide M2', 'curcumin', 'fluoxetine glucuronide', 'thyrotropin', 'Sex Hormones And Modulators Of The Genital System', 'bopindolol', 'amsacrine', 'carboxy celecoxib', 'tiludronate', 'clemastine', 'carvedilol glucuronide', 'potassium acetate', 'docosanol', 'carbon dioxide', 'exenatide', 'Ace Inhibitors, Combinations', 'midostaurin', 'calcium acetate', 'Calcineurin inhibitors', 'torcetrapib', 'mequitazine', 'voacamine', 'geranyl diphosphate', '4-hydroxytamoxifen', 'nitrous oxide', 'cotinine glucuronide', '3,4-dihydroxyphenylglycolaldehyde', 'Corticosteroids, moderately potent (group II)', 'aluminium', 'dalcetrapib', 'Resveratrol', 'Protectives against UV-radiation for systemic use', 'amdinocillin', 'ardeparin', 'bortezomib', 'amoxicillin', 'milnacipran', 'nandrolone', 'nitroglycerin', 'udenafil', 'alpha-dihydro-artemisinin-beta-glucoronide', 'dabrafenib', 'Ectoparasiticides, Incl. Scabicides, Insecticides And Repellents', 'nepafenac', 'cilastatin', 'Benzodiazepine related drugs', 'penicillin v', 'acetaminophen-cysteine', 'denileukin diftitox', 'vinorelbine', 'Anti-androgens', 'emedastine', '6beta-hydroxycortisol', 'Sympathomimetics, combinations excl. corticosteroids', 'diflunisal', 'niclosamide', 'pepsin', 'Antifungals For Topical Use', 'bezafibrate', '34-hydroxy-sirolimus', 'Other anti-dementia drugs', 'calcein', 'brotizolam', 'nicotine n-oxide', 'methoxamine', 'Tetracyclines', 'ephedra', 'metolazone', 'triciribine', 'Second-generation cephalosporins', 'aminobenzoic acid', 'Vitamin K antagonists', 'Other dopaminergic agents', 'fluoroquinolones', 'ethinamate', 'xanthophyll', 'arteether', 'talbutal', 'Antipsoriatics For Systemic Use', 'isoetharine', 'afatinib', 'All Other Non-therapeutic Products', 'Hormones And Related Agents', 'proguanil', 'MK-571', 'Progestogens', 'Preparations with no effect on uric acid metabolism', 'sucralfate', 'nilotinib n-oxide', 'Dibenzo-bicyclo-octadiene derivatives', 'ondansetron 6-glucuronide', 'Decongestants And Other Nasal Preparations For Topical Use', "(-)-carbovir 5'-monophosphate", 'haloperidol glucuronide', 'leukotriene D4', 'chloroacetic acid', 'mirabegron', 'deferasirox m1', 'pegfilgrastim', 'aceprometazine', 'ochratoxin A', 'pyridoxine', 'Pregnadien derivatives', '8-hydroxyondansetron', 'etoricoxib', 'Corticosteroids, very potent (group IV)', 'Adrenergics For Systemic Use', 'methyl-thioinosine monophosphate', 'l-ornithine', 'pancreozymin (cholecystokinin)', 'rolitetracycline', 'Azaspirodecanedione derivatives', 'chlorotrianisene', 'bexarotene', 'phenytoin quinone', 'Other Diagnostic Agents', 'Ergot alkaloids', 'Pancreatic Hormones', 'amitriptyline n-glucuronide', 'Direct thrombin inhibitors', 'Antiandrogens and estrogens', 'losartan M1', 'monobenzone', 'n-desmethyl-para-hydroxy rosiglitazone', 'vasopressin', 'naringin', 'methyprylon', 'Aminosalicylic acid and derivatives', 'dexbrompheniramine', '12-hydroxynevirapine', 'trifluridine', 'pilocarpine', 'interferon beta-1b', 'lamotrigine', 'dihydrocodeine', 'sodium acetate', 'Other diagnostic radiopharmaceuticals for inflammation and infection detection', 'hydroxyamitriptyline', 'Other hormones', 'Liver therapy', 'sipoglitazar', 'l-cystine', 'Other Mineral Supplements', 'chloroxine', 'Otologicals', 'purine analogues', 'Other non-therapeutic auxiliary products', 'mifepristone', 'alpha-hydroxytamoxifen o-glucuronide', 'cefditoren', 'cetuximab', 'xanthine monophosphate', 'tamibarotene', 'repaglinide M1', 'Progestogens and estrogens, sequential preparations', 'clofibrate', 'biperiden', 'desvenlafaxine', 'dihydroxyvoriconazole o-glucuronide', 'finasteride', 'leuprolide', 'nateglinide M11/M12', 'Antracen derivatives', 'granulocyte colony-stimulating factor', 'n-desmethyl-para-o-sulfate rosiglitazone', '4-hydroxybupropion', '5-hydroxytropisetron', 'adinazolam', 'Zinc bandages', 'acetaminophen sulfate', 'fluocinolone acetonide', 'lamotrigine n2-oxide', 'baclofen', 'trioxsalen', 'l-phenylalanine', 'oxymorphone 3-glucuronide', 'nadolol', 'Laxatives', 'ambrisentan', 'glycopyrrolate', 'Vitamin B12 (cyanocobalamin and analogues)', 'pazopanib M24', 'l-citrulline', 'Encephalitis vaccines', 'corn oil', 'sparfloxacin', 'anastrozole', 'aloe', 'idarubicin', 'succinyl coenzyme A', '8-cyclopentyl-1,3-dipropylxanthine', 'thioether product', 'milrinone', 'l-threonine', 'Renal System', 'Substituted alkylamines', 'diltiazem', 'alvespimycin', 'firocoxib', 'n,o-didesmethyl-tramadol', 'barbital', 'Belladonna and derivatives in combination with analgesics', 'phenylephrine', 'statin active metabolites; statin inactive metabolites', 'podophyllotoxin derivatives', 'debrisoquine', 'eplerenone', 'remikiren', '4-aminobutyric acid', 'alectinib', 'collagenase', 'Prostaglandin analogues', 'alefacept', 'bromodiphenhydramine', 'roxatidine acetate', 'ciclopirox', 'triamterene', 'Other drugs for treatment of tuberculosis', 'ethotoin', 'levobunolol', 'ketamine', 'cryptenamine', 'Antihypertensives And Diuretics In Combination', 'menotropins', 'Vitamin B1, Plain And In Combination With Vitamin B6 And B12', 'Angiotensin II Antagonists', 'dihydrofluorouracil', 'permethrin', 'Various', 'Retinoids for topical use in acne', 'Other anti-parathyroid agents', 'venetoclax', 'frovatriptan', 'hydroxynortriptyline', 'interferon alfacon-1', 'nateglinide', 'calcium pantothenate', 'insulin-aspart', 'N-demethylondansetron', 'Oxazol, thiazine, and triazine derivatives', 'belinostat', 'urokinase', 'ceforanide', '2-hydroxyimipramine glucuronide', 'Other antigout preparations', 'fluspirilene', 'efalizumab', 'Other antimalarials', 'flupenthixol', 'naproxen', 'Insulins And Analogues', 'Antispasmodics And Anticholinergics In Combination With Other Drugs', 'Ovulation stimulants, synthetic', 'hydroxychloroquine', 'l-leucine', 'salmeterol', 'dextromethorphan / quinidine', 'geldanamycin', 'Cardiac Therapy', 'leukotriene B4', 'dilazep', 'nateglinide M2/M3', 'degarelix', 'Corticosteroid derivatives', 'Bulk producers', 's-omeprazole', 'Systemic Hormonal Preparations, Excl.', 'dimethyl sulfoxide', 'Sympathomimetics, labour repressants', 'n-desmethyl ponatinib', 'bethanechol', 'stepronin', "4',5-dihydroxydiclofenac", 'deleobuvir', 'endoxifen', 'flupirtine', 'Other combinations of nutrients', 'suramin', 'enprofylline', 'naratriptan', 'grepafloxacin', 'tetrahydrofolic acid', 'isoniazid diazohydroxide metabolite', 'Pyrethrines', 'Diuretics And Potassium-sparing Agents In Combination', 'niraparib', 'phosphoric acid', 'clarithromycin', 'cefmenoxime', 'ammonium', 'cerulenin', 'Plague vaccines', 'bosentan', 'tramadol', 'rifapentine', 'l-methionine', 'adenosine monophosphate', 'ethosuximide', 'technetium (99mtc) sulfur colloid', 'nilotinib carboxylic acid', 'guanfacine', 'Technetium (99mTc), particles and colloids', "4'-hydroxydiclofenac", 'streptozocin', 'aminosalicylic acid', 'rifampin', 'Other Anabolic Agents', 'organic nitrates', 'stiripentol', 'enfuvirtide', 'Other parasympathomimetics', 'hydantoin derivatives', '5-hydroxyindole-3-acetic acid', 'retigabine', 'Anti-gonadotropin-releasing hormones', 'glutethimide', 'Penicillamine and similar agents', 'n,o-didesmethyl venlafaxine', 'azlocillin', 'flunoxaprofen', 'telaprevir', 'ifosfamide', 'echothiophate iodide', 'lapatinib', 'daunorubicin', 'abacavir minor metabolites', 'hexachlorophene', 'Phosphodiesterase inhibitors', 'lisdexamfetamine', 'adenosine triphosphate', 'pentosan polysulfate', 'LY2140023', 'lamivudine sulfoxide', 'Antineovascularisation agents', 'azacitidine', 'Other Urologicals, Incl. Antispasmodics', 'bicalutamide', 'Beta-lactamase inhibitors', 'sodium stibogluconate', 'danazol', 'naloxone', 'pipobroman', 'bambuterol', 'benazepril', 'vilazodone', 'penicillin g', 'meloxicam', 'tinidazole', 'isopropyl alcohol', 'practolol', 'melacine(ribi immunochem)', 'disopyramide', 'Beta Blocking Agents', 'oxtriphylline', 'inosine', 'dyclonine', 'General Nutrients', "3'-amino-3'-deoxythymidine", 'bleomycin', 'thromboxane A2', 'n,n,o-tridesmethyl-tramadol conjugates', 'vitamin b-complex, plain', 'methysergide', 'antiglaucoma preparations and miotics', 'choline', 'thioguanosine monophosphate', 'Corticosteroids, very potent, other combinations', 'doxorubicinol aglycone', 'Amphenicols', 'etodolac', 'amifostine', '5,10-methylenetetrahydrofolate', 'Belladonna And Derivatives, Plain', 'ceftibuten', 'Thiosemicarbazones', 'estrone', 'cyclandelate', 'thyroglobulin', 'Other bacterial vaccines', 'Methyldopa', 'tolmetin', 'amodiaquine', 'prostaglandins', 'dovitinib', 'lopinavir', 'Cardiac Stimulants Excl. Cardiac Glycosides', 'omeprazole', 'threohydrobupropion', 'aluminum hydroxide', 'Sensory Organs', 'decitabine', 'amphetamine', 'Cough And Cold Preparations', 'benzodiazepine glucoronidated metabolites', 'naphthoxylactic acid', 'o-desmethyl-tramadol', 'Enzyme preparations', 'Piperazine and derivatives', 'asparaginase', 'verapamil D-620', 'dihydrofolic acid', 'para-o-glucuronide rosiglitazone', 'betamethasone', 'carteolol', 'hydron', 'nitrendipine', 'Estrogens, combinations with other drugs', 'darifenacin', 'methocarbamol', 'Halogenated hydrocarbons', 'diflomotecan', 'oxycodone-6-glucuronide', 'teicoplanin', 'calcidiol', 'olopatadine', 'thioacetazone and isoniazid', 'etidronic acid', '10-formyltetrahydrofolate', 'cyproheptadine', '8-oxo-dGTP', 'poliomyelitis vaccines', 'phosphoribosylamine', 'sulfate', '6beta-oxymorphol', 'inosine monophosphate', 'oxiglutatione', 'mitiglinide', 'mirtazapine', 'fulvestrant', 'Androgens And Female Sex Hormones In Combination', 'chlorhexidine', 'alfacalcidol', 'thiazolidinediones', 'brexpiprazole', 'etravirine', 'levomepromazine', 'Synthetic antispasmodics, amides with tertiary amines', 'sofosbuvir / velpatasvir / voxilaprevir', 'progabide', 'Amino acids, incl. combinations with polypeptides', 'nicotine iminium ion', 'phenmetrazine', 'raltegravir', 'benzene', 'aminopterin', 'cefepime', 'lindane', 'Proteinase inhibitors', 'benzquinamide', 'heroin', 'Vaccines', 'nitrofurantoin', 'metoprolol', 'canertinib', 'saracatinib', 'tirofiban', 'Combinations Of Antihypertensives In Atc-gr. C02', 'allantoin', 'Aldosterone antagonists', 'selective beta-2-adrenoreceptor agonists', 'ataluren', 'chlorambucil', 'everolimus', 'flurandrenolide', '7-hydroxyondansetron', 'Other drugs for functional bowel disorders', 'mepivacaine', 'solithromycin', 'lucanthone', 'Intravaginal contraceptives', 'roxithromycin', 'Cardiac Glycosides', 'clozapine', 'hydroxy-desmethyldoxepin glucuronide', 'Anti-estrogens', 'cariprazine', 'insulin recombinant', 'lonafarnib', 'Bisphosphonates, combinations', '2,4-diene valproic acid-coenzyme A', 'itopride', 'gemcitabine diphosphate', '3-hydroxynevirapine glucuronide', 'Other Vitamin Products, Combinations', 'bromperidol', 'flunitrazepam', 'folic acid', 'Corticosteroids, potent, other combinations', 'Other surgical aids', 'maytansine', 'bupropion', 'HMG CoA reductase inhibitors, other combinations', 'Antiallergic agents, excl. corticosteroids', 'Guanidine derivatives and diuretics', 'Nasal Preparations', 'Oltipraz', 'nppb', 'novobiocin', 'gamma hydroxybutyric acid', 'Enemas', '4-hydroxycyclophosphamide', 'dyphylline', '6-alpha-noroxycodol', 'Anti-dementia Drugs', 'tegaserod', 'Antivirals for treatment of HIV infections, combinations', 'bacitracin', 'Protectives against UV-radiation for topical use', 'glucagon recombinant', 'allopurinol', 'prochlorperazine', 'muscle relaxants, peripherally acting agents', 'auranofin', 'filgrastim', 'Angiotensin II antagonists and calcium channel blockers', 'amantadine', 'sulfur', 'lumiracoxib', 'methylprednisolone', 'Anthelmintics', 'coagulation factor ix', 'famotidine', 'Vasodilators Used In Cardiac Diseases', 'phenacetin', 'warfarin', 'metrizamide', 'clopidogrel active metabolite', 'Other Hematological Agents', 'doxorubicinol hydroxyaglycone', 'thyrotropin alfa', 'ceftazidime', 'dihydro-artemisinin', 'diphenidol', 'fluorouridine diphosphate', 'ibuprofen glucuronide', 'voglibose', 'quinine', 'atrasentan', 'bile acid preparations', 'phytonadione', 'felypressin', 'Antifibrinolytics', 'fluoxetine / olanzapine', 'acetaminophen-glutathione', 'hydroquinone', 'thioguanosine triphosphate', 'Synthetic anticholinergics, quaternary ammonium compounds', 'midazolam', 'crotamiton', 'sulindac', 'BSI-201', '5-hydroxydiclofenac', 'Boric acid products', 'ampicillin', 'losartan E-3179', 'methantheline', 'mitoxantrone', 'thioxanthine', 'Chemicals and reagents for analysis', 'sofosbuvir', 'cephapirin', 'charcoal preparations', 'prednisolone', 'troglitazone', 'rivaroxaban', 'oxyphenonium', 'Antigonadotropins and similar agents', 'Iodine Therapy', 'valproic acid', 'atropine', 'propylhexedrine', 'zoxazolamine', 'sulfadoxine', 'Other mineral products', 'tropisetron 5-sulfate', 'zinc sulfate', 'Dermatologicals', 'Succinimide derivatives', 'carboplatin', '6-methylmercaptopurine riboside', 'Amides', 'Ethers chemically close to antihistamines', 'primidone', 'cromoglicate', 'prostaglandin E2', 'glucosamine', 'verapamil', '6-phosphogluconate', 'diazoxide', 'gadoversetamide', 'vemurafenib', 'ticlopidine', 'insulin glargine', 'moclobemide', 'ustekinumab', 'losartan M7', 'Protein kinase inhibitors', '6-o-desmethyl-mycophenolic acid', 'delavirdine', 'nilvadipine', 'naphthol', 'Diaminopyrimidines', 'Solutions affecting the electrolyte balance', 'citalopram propionic acid', 'Nepicastat', 'Other Alimentary Tract And Metabolism Products', 'zinc', 'mephentermine', 'ergonovine', '2-amino-1-phenylethanol derivatives', 'Hormone Antagonists And Related Agents', 'cilengitide', 'acarbose', 'dasabuvir / ombitasvir / paritaprevir / ritonavir', 'Imidazoline derivatives', 'thioxanthene derivatives', 'antacids', '8-hydroxycarvedilol', 'palivizumab', 'famciclovir', 'immune globulin', 'lumacaftor', 'cefotaxime', 'methyclothiazide', 'phensuximide', 'protonated proton pump inhibitors', 'trovafloxacin', 'Vitamin B1 in combination with vitamin B6 and/or vitamin B12', 'Coxibs', 'dydrogesterone', 'cetrorelix', 'perflutren', 'clopidogrel', 'insulin, porcine', 'arylhydrazines', 'dacarbazine', 'pazopanib M27', 'angiotensin 1-9', 'cefpiramide', 'doxylamine', 'methdilazine', 'etretinate', 'casopitant', '2-hydroxyestradiol', 'ginseng', 'lucitanib', 'dimethyl fumarate', 'methyl-thioguanosine monophosphate', 'Biguanides and amidines', 'norfloxacin', 'acetamide mea', 'bendroflumethiazide', 'Antimigraine Preparations', 'calcium chloride', 'flavin mononucleotide', 'tranylcypromine', 'Other agents for local oral treatment', 'chlophedianol', 'R101933', 'salbutamol', '1-hydroxyibuprofen glucuronide', 'Low-energy diets', 'cefamandole', 'benzaldehyde', 'Watersoluble, nephrotropic, high osmolar X-ray contrast media', 'hexylcaine', 'Antimalarials', 'Esters of aminobenzoic acid', 'alteplase', 'veliparib', 'Other drugs for peptic ulcer and gastro-oesophageal reflux disease (GORD)', 'aminoglutethimide', 'Quinolone vasodilators', 'magnesium oxide', 'vincristine M1', 'letrozole', 'mepyramine', 'Antiinfectives and antiseptics for local oral treatment', 'mycophenolic acid-7-o-glucuronide', 'mebendazole', 'Drugs For Functional Gastrointestinal Disorders', 'doxorubicin hydroxyaglycone', 'pembrolizumab', 'taselisib', 'direct acting antivirals', 'voriconazole', 'pegloticase', 'umeclidinium', 'propiomazine', 'lecithin', 'piperonyl butoxide', 'Other anxiolytics', 'Antidotes', 'platinum', 'atenolol', 'Plant Alkaloids And Other Natural Products', 'meprobamate', 'procainamide', 'verapamil D-617', 'mivacurium', 'trimethoprim', 'ziprasidone', 'Organophosphorous compounds', 'Other Drugs For Acid Related Disorders', 'candesartan', 'calcium carbonate', 'silver sulfadiazine', 'Other cardiovascular system diagnostic radiopharmaceuticals', '8-hydroxyefavirenz', 'levofloxacin', 'Immune Sera', 'propylthiouracil', 'Antimycotics For Systemic Use', 'procaterol', 'promazine', 'bufuralol', 'rucaparib', 'tolperisone', 'Glycopeptide antibacterials', 'Psoralens for systemic use', 'darunavir', 'hydroxyalprazolam', 'omeprazole sulfone', 'mitomycin', '3-hydroxy valproic acid-coenzyme A', 'tolnaftate', 'AZD1152', 'methylscopolamine', 'acetohexamide', 'tolcapone', 'retinal', 'GW2016', 'Other dermatologicals', 'Farglitazar', 'selenium', '5-hydroxyomeprazole', 'gemifloxacin', '6-hydroxy s-warfarin', '4-hydroxy-n-desmethyltamoxifen', 'Sulfonamides And Trimethoprim', 'dl-homocysteine', 'guanadrel sulfate', 'loxoprofen', 'piperacillin', 'sodium phenylbutyrate', 'Cytotoxic Antibiotics And Related Substances', 'isosorbide dinitrate', 'quetiapine', 'sitaxentan', 'dasatinib beta-d-glucuronide', 'lorazepam', 'methylene blue', 'protease inhibitors', 'Respiratory stimulants', 'ribulose-5-phosphate', 'azathioprine', 'etoposide quinone', '4-hydroxypropranolol sulfate', 'Superparamagnetic contrast media', 'avelumab', 'oxiconazole', 'atomoxetine', 'perazine', 'Other hypnotics and sedatives', 'clonazepam', 'ephedrine', 'Synthetic estrogens, plain', 'Other Ophthalmological And Otological Preparations', 'MAO inhibitors and diuretics', 'n-bis-desethyl-amodiaquine', 'azithromycin', 'Antifungals For Dermatological Use', 'trabectedin', 'vanillin', 'sibutramine', 'guanabenz', 'diclofenac acyl glucuronide', 'acetyl coenzyme A', 'Calcium, combinations with other drugs', '8-hydroxythioguanine', 'Other antitrematodal agents', 'Other centrally acting agents', 'GS-9350', 'Beta blocking agents, selective, and vasodilators', 'flavopiridol', 'hydroxy-vitamin K', 'tasosartan', 'dexlansoprazole', 'desloratadine', 'haloprogin', 'cyclacillin', 'fructose 1,6 bisphosphate', 'brivaracetam', 'irinotecan', 'succinate semialdehyde', 'Antacids, other combinations', 'Sulfur containing products', 'dipyrone', 'noroxycodone', 'amphotericin b', '6-o-desmethylnaproxen iso acyl glucuronide', 'antipsychotics', 'terbinafine', 'enalapril', 'Combinations for eradication of Helicobacter pylori', 'ammonia', 'pimecrolimus', 'apraclonidine', 'aldophosphamide', 'morphine', 'Low-ceiling Diuretics, Excl. Thiazides', 'quinapril', 'Monobactams', 'nateglinide M1', 'Anxiolytics', 'chlordiazepoxide', 'n-desmethylflunitrazepam', 'dexketoprofen', 'Other antiinfectives', 'dicumarol', 'olaratumab', 'bumetanide', 'latonduine a', 'propafenone'];
+
+
+				/*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
+				autocomplete(document.getElementById("myInput"), countries);
+
+
+              </script>
+		</section> <!-- /features -->
+
+
+
+		<!-- infos
+   	================================================== -->
+
+
+		<!-- stats
+   	================================================== -->
+
+		<!-- pricing
+   	================================================== -->
+
+
+	   <!-- testimonials
+   	================================================== -->
+
+	   <!-- download
+   	================================================== -->
+
+	   <!-- subscribe
+   	================================================== -->
+
+   <!-- footer
+	================================================== -->
+	<footer id="main-footer">
+
+   	<div class="footer-social-wrap">
+   		<div class="row">
+
+	         <ul class="footer-social-list">
+	            <li><a href="#">
+	             	<i class="fa fa-facebook-square"></i>
+	            </a></li>
+	            <li><a href="#">
+	              	<i class="fa fa-twitter"></i>
+	            </a></li>
+              <li><a href="#">
+	              	<i class="fa fa-google-plus"></i>
+	            </a></li>
+	            <li><a href="#">
+	              	<i class="fa fa-pinterest"></i>
+	            </a></li>
+	            <li><a href="#">
+	              	<i class="fa fa-instagram"></i>
+	            </a></li>
+	            <li><a href="#">
+	              	<i class="fa fa-dribbble"></i>
+	            </a></li>
+	         </ul>
+
+			</div>
+   	</div> <!-- /footer-social-wrap -->
+
+	   <div class="footer-info-wrap">
+
+	   	<div class="row footer-info">
+
+		  		<div class="col-four tab-full">
+		  			<h4><i class="icon-location-map-1"></i> Where to Find Us</h4>
+
+		  			<p>
+		         El-motamize District<br>
+		         6th of October, Giza<br>
+		         P.O BOX xxxx giza
+		         </p>
+		  		</div>
+
+		   	<div class="col-four tab-full collapse">
+	   			<h4><i class="icon-phone-incoming"></i> Get In Touch</h4>
+
+	   			<p>someone@elevatewebsite.com<br>
+				   	P.Habib911@gmail.com <br>
+				   	Phone: (+20) 0155 0539 179
+				   </p>
+	   		</div>
+
+	   		<div class="col-four tab-full">
+	   			<h4><i class="icon-organization-hierarchy-3"></i> Company Links</h4>
+
+				   <ul class="footer-link-list">
+				   	<li><a href="#">Company Journal</a></li>
+				   	<li><a href="#">Product Support</a></li>
+				   	<li><a href="#">Privacy Policy</a></li>
+				   </ul>
+	   		</div>
+
+		  	</div>
+	   </div> <!-- /footer-info-wrap -->
+
+	   <div class="footer-bottom">
+
+	   	<div class="copyright">
+		     	<span>© Copyright Pharmosome 2018.</span>
+		   </div>
+   	</div>
+
+   </footer>
+
+   <div id="go-top">
+		<a class="smoothscroll" title="Back to Top" href="#top"><i class="fa fa-long-arrow-up"></i></a>
+	</div>
+
+   <!-- preloader
+   ================================================== -->
+   <div id="preloader">
+    	<div id="loader"></div>
+   </div>
+
+   <!-- Java Script
+   ================================================== -->
+   <script src="/database/static/js/jquery-2.1.3.min.js"></script>
+   <script src="/database/static/js/plugins.js"></script>
+   <script src="/database/static/js/main.js"></script>
+
+
+
+</body>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+function lessmore() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+function myFunction() {
+  var input, filter, table, tr, td, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
+}
+
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
+</script>
+
+</html>

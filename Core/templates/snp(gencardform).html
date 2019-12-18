@@ -1,0 +1,785 @@
+{% load staticfiles %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/vendor.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/vendor.css' %}">
+<script src="{% static 'js/pace.min.js' %}" type="text/javascript" ></script>
+<script src="{% static 'js/modernizr.js' %}" type="text/javascript" ></script>
+<script src="{% static 'js/jquery-2.1.3.min.js' %}" type="text/javascript" ></script>
+<script src="{% static 'js/main.js' %}" type="text/javascript" ></script>
+<script src="{% static 'js/plugins.js' %}" type="text/javascript" ></script>
+<!DOCTYPE html>
+<head>
+
+   <!--- basic page needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>Pharmosome</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+   <!-- mobile specific metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+ 	<!-- CSS
+   ================================================== -->
+   <link rel="stylesheet" href="/database/static/css/base.css">
+   <link rel="stylesheet" href="/database/static/css/vendor.css">
+   <link rel="stylesheet" href="/database/static/css/main.css">
+
+   <!-- script
+   ================================================== -->
+	<script src="/database/static/js/modernizr.js"></script>
+	<script src="/database/static/js/pace.min.js"></script>
+
+   <!-- favicons
+	================================================== -->
+	<link rel="icon" type="image/png" href="/database/static/1.jpg">
+
+</head>
+
+<body id="top">
+
+	<!-- header
+   ================================================== -->
+
+	<!-- header
+   ================================================== -->
+   <header class="main-header">
+
+
+	   <!DOCTYPE html>
+		<html>
+		<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+		body {
+		  margin: 0;
+		  font-family: Arial, Helvetica, sans-serif;
+		}
+		.topnav {
+		  overflow: hidden;
+		  background-color: #000000;
+		}
+		.topnav a {
+		  float: left;
+		  color: #ffffff;
+		  text-align: center;
+		  padding: 14px 53px;
+		  text-decoration: none;
+		  font-size: 20px;
+		}
+		.topnav a:hover {
+		  background-color: #0a0a0a;
+		  color: #f7f7f7;
+		}
+		.topnav a.active {
+		  background-color: #4CAF50;
+		  color: white;
+		}
+		</style>
+		</head>
+		<body>
+
+		<div class="topnav">
+			<a href="/" title="">Home</a>
+			<a href="/snp" title="">SNP</a>
+			<a href="/disease" title="">Disease</a>
+			<a href="/chemical" title="">Chemical</a>
+			<a href="/genes" title="">Genes</a>
+			<a href="/srange" title="">SNP Collector</a>
+			<a href="/primer" title="">Pick Primer</a>
+			<a href="/phy" title="">SNP Phylogenetic</a>
+		</div>
+		<div style="padding-left:16px">
+
+		</div>
+
+		</body>
+		</html>
+
+
+
+
+   </header>
+
+
+   <!-- main navigation
+   ================================================== -->
+   <nav id="menu-nav-wrap">
+
+   	<h3>Menu</h3>
+		<ul class="nav-list">
+			<li><a href="/" title="">Home</a></li>
+			<li><a href="/snp" title="">SNP</a></li>
+			<li><a href="/disease" title="">Disease</a></li>
+			<li><a href="#stats" title="">Population</a></li>
+			<li><a href="#pricing" title="">Drug</a></li>
+			<li><a href="/primer" title="">Pick Primer</a></li>
+			<li><a href="#download" title="">Download</a></li>
+			<li><a href="#subscribe" title="">About</a></li>
+		</ul>
+
+		<h3>We Recommend Dreamhost</h3>
+		<p class="sponsor-text">
+			Looking for an awesome and reliable webhosting? Try <a href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT">DreamHost</a>.
+			Get <span>$50 off</span> when you sign up with the promocode <span>styleshout</span>.
+			<!-- Simply type	the promocode in the box labeled “Promo Code” when placing your order. -->
+		</p>
+
+		<div class="action">
+			<a class="button" href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT">Sign Up Now</a>
+		</div>
+
+	</nav> <!-- /menu-nav-wrap -->
+
+
+	<!-- main content wrap
+   ================================================== -->
+   <div id="main-content-wrap">
+
+
+		<!-- main content wrap
+   	================================================== -->
+   	<section id="intro">
+
+		   <!-- <div class="shadow-overlay"></div> -->
+
+		   <div class="row intro-content">
+		   	<div class="col-twelve">
+
+		   		<h3 class="animate-intro">Pharmosome</h3>
+
+					<h1 class="animate-intro">
+						Personalized Medicine Database
+					</h1>
+
+					<div class="buttons">
+						<a class="button stroke smoothscroll animate-intro" href="#features" title="">Features</a>
+					</div>
+
+
+			  	</div> <!-- /twelve -->
+		   </div> <!-- /row -->
+
+		</section> <!-- /intro -->
+
+
+		<!-- features
+   	================================================== -->
+		<section id="features">
+			<!DOCTYPE html>
+			<html>
+			<head>
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<style>
+			input[type=text] {
+			  width: 200px;
+			  box-sizing: border-box;
+			  border: 2px solid #ccc;
+			  border-radius: 4px;
+			  font-size: 16px;
+			  background-color: white;
+			  background-image: url('searchicon.png');
+			  background-position: 10px 10px;
+			  background-repeat: no-repeat;
+			  padding: 12px 20px 12px 40px;
+			  -webkit-transition: width 0.4s ease-in-out;
+			  transition: width 0.4s ease-in-out;
+			}
+
+			input[type=text]:focus {
+			  width: 50%;
+			}
+			* {
+			  box-sizing: border-box;
+			}
+
+			body {
+			  font: 16px Arial;
+			}
+
+			/*the container must be positioned relative:*/
+			.autocomplete {
+			  position: relative;
+			  display: inline-block;
+			}
+
+			input {
+			  border: 1px solid transparent;
+			  background-color: #f1f1f1;
+			  padding: 10px;
+			  font-size: 16px;
+			}
+
+			input[type=text] {
+			  background-color: #f1f1f1;
+			  width: 100%;
+			}
+
+			input[type=submit] {
+			  background-color: DodgerBlue;
+			  color: #fff;
+			  cursor: pointer;
+			}
+
+			.autocomplete-items {
+			  position: absolute;
+			  border: 1px solid #d4d4d4;
+			  border-bottom: none;
+			  border-top: none;
+			  z-index: 99;
+			  /*position the autocomplete items to be the same width as the container:*/
+			  top: 100%;
+			  left: 0;
+			  right: 0;
+			}
+
+			.autocomplete-items div {
+			  padding: 10px;
+			  cursor: pointer;
+			  background-color: #fff;
+			  border-bottom: 1px solid #d4d4d4;
+			}
+
+			/*when hovering an item:*/
+			.autocomplete-items div:hover {
+			  background-color: #e9e9e9;
+			}
+
+			/*when navigating through the items using the arrow keys:*/
+			.autocomplete-active {
+			  background-color: DodgerBlue !important;
+			  color: #ffffff;
+			}
+
+			</style>
+
+			<form action="" method="get" autocomplete="off">
+				<div class="autocomplete" style="width:300px;">
+				<label>SNP.ID</label>
+				<input id="myInput" type="text" name="rs" placeholder="Write SNP ID">
+				</div>
+				<input type="submit">
+
+			</form>
+
+				<!--<form autocomplete="off" action="/action_page.php">-->
+				  <!--<div class="autocomplete" style="width:300px;">-->
+					<!--<input id="myInput" type="text" name="myCountry" placeholder="Country">-->
+				  <!--</div>-->
+				  <!--<input type="submit">-->
+				<!--</form>-->
+
+			<script>
+			function autocomplete(inp, arr) {
+			  /*the autocomplete function takes two arguments,
+			  the text field element and an array of possible autocompleted values:*/
+			  var currentFocus;
+			  /*execute a function when someone writes in the text field:*/
+			  inp.addEventListener("input", function(e) {
+				  var a, b, i, val = this.value;
+				  /*close any already open lists of autocompleted values*/
+				  closeAllLists();
+				  if (!val) { return false;}
+				  currentFocus = -1;
+				  /*create a DIV element that will contain the items (values):*/
+				  a = document.createElement("DIV");
+				  a.setAttribute("id", this.id + "autocomplete-list");
+				  a.setAttribute("class", "autocomplete-items");
+				  /*append the DIV element as a child of the autocomplete container:*/
+				  this.parentNode.appendChild(a);
+				  /*for each item in the array...*/
+				  for (i = 0; i < arr.length; i++) {
+					/*check if the item starts with the same letters as the text field value:*/
+					if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
+					  /*create a DIV element for each matching element:*/
+					  b = document.createElement("DIV");
+					  /*make the matching letters bold:*/
+					  b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
+					  b.innerHTML += arr[i].substr(val.length);
+					  /*insert a input field that will hold the current array item's value:*/
+					  b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
+					  /*execute a function when someone clicks on the item value (DIV element):*/
+					  b.addEventListener("click", function(e) {
+						  /*insert the value for the autocomplete text field:*/
+						  inp.value = this.getElementsByTagName("input")[0].value;
+						  /*close the list of autocompleted values,
+						  (or any other open lists of autocompleted values:*/
+						  closeAllLists();
+					  });
+					  a.appendChild(b);
+					}
+				  }
+			  });
+			  /*execute a function presses a key on the keyboard:*/
+			  inp.addEventListener("keydown", function(e) {
+				  var x = document.getElementById(this.id + "autocomplete-list");
+				  if (x) x = x.getElementsByTagName("div");
+				  if (e.keyCode == 40) {
+					/*If the arrow DOWN key is pressed,
+					increase the currentFocus variable:*/
+					currentFocus++;
+					/*and and make the current item more visible:*/
+					addActive(x);
+				  } else if (e.keyCode == 38) { //up
+					/*If the arrow UP key is pressed,
+					decrease the currentFocus variable:*/
+					currentFocus--;
+					/*and and make the current item more visible:*/
+					addActive(x);
+				  } else if (e.keyCode == 13) {
+					/*If the ENTER key is pressed, prevent the form from being submitted,*/
+					e.preventDefault();
+					if (currentFocus > -1) {
+					  /*and simulate a click on the "active" item:*/
+					  if (x) x[currentFocus].click();
+					}
+				  }
+			  });
+			  function addActive(x) {
+				/*a function to classify an item as "active":*/
+				if (!x) return false;
+				/*start by removing the "active" class on all items:*/
+				removeActive(x);
+				if (currentFocus >= x.length) currentFocus = 0;
+				if (currentFocus < 0) currentFocus = (x.length - 1);
+				/*add class "autocomplete-active":*/
+				x[currentFocus].classList.add("autocomplete-active");
+			  }
+			  function removeActive(x) {
+				/*a function to remove the "active" class from all autocomplete items:*/
+				for (var i = 0; i < x.length; i++) {
+				  x[i].classList.remove("autocomplete-active");
+				}
+			  }
+			  function closeAllLists(elmnt) {
+				/*close all autocomplete lists in the document,
+				except the one passed as an argument:*/
+				var x = document.getElementsByClassName("autocomplete-items");
+				for (var i = 0; i < x.length; i++) {
+				  if (elmnt != x[i] && elmnt != inp) {
+					x[i].parentNode.removeChild(x[i]);
+				  }
+				}
+			  }
+			  /*execute a function when someone clicks in the document:*/
+			  document.addEventListener("click", function (e) {
+				  closeAllLists(e.target);
+			  });
+			}
+
+			/*An array containing all the country names in the world:*/
+			var countries = ['rs75527207', 'rs8175347', 'rs4149056', 'rs141033578', 'rs78769542', 'rs1799971', 'rs4693075', 'rs11065987', 'CYP2D6*1, CYP2D6*10, CYP2D6*87, CYP2D6*88, CYP2D6*89, CYP2D6*90, CYP2D6*91, CYP2D6*93, CYP2D6*94, CYP2D6*95, CYP2D6*97, CYP2D6*98', 'CYP2D6*1, CYP2D6*10, CYP2D6*87, CYP2D6*88, CYP2D6*89, CYP2D6*90, CYP2D6*91, CYP2D6*92, CYP2D6*93, CYP2D6*94, CYP2D6*95, CYP2D6*96, CYP2D6*97, CYP2D6*98', 'rs8177374', 'rs11465996', 'rs5744174', 'rs1143627', 'rs1143623', 'rs352139', 'rs4696480', 'HLA-B*15:12', 'rs113993960', 'rs2853741', 'rs1045642', 'rs3857532', 'rs10817464', 'rs16969968', 'rs1799793', 'rs2070096', 'rs2284922', 'rs2229046', 'rs773123', 'rs1136201', 'rs12248560', 'rs104894542', 'rs1105879', 'rs1360780', 'rs1051266', 'CYP3A5*1A, CYP3A5*3A', 'rs202179988', 'rs1799853', 'rs1057910', 'rs762151655', 'rs762151655', 'rs762151655', 'rs762151655', 'rs750575779', 'rs750575779', 'rs750575779', 'rs553050853', 'rs553050853', 'rs553050853', 'rs553050853', 'rs751527244', 'rs751527244', 'rs751527244', 'rs751527244', 'rs1293732453', 'rs1293732453', 'rs1293732453', 'rs1328799050', 'rs1328799050', 'rs1328799050', 'rs1328799050', 'rs1056836', 'rs2231142', 'rs714368', 'rs8124728', 'rs2273697', 'rs13181', 'rs3212986', 'rs776746', 'rs2740574', 'rs11188072', 'rs4072879', 'rs6090041', 'rs6090043', 'rs1061115', 'rs4437856', 'rs2419128', 'rs61908410', 'rs887829', 'rs4587017', 'rs12979860', 'rs540825', 'rs1801019', 'rs1799971', 'rs13181', 'rs10919035', 'rs9376230', 'rs7439366', 'rs1801260', 'rs11676382', 'rs2242480', 'rs6265', 'rs6065', 'rs5186', 'rs2207396', 'rs5030655', 'rs2500535', 'rs1143684', 'rs776746', 'CYP3A5*1A, CYP3A5*3A', 'rs1922242', 'CYP2D6*1, CYP2D6*2xN, CYP2D6*3, CYP2D6*4, CYP2D6*5, CYP2D6*6', 'rs12041331', 'CYP2C19*1, CYP2C19*2', 'HLA-B*13:01:01', 'rs4148323', 'rs2282143', 'rs2631372', 'rs11600347', 'rs10757274', 'rs12659', 'rs8175347', 'rs1799998', 'rs1045642', 'CYP2D6*10, CYP2D6*2', 'HLA-B*58:01', 'rs316019', 'rs28371759', 'rs1042713', 'CYP2D6*1, CYP2D6*10, CYP2D6*3, CYP2D6*4, CYP2D6*5, CYP2D6*6', 'rs1105525', 'rs6265', 'HLA-B*51:01:01', 'CYP2D6*1, CYP2D6*10, CYP2D6*3, CYP2D6*4, CYP2D6*41, CYP2D6*5, CYP2D6*6', 'rs762551', 'rs10036156', 'rs588765', 'rs11749035', 'rs1800532', 'rs1799752', 'rs776746', 'rs61767072', 'rs7311358', 'rs1799752', 'rs3211371', 'rs1051685', 'rs61162043', 'rs4986790', 'rs495828', 'rs1045642', 'rs2032582', 'rs2244613', 'rs4783961', 'rs428785', 'CYP2D6*1, CYP2D6*10, CYP2D6*17, CYP2D6*1xN, CYP2D6*2, CYP2D6*2xN, CYP2D6*3, CYP2D6*4, CYP2D6*40, CYP2D6*41, CYP2D6*5, CYP2D6*6', 'rs1042858', 'rs4253728', 'rs10426377', 'rs1057868', 'rs6295', 'CYP2C19*1, CYP2C19*2, CYP2C19*3', 'HLA-B*13:01:01', 'rs2515641', 'rs1799724', 'CYP3A4*1, CYP3A4*1G', 'rs2740574', 'rs1594160', 'rs602950', 'rs2306283', 'rs4148323', 'rs8187710', 'rs1050828', 'rs8175347', 'rs7787082', 'rs761142', 'rs2229437', 'rs3025000', 'rs2245705', 'rs2106809', 'rs1801133', 'rs1799752', 'rs2305089', 'rs2227310', 'rs3740066', 'rs1414334', 'rs1042640', 'rs11960832', 'rs1719247', 'rs17574269', 'rs17060812', 'rs12819210', 'rs12041331', 'rs28401781', 'CYP2D6*1, CYP2D6*10, CYP2D6*3, CYP2D6*4', 'rs11191561', 'rs8175347', 'rs2304016', 'rs4124874', 'rs2494752', 'rs1265138', 'rs7194667', 'rs1042713', 'rs10919563', 'rs71647871', 'NAT2*12, NAT2*13, NAT2*14, NAT2*4, NAT2*5, NAT2*6, NAT2*7', 'rs7787082', 'rs7118900', 'rs2071427', 'rs1137101', 'CYP2B6*1, CYP2B6*5', 'rs2228478', 'rs735482', 'rs708272', 'rs2266780', 'rs4630', 'rs12487736', 'rs4149056', 'rs1979277', 'rs1057910', 'rs776746', 'CYP3A4*1, CYP3A4*1G', 'rs662799', 'SLC22A1*1, SLC22A1*2, SLC22A1*3, SLC22A1*4, SLC22A1*5', 'rs6314', 'rs2235067', 'rs62205366', 'rs5186', 'rs767455', 'rs2239128', 'rs3740556', 'rs2276302', 'rs2230806', 'rs2497538', 'rs1800471', 'rs1128503', 'rs880054', 'rs10423928', 'rs1346268', 'rs2302948', 'rs8175347', 'CYP3A4*1, CYP3A4*1G', 'rs10264272', 'rs2306283', 'rs5063', 'rs1800795', 'CYP2D6*1, CYP2D6*3, CYP2D6*4', 'rs2235040', 'rs2472304', 'rs4713916', 'CYP2C9*1, CYP2C9*3', 'rs2069521', 'rs4646425', 'rs4148740', 'rs669', 'rs1799853', 'rs1805087', 'rs2742435', 'rs1799998', 'rs3091244', 'rs3024530', 'CYP2C9*1, CYP2C9*2, CYP2C9*3', 'CYP2D6*1, CYP2D6*3, CYP2D6*4, CYP2D6*5', 'CYP2C19*1, CYP2C19*2, CYP2C19*3', 'rs28371759', 'rs4148323', 'CYP2D6*1, CYP2D6*4', 'rs1130609', 'rs5030743', 'rs2898950', 'rs1561876', 'rs1042919', 'CYP2D6*1, CYP2D6*10', 'rs1532624', 'rs11189381', 'rs11080344', 'rs1080985', 'rs1080985', 'HLA-A*33:03', 'rs2070676', 'rs71647872', 'rs502434', 'rs9483947', 'rs6431558', 'rs1051730', 'rs7934165', 'rs2289658', 'rs4148416', 'rs5918', 'rs1057910', 'rs4244285', 'rs12248560', 'rs6785930', 'rs762551', 'rs2243250', 'rs8175347', 'rs10306114', 'rs72551330', 'rs12720462', 'rs1800566', 'rs1045642', 'rs4713916', 'rs2032582', 'rs2231142', 'APOE E2, APOE E3, APOE E4', 'rs5888', 'rs2952768', 'CYP2D6*1, CYP2D6*10, CYP2D6*1xN, CYP2D6*2, CYP2D6*2xN, CYP2D6*3, CYP2D6*4, CYP2D6*41, CYP2D6*5, CYP2D6*6', 'rs11983225', 'rs8187710', 'rs1051640', 'rs1806201', 'rs5370', 'rs2238032', 'rs1801020', 'rs2230808', 'rs2231137', 'rs1110470', 'CYP2B6*1, CYP2B6*4, CYP2B6*5, CYP2B6*6, CYP2B6*7', 'rs544093', 'rs4483927', 'rs9552679', 'rs7412', 'CYP2C19*1, CYP2C19*2, CYP2C19*3', 'rs17626122', 'rs17376848', 'rs13266634', 'rs4646427', 'G6PD A- 202A_376G, G6PD B (wildtype)', 'rs3737224', 'CYP2C19*1, CYP2C19*2, CYP2C19*3', 'rs16960228', 'rs17583889', 'rs17024608', 'rs16950650', 'rs12979860', 'rs2070673', 'rs4149056', 'rs2032582', 'CYP2D6*1, CYP2D6*10, CYP2D6*2, CYP2D6*3, CYP2D6*4, CYP2D6*5', 'rs41303343', 'rs1045642', 'rs1429376', 'rs11598702', 'rs11872992', 'rs1934969', 'CYP2D6*1, CYP2D6*10, CYP2D6*5', 'rs1051266', 'rs1045642', 'rs1801131', 'rs833069', 'UGT2B15*1, UGT2B15*2', 'rs1050152', 'rs854560', 'rs2826494', 'rs2769605', 'rs1128503', 'rs1137101', 'rs7997012', 'rs9934438', 'rs1800532', 'rs1143627', 'rs9332096', 'rs731236', 'rs12248560', 'P2RY12 H1, P2RY12 H2', 'rs2228479', 'CYP2D6*1, CYP2D6*1xN, CYP2D6*2, CYP2D6*2xN, CYP2D6*3, CYP2D6*4, CYP2D6*5', 'rs135550', 'rs4680', 'rs4459610', 'rs28365062', 'rs11568695', 'ABCC2 H12, ABCC2 H2', 'rs1801368', 'rs5882', 'rs328', 'CYP2D6*1, CYP2D6*10, CYP2D6*1xN, CYP2D6*2, CYP2D6*2xN, CYP2D6*3, CYP2D6*4, CYP2D6*5, CYP2D6*6', 'rs879207', 'rs4149601', 'rs2061051', 'rs153549', 'CYP2C19*1, CYP2C19*2', 'G6PD A- 202A_376G, G6PD B (wildtype)', 'rs10981694', 'rs4961', 'rs2301339', 'rs16965962', 'rs9561765', 'rs28399433', 'rs762551', 'rs17868320', 'rs17751934', 'rs11231825', 'rs35599367', 'CYP2D6*1, CYP2D6*3, CYP2D6*4', 'rs6025', 'rs1124493', 'rs3745274', 'rs4291', 'rs11064426', 'rs2239050', 'rs4238001', 'rs11615', 'rs2273697', 'rs1799752', 'rs2440390', 'CYP2C19*1, CYP2C19*2, CYP2C19*3', 'rs7668258', 'CYP2C19*1, CYP2C19*2, CYP2C19*3', 'HLA-B*40:01:01', 'rs4148323', 'rs776746', 'rs1042713', 'rs8175347', 'rs9626730', 'rs13273672', 'rs25648', 'HLA-A*02:07:01', 'HLA-A*31:01:02', 'rs8099917', 'rs1137617', 'rs1050828', 'GSTM1 non-null, GSTM1 null', 'GSTT1 non-null, GSTT1 null', 'rs8192440', 'rs35599367', 'rs4877900', 'rs558025', 'rs1045642', 'rs5918', 'rs4244285', 'rs2270777', 'rs717620', 'rs1800629', 'rs17886199', 'rs4986790', 'SLCO1B1*15, SLCO1B1*1A, SLCO1B1*1B', 'rs2306283', 'rs4267385', 'SLCO1B1*15, SLCO1B1*18, SLCO1B1*1A, SLCO1B1*1B, SLCO1B1*5, SLCO1B1*9', 'rs5443', 'rs55754655', 'rs1800591', 'rs1045642', 'rs2032582', 'rs11706052', 'rs2231142', 'rs72547516', 'rs702553', 'rs17244841', 'APOE E2, APOE E3, APOE E4', 'CYP2D6*1, CYP2D6*1xN, CYP2D6*2, CYP2D6*2xN, CYP2D6*3, CYP2D6*4, CYP2D6*5, CYP2D6*6', 'CYP2C19*1, CYP2C19*17, CYP2C19*2, CYP2C19*3', 'rs12248560', 'rs3892097', 'rs35167514', 'CYP2D6*1, CYP2D6*10, CYP2D6*21, CYP2D6*36, CYP2D6*4, CYP2D6*5', 'CYP2D6*1, CYP2D6*2xN, CYP2D6*3, CYP2D6*4, CYP2D6*5, CYP2D6*6', 'rs12777823', 'rs4358872', 'rs1128503', 'rs708272', 'rs2032582', 'rs1799853', 'rs17868320', 'CYP2C8*1A, CYP2C8*2, CYP2C8*3', 'rs10030044', 'rs4523', 'rs6318', 'rs12903202', 'rs4680', 'rs4917639', 'rs12487736', 'rs1150226', 'rs1800566', 'rs6787801', 'rs11887534', 'rs1042173', 'CYP3A4*1, CYP3A4*4', 'rs1801133', 'rs5882', 'rs17238540', 'rs6313', 'rs11188072', 'rs57098334', 'CYP2D6*1, CYP2D6*10, CYP2D6*1xN, CYP2D6*2, CYP2D6*2xN, CYP2D6*3, CYP2D6*4, CYP2D6*5, CYP2D6*6', 'CYP2D6*1, CYP2D6*4', 'rs6265', 'CYP2D6*1, CYP2D6*10, CYP2D6*2, CYP2D6*3, CYP2D6*4, CYP2D6*41, CYP2D6*5, CYP2D6*6', 'CYP2C19*1, CYP2C19*2', 'rs822442', 'rs4646427', 'rs4148739', 'rs1806201', 'GSTM1 non-null, GSTM1 null', 'rs5051', 'rs1042640', 'rs2740574', 'rs1344706', 'rs2742423', 'rs2251954', 'rs4253778', 'rs717620', 'rs11615', 'rs55886062', 'rs3832043', 'rs4149015', 'rs1127687', 'rs4353229', 'rs776746', 'rs66878317', 'rs915120', 'rs1523130', 'rs238', 'rs1045642', 'CYP2C19*1, CYP2C19*2, CYP2C19*3', 'rs7588295', 'rs1760217', 'rs17091162', 'rs1678387', 'rs16944', 'rs1517114', 'rs1423515', 'rs13306278', 'rs12946454', 'rs12943590', 'rs12943590', 'rs12210538', 'rs4253728', 'rs35599367', 'rs2120266', 'rs1948308', 'rs2239622', 'rs2301149', 'rs1799752', 'ABCB1*2(PMID:11503014)', 'rs10276036', 'rs11252394', 'rs2228079', 'rs11587213', 'rs2768759', 'CYP2C19*1, CYP2C19*2, CYP2C19*3, CYP2C19*4, CYP2C19*5, CYP2C19*6, CYP2C19*8', 'rs833061', 'rs1364043', 'rs12795437', 'rs12782374', 'rs12721655', 'rs4606', 'SLCO1B1*15, SLCO1B1*1A, SLCO1B1*1B', 'rs324420', 'rs2306283', 'rs6714486', 'rs2032582', 'rs9922316', 'rs352428', 'rs352046', 'rs3917643', 'rs61764370', 'rs2231142', 'CYP2D6*1, CYP2D6*10, CYP2D6*1xN, CYP2D6*2, CYP2D6*2xN, CYP2D6*3, CYP2D6*4, CYP2D6*5, CYP2D6*6', 'CYP2D6*1, CYP2D6*1xN, CYP2D6*2xN, CYP2D6*3, CYP2D6*4, CYP2D6*5, CYP2D6*6', 'rs822441', 'rs6313', 'rs8330', 'rs10929303', 'rs1048943', 'rs1065852', 'rs2239347', 'rs2237892', 'rs2237895', 'rs10929303', 'CYP2D6*1, CYP2D6*1xN', 'CYP2D6*1, CYP2D6*10, CYP2D6*17, CYP2D6*2, CYP2D6*3, CYP2D6*4, CYP2D6*5', 'CYP2B6*1, CYP2B6*4, CYP2B6*5, CYP2B6*6, CYP2B6*7', 'rs316019', 'rs3918290', 'TPMT*1, TPMT*3B, TPMT*3C', 'rs2246709', 'rs17782313', 'rs17135437', 'rs10248420', 'rs2279343', 'CYP2D6*1, CYP2D6*10, CYP2D6*14B, CYP2D6*1xN, CYP2D6*3, CYP2D6*4, CYP2D6*5, CYP2D6*6', 'rs9806699', 'CYP2C19*1, CYP2C19*2', 'rs13306673', 'rs2297480', 'rs1954787', 'rs3761555', 'rs3761554', 'rs3794271', 'rs1491850', 'rs1799971', 'rs1799752', 'rs56165452', 'rs2884737', 'CYP2D6*1, CYP2D6*10, CYP2D6*3, CYP2D6*4, CYP2D6*41, CYP2D6*5, CYP2D6*6', 'rs4244285', 'rs9344', 'rs1801262', 'rs1131882', 'rs7903146', 'rs1800872', 'rs1042597', 'rs708272', 'rs1800591', 'rs1045642', 'rs4149081', 'rs1057868', 'rs4673', 'rs1800629', 'rs12003906', 'rs2470890', 'rs4646425', 'CYP2C19*1, CYP2C19*2, CYP2C19*3', 'CYP2D6*1, CYP2D6*10, CYP2D6*2, CYP2D6*4, CYP2D6*41, CYP2D6*5, CYP2D6*6', 'rs10248420', 'rs10280101', 'rs12720067', 'CYP2C19*1, CYP2C19*17, CYP2C19*2, CYP2C19*3, CYP2C19*4', 'CYP2D6*1, CYP2D6*10', 'rs8175347', 'rs1042713', 'rs2742417', 'rs45445694', 'rs1805010', 'rs8330', 'rs4815273', 'rs1043620', 'rs1045642', 'rs2242446', 'rs2205986', 'GSTM1 non-null, GSTM1 null', 'GSTT1 non-null, GSTT1 null', 'CYP2D6*1, CYP2D6*10, CYP2D6*2, CYP2D6*4, CYP2D6*5', 'rs1128503', 'rs701829', 'rs17602729', 'rs1051740', 'rs1800497', 'rs11045585', 'rs1799752', 'rs11615', 'rs1127354', 'rs1736557', 'rs1522113', 'rs104894541', 'rs104894539', 'rs1057910', 'rs16969968', 'HLA-B*57:01:01', 'HLA-B*58:01', 'HLA-B*15:02:01', 'rs118192172', 'rs2819742', 'rs11188072', 'rs10800397', 'rs4902333', 'rs9032', 'rs2933304', 'rs9873889', 'rs61908411', 'rs7316769', 'rs7306991', 'NAT2*12, NAT2*13, NAT2*14, NAT2*4, NAT2*5, NAT2*6, NAT2*7', 'rs324420', 'rs699947', 'rs1992647', 'rs9859552', 'rs4532', 'rs2499984', 'rs2314339', 'rs2284018', 'rs568408', 'rs10835210', 'rs2283265', 'CYP2C9*1, CYP2C9*2, CYP2C9*3', 'rs17880887', 'rs1045642', 'rs1126643', 'rs6988229', 'rs2069502', 'rs948854', 'rs28399504', 'rs6809699', 'rs2032582', 'rs6265', 'rs7179742', 'rs3856806', 'rs16851030', 'rs8060157', 'rs10306114', 'rs9380524', 'CYP2D6*1, CYP2D6*1xN, CYP2D6*2, CYP2D6*2xN, CYP2D6*3, CYP2D6*4, CYP2D6*5, CYP2D6*6', 'P2RY12 A, P2RY12 F', 'rs135543', 'rs3810651', 'rs114202595', 'rs6787801', 'CYP2C9*1, CYP2C9*3', 'rs708272', 'rs3025058', 'rs1799752', 'rs1799752', 'rs7877', 'rs10509680', 'rs11150606', 'rs60282872', 'rs8016905', 'rs3025058', 'rs2281617', 'rs3808607', 'rs4149056', 'rs2168631', 'rs1057910', 'rs16944', 'rs11746641', 'rs7160796', 'rs6413432', 'rs2231142', 'rs2231142', 'rs72547517', 'rs776746', 'rs2283265', 'rs1800497', 'rs10494366', 'rs1801394', 'rs776746', 'rs17161788', 'rs2298826', 'rs17238540', 'rs17244841', 'rs1801133', 'rs2279020', 'APOE E2, APOE E3, APOE E4', 'rs2230806', 'rs2952768', 'rs12948783', 'rs17183814', 'rs2298771', 'rs3812718', 'rs8192726', 'rs699', 'rs12407843', 'rs77235035', 'CYP2C19*1, CYP2C19*17, CYP2C19*2, CYP2C19*3', 'CYP2D6*1, CYP2D6*10, CYP2D6*87, CYP2D6*88, CYP2D6*89, CYP2D6*90, CYP2D6*91, CYP2D6*93, CYP2D6*94, CYP2D6*95, CYP2D6*97, CYP2D6*98', 'rs130058', 'rs57098334', 'rs4244285', 'rs12208357', 'rs6313', 'rs3892097', 'rs6280', 'rs495794', 'rs153560', 'rs13432159', 'rs334558', 'rs2378676', 'rs6438552', 'rs5443', 'rs7572857', 'rs1613662', 'rs1062535', 'rs7089580', 'rs5030868', "G6PD A- 202A_376G, G6PD B (wildtype), G6PD Mediterranean, Dallas, Panama' Sassari, Cagliari, Birmingham", 'CYP2D6*1, CYP2D6*10, CYP2D6*17, CYP2D6*1xN, CYP2D6*2, CYP2D6*2xN, CYP2D6*3, CYP2D6*4, CYP2D6*41, CYP2D6*5', 'rs41273215', 'rs2069526', 'rs324026', 'rs324023', 'rs167770', 'rs130058', 'CYP2D6*1, CYP2D6*1xN, CYP2D6*2xN, CYP2D6*3, CYP2D6*4, CYP2D6*5, CYP2D6*6', 'rs1130214', 'rs964184', 'rs776746', 'rs5443', 'rs430397', 'rs767455', 'rs10042486', 'rs12082710', 'rs699', 'rs1800545', 'rs1042714', 'rs1801133', 'rs7079', 'rs2742390', 'rs1799752', 'rs2290732', 'rs60369023', 'rs2032582', 'rs11706052', 'rs5985', 'rs1062535', 'rs861539', 'rs242941', 'rs6755571', 'rs11039149', 'rs2306283', 'rs510769', 'UGT1A3*1, UGT1A3*2', 'rs4553808', 'rs12721226', 'rs1800544', 'HMGCR H2, HMGCR H7', 'LDLRL5', 'rs17655652', 'rs12654264', 'CYP2C19*1, CYP2C19*17, CYP2C19*2, CYP2C19*3', 'rs2235040', 'rs5186', 'rs1062613', 'rs1801253', 'rs1417938', 'rs2241883', 'APOE E2, APOE E3, APOE E4', 'rs717620', 'rs1127687', 'rs1801701', 'rs4149056', 'rs1799752', 'rs8832', 'rs1029489', 'rs1045642', 'rs2066844', 'CYP2C19*1, CYP2C19*17, CYP2C19*2', 'CYP2C19*1, CYP2C19*2, CYP2C19*3', 'CYP2C19*1, CYP2C19*2, CYP2C19*3', 'rs1799983', 'rs4148737', 'rs1050891', 'rs861539', 'rs3832043', 'rs7921977', 'rs1969624', 'rs2742421', 'rs4149056', 'CYP2C19*1, CYP2C19*2', 'rs3832043', 'rs4823613', 'rs2849380', 'rs139887', 'CYP2C19*1, CYP2C19*2, CYP2C19*3', 'rs2776546', 'rs4791040', 'rs885004', 'rs878949', 'rs2445142', 'rs1042713', 'CYP2C19*1, CYP2C19*17, CYP2C19*2, CYP2C19*3', 'CYP2C19*1, CYP2C19*2, CYP2C19*3', 'CYP2C19*1, CYP2C19*2, CYP2C19*3', 'rs1799752', 'rs962369', 'rs4244285', 'rs1065776', 'rs11269124', 'rs12415607', 'rs10515074', 'CYP2D6*1, CYP2D6*24', 'CYP2D6*1, CYP2D6*10, CYP2D6*87, CYP2D6*88, CYP2D6*89, CYP2D6*90, CYP2D6*91, CYP2D6*92, CYP2D6*93, CYP2D6*94, CYP2D6*95, CYP2D6*96, CYP2D6*97, CYP2D6*98', 'rs1800888', 'rs11125883', 'rs652888', 'rs4720833', 'rs118192168', 'rs1801274', 'rs17685420', 'rs3210967', 'rs10413455', 'rs2071421', 'rs12302749', 'rs10420097', 'rs3810818', 'rs2886059', 'rs9901675', 'rs4805162', 'rs4562', 'rs17211071', 'rs2275913', 'rs35599367', 'rs9397685', 'rs13093031', 'rs2236947', 'rs4261893', 'rs117986340', 'rs2303377', 'rs368505753', 'rs115545701', 'rs121908751', 'rs397508537', 'rs113993958', 'rs77834169', 'rs397508759', 'rs121908752', 'rs4968187', 'rs397508328', 'rs762551', 'rs7668258', 'rs11568732', 'rs1799722', 'rs1105879', 'rs7270101', 'rs4979223', 'rs4978536', 'rs2233914', 'CYP2D6*1, CYP2D6*10, CYP2D6*87, CYP2D6*90, CYP2D6*91, CYP2D6*93, CYP2D6*95, CYP2D6*98', 'rs3888190', 'rs2231142', 'rs8192709', 'rs3211371', 'rs1801278', 'rs1799971', 'rs121909047', 'rs2228100', 'CYP3A4*1, CYP3A4*1B', 'rs2231142', 'rs3131003', 'rs4149056', 'rs12409352', 'rs17712523', 'rs2799018', 'rs2295490', 'rs4627790', 'rs1048786', 'rs9901673', 'rs751655', 'rs11559290', 'rs7858', 'rs929740', 'rs11552708', 'rs1061735', 'rs11553441', 'rs362272', 'rs757978', 'rs17279558', 'rs3761372', 'rs2013169', 'rs7616119', 'rs9310657', 'rs9310658', 'rs7653345', 'rs9819548', 'rs13093500', 'rs12630569', 'rs9824595', 'rs4334661', 'rs7625956', 'rs4858478', 'rs12502866', 'rs61692318', 'rs10007051', 'rs11933890', 'rs62319299', 'rs56229625', 'rs55881666', 'rs12657120', 'rs4639250', 'rs9369266', 'rs13204353', 'rs10123866', 'rs7472', 'rs10124893', 'rs7035619', 'rs6479008', 'rs10989064', 'rs3124955', 'rs3128624', 'rs61908402', 'rs61908403', 'rs61908404', 'rs61908405', 'rs17786394', 'rs17786400', 'rs61908406', 'rs17786412', 'rs61908407', 'rs61908408', 'rs61908409', 'rs12595802', 'rs3889402', 'rs12603700', 'rs56355515', 'rs58042962', 'rs17724452', 'rs17724464', 'rs10132552', 'HLA-B*51:01:01', 'HLA-B*51:02:01', 'HLA-B*54:01:01', 'HLA-B*55:01:01', 'HLA-B*55:02:01', 'HLA-B*56:01:01', 'HLA-B*56:06', 'rs503464', 'rs55781567', 'HLA-B*67:01:01', 'HLA-B*78:01:01', 'HLA-B*13:02:01', 'HLA-B*38:01:01', 'HLA-B*39:05:01', 'HLA-B*39:06:01', 'HLA-B*39:09', 'HLA-B*57:01', 'HLA-B*15:01:01:01', 'HLA-B*15:25:01', 'HLA-B*15:27:01', 'HLA-B*15:32', 'HLA-B*15:35', 'HLA-B*52:01:01:01', 'HLA-C*04:03', 'HLA-C*04:06', 'HLA-C*04:07', 'HLA-C*05:01:01:01', 'HLA-C*05:09:01', 'HLA-C*18:01', 'HLA-DRB1*01:03', 'HLA-DRB1*04:04:01', 'HLA-DRB1*08:01:01', 'HLA-DRB1*10:01:01', 'rs4149117', 'rs77769901', 'CYP3A4*1, CYP3A4*1G', 'HLA-A*24:02:01:01', 'rs113993960', 'rs1800896', 'rs20455', 'HLA-B*15:02:01', 'rs145623321', 'rs10771999', 'rs2758339', 'rs5746136', 'rs2231142', 'rs1045642', 'rs1061622', 'rs762551', 'rs2162145', 'rs57081354', 'rs254271', 'rs4149056', 'rs2266780', 'rs772226819', 'rs2231142', 'rs780668', 'rs1976391', 'rs9200', 'rs10052999', 'rs1128503', 'rs2273697', 'CYP3A4*1, CYP3A4*18B', 'CYP3A4*1, CYP3A4*1G', 'rs7439366', 'rs10028494', 'rs1799971', 'rs1129844', 'rs231775', 'rs9933632', 'rs6500265', 'CYP3A4*1, CYP3A4*20', 'rs111618861', 'rs2070401', 'rs1976391', 'rs10759637', 'rs4244285', 'rs2273697', 'rs3740066', 'rs1801516', 'rs3212986', 'rs11615', 'rs20572', 'rs25487', 'rs1695', 'rs1045642', 'rs9342288', 'rs1337512', 'rs1799971', 'rs193922768', 'rs193922762', 'rs193922748', 'rs2229109', 'CYP3A7*1A, CYP3A7*1C', 'rs890293', 'rs3740066', 'CYP2C8*1A, CYP2C8*3', 'CYP2C8*1A, CYP2C8*3', 'rs1799971', 'rs12209447', 'rs1045642', 'rs62638690', 'rs1076560', 'rs2231142', 'rs776746', 'CYP2D6*1, CYP2D6*1xN, CYP2D6*4, CYP2D6*41', 'rs429358', 'rs2108622', 'rs1057868', 'rs55633228', 'rs148013902', 'rs1799972', 'rs1799971', 'rs20455', 'rs1043550', 'rs7294', 'rs1074287', 'rs510769', 'rs3798676', 'rs553202', 'rs7748401', 'rs495491', 'rs10457090', 'rs3778152', 'rs563649', 'rs2075572', 'rs117341846', 'rs2276307', 'rs5443', 'rs762551', 'rs9934438', 'rs2108622', 'rs688', 'rs1801252', 'rs165599', 'rs1800497', 'rs1935349', 'rs1045642', 'rs7992226', 'rs10821936', 'rs4846051', 'rs1800909', 'rs1079598', 'rs6277', 'rs1800497', 'rs2070744', 'rs762551', 'rs7997012', 'rs1414334', 'rs1045642', 'rs61888800', 'rs1057910', 'rs1799853', 'rs12721627', 'rs290487', 'rs2273697', 'rs1800629', 'rs2032582', 'rs2032582', 'rs13058338', 'rs17222723', 'rs1883112', 'rs45511401', 'rs4673', 'rs1051740', 'rs2234922', 'rs2784917', 'rs6539870', 'rs1045642', 'rs9024', 'rs1045642', 'rs8187710', 'rs714368', 'rs20572', 'rs7769719', 'rs730720', 'rs6922548', 'rs4646487', 'rs4148950', 'rs4148947', 'rs4148945', 'rs4148943', 'rs3734254', 'rs2301159', 'rs2292954', 'rs2238472', 'rs2227291', 'rs2016520', 'rs1883322', 'rs1871450', 'rs1799931', 'rs1402467', 'rs12960', 'rs12418', 'rs2070995', 'rs1045642', 'rs870995', 'rs518329', 'rs2234922', 'rs1382368', 'rs1051266', 'rs1801131', 'rs11042725', 'rs1801133', 'rs1142345', 'rs4646316', 'rs12201199', 'rs1800460', 'rs9332377', 'rs2228001', 'rs13181', 'rs1042522', 'rs11615', 'rs1799735', 'rs25487', 'rs3212986', 'rs3212986', 'rs3957357', 'rs60369023', 'rs1799889', 'rs2227631', 'rs1544410', 'rs731236', 'rs16944', 'rs12248560', 'rs7793837', 'rs2298383', 'rs3761422', 'rs2267076', 'rs2236624', 'rs2279343', 'rs2740574', 'rs8192709', 'rs9561778', 'rs1799983', 'rs2070744', 'rs2072671', 'rs532545', 'rs776746', 'rs2740574', 'rs6280', 'rs1128503', 'rs6311', 'rs3813928', 'rs7799039', 'rs1799978', 'rs1799978', 'rs1800497', 'rs12248560', 'rs12248560', 'rs1902023', 'rs2853539', 'rs1544105', 'rs1801133', 'rs1801131', 'rs167771', 'rs70991108', 'rs4149081', 'rs11045879', 'rs4149056', 'rs1045642', 'rs1799732', 'rs776746', 'rs1113129', 'rs1801131', 'rs1801131', 'rs2016848', 'rs11209716', 'rs8012552', 'rs10879346', 'rs4343', 'rs1695', 'rs334558', 'rs1057910', 'rs2234922', 'rs750332', 'rs2227956', 'rs2236196', 'rs3812718', 'rs3812718', 'rs1042714', 'rs5443', 'rs730012', 'rs2236196', 'rs12720441', 'rs2297480', 'rs9937', 'rs2032583', 'rs2235015', 'rs11572080', 'rs10509681', 'rs25531', 'rs1127354', 'rs1799853', 'rs1131873', 'rs28371685', 'rs28371686', 'rs7900194', 'rs9332131', 'rs5760410', 'rs11545078', 'rs339097', 'rs2814707', 'rs3849942', 'rs437943', 'rs6138150', 'rs7046653', 'rs854555', 'rs854548', 'rs854547', 'rs6028945', 'rs6071980', 'rs983332', 'rs774359', 'rs868856', 'rs928655', 'rs2032582', 'rs2075252', 'rs316019', 'rs1695', 'rs1695', 'rs1695', 'rs712829', 'rs712829', 'rs712829', 'rs712829', 'rs712829', 'rs7997012', 'rs2229109', 'rs2229109', 'rs2229109', 'rs2229109', 'rs2229109', 'rs2229109', 'rs2229109', 'rs9282564', 'rs9282564', 'rs9282564', 'rs9282564', 'rs9282564', 'rs9282564', 'rs9282564', 'rs72552784', 'rs72552784', 'rs72552784', 'rs72552784', 'rs72552784', 'rs72552784', 'rs72552784', 'HLA-B*48:01', 'rs12050217', 'rs275651', 'rs5182', 'rs10836235', 'rs1056892', 'rs8133052', 'rs4149056', 'rs2032582', 'rs9344', 'rs7569963', 'rs4244285', 'rs742105', 'rs4880', 'rs2032582', 'rs1128503', 'rs10932125', 'rs3800373', 'rs1360780', 'rs2740574', 'rs11045819', 'rs11572103', 'rs12721627', 'rs1934951', 'rs951439', 'rs951439', 'rs17244841', 'rs17238540', 'rs20455', 'rs4149015', 'rs58597806', 'rs4149056', 'rs10509681', 'rs429358', 'rs7412', 'rs396991', 'rs20417', 'rs4343', 'rs3892097', 'rs10811661', 'rs5030655', 'rs3892097', 'rs1057910', 'rs4086116', 'rs7294', 'rs17708472', 'HLA-A*02:01', 'rs5065', 'rs6295', 'rs4253778', 'rs1799722', 'rs1800629', 'rs2781659', 'rs622342', 'rs1801253', 'rs5370', 'rs2306283', 'rs4987161', 'rs11572080', 'rs10509681', 'rs11572080', 'rs1045642', 'rs1045642', 'rs2740574', 'rs10042486', 'rs909706', 'rs4933824', 'rs7142881', 'rs4799915', 'rs993648', 'rs10918594', 'rs10494366', 'rs762551', 'rs3213422', 'rs3775291', 'rs2076369', 'rs3213207', 'rs2619538', 'rs2115819', 'rs2660845', 'rs730012', 'rs5443', 'rs6313', 'rs6313', 'rs6318', 'rs4994', 'rs6280', 'rs518147', 'rs3813929', 'rs2842030', 'rs2842030', 'rs4731426', 'rs1123617', 'rs3745009', 'rs61750900', 'rs9923231', 'rs10871454', 'rs2359612', 'rs8050894', 'rs1136201', 'rs6280', 'rs2306283', 'rs2472677', 'rs2661319', 'rs1800497', 'rs2494732', 'rs3803300', 'rs165599', 'rs724226', 'rs2854117', 'rs2854116', 'rs5128', 'rs10192566', 'rs1042713', 'rs2267715', 'rs2284220', 'rs255100', 'rs5443', 'rs3846662', 'rs12255372', 'rs5219', 'rs2273697', 'rs4986938', 'rs9340799', 'rs1751034', 'rs1138272', 'rs1487278', 'rs119774', 'rs12422149', 'rs4680', 'rs2368564', 'rs2278293', 'rs1799971', 'rs4149056', 'rs28364006', 'rs2238476', 'rs35592', 'rs17731538', 'rs246240', 'rs13120400', 'rs1801253', 'rs2372536', 'rs1801133', 'rs45445694', 'rs9345389', 'rs4888024', 'rs5030655', 'rs3892097', 'rs1044396', 'rs1367117', 'rs1212037891', 'rs188052243', 'rs59086055', 'rs148994843', 'rs748620513', 'rs143879757', 'HLA-A*11:01:01', 'CYP3A5*1A, CYP3A5*3A', 'CYP2A6*12, CYP2A6*17, CYP2A6*1A, CYP2A6*2, CYP2A6*4A, CYP2A6*9', 'rs1128503', 'rs1979277', 'rs1057910', 'rs17222723', 'rs4149056', 'rs1128503', 'rs1695', 'rs1800497', 'rs1050828', 'rs9981861', 'rs1127354', 'rs2032582', 'rs1801253', 'rs20417', 'rs712829', 'rs532545', 'rs3212986', 'rs9344', 'rs9332131', 'rs9316233', 'rs3918290', 'rs1695', 'rs963468', 'rs9340799', 'rs9332239', 'rs9340799', 'rs1801133', 'rs1051375', 'rs2230345', 'rs9597', 'rs9895420', 'rs9679162', 'rs9561778', 'rs9349256', 'rs9657182', 'rs9272105', 'rs943580', 'rs9282861', 'rs9274407', 'rs1057910', 'rs9514091', 'rs2298383', 'rs2046934', 'rs3093726', 'rs4244285', 'rs4149601', 'rs2069514', 'rs1801265', 'rs3745274', 'rs151264360', 'rs28399433', 'rs3745274', 'rs45445694', 'rs2070959', 'rs4680', 'rs2284017', 'rs28399433', 'rs7297610', 'rs3740066', 'rs3215400', 'rs28399499', 'rs1801158', 'rs151264360', 'rs3745274', 'rs2273697', 'rs28399468', 'rs1045642', 'rs1801159', 'rs4680', 'rs2236225', 'rs2070744', 'rs4673993', 'rs2072671', 'rs2227983', 'rs2278294', 'rs2297595', 'rs3215400', 'rs4148323', 'rs4149117', 'rs12714145', 'rs5031016', 'rs662', 'rs3745274', 'rs3745274', 'rs3758149', 'rs4444903', 'rs1801394', 'rs4680', 'rs151264360', 'rs2740574', 'rs28399499', 'rs2278294', 'rs151264360', 'rs4244285', 'rs28399454', 'rs1801133', 'rs71647871', 'rs4961', 'rs45445694', 'rs396991', 'rs10509681', 'rs4986893', 'HLA-B*15:02:01', 'rs113993960', 'rs1799971', 'rs1127354', 'rs1979277', 'rs11212617', 'rs2032582', 'rs5219', 'rs104894540', 'rs121434568', 'rs121434568', 'rs121434568', 'rs11568315', 'rs1045642', 'rs1045642', 'rs1045642', 'rs2032582', 'rs121434569', 'rs9977268', 'rs9923231', 'rs6275', 'rs776746', 'rs2032582', 'rs66554220', 'rs717620', 'rs1801133', 'rs2032582', 'rs1045642', 'rs1805087', 'rs2032582', 'rs2032582', 'rs5219', 'rs4961', 'rs717620', 'rs776746', 'rs7439366', 'rs1045642', 'rs4961', 'rs776746', 'rs776746', 'rs1045642', 'rs1045642', 'rs1801133', 'rs7412', 'rs20417', 'rs2032582', 'rs4149056', 'rs5751876', 'rs602950', 'rs6275', 'rs6759892', 'rs776746', 'rs776746', 'rs9024', 'rs1045642', 'rs1045642', 'rs1045642', 'rs1045642', 'rs1045642', 'rs1801131', 'rs6280', 'rs9461684', 'rs1045642', 'rs121434568', 'rs1045642', 'rs1805087', 'CYP2C9*1, CYP2C9*2, CYP2C9*3', 'rs25487', 'rs4149056', 'rs4149056', 'rs776746', 'rs25487', 'rs2032582', 'rs1801133', 'rs67376798', 'rs1801131', 'rs4149056', 'rs1695', 'rs6535454', 'rs1799853', 'rs1695', 'rs2307240', 'rs28898617', 'rs2298771', 'rs1829346', 'rs36080650', 'rs1059698', 'rs73594404', 'rs2027701', 'rs1045642', 'CYP3A4*1A, CYP3A4*1B', 'rs3814055', 'rs2075685', 'rs324899', 'rs6942227', 'rs1611259', 'rs59724122', 'rs61123830', 'rs7959663', 'rs66486766', 'rs7405404', 'rs6728642', 'rs62200793', 'rs7588746', 'rs3919583', 'rs209474', 'rs1521470', 'rs79403677', 'rs2298881', 'rs3734704', 'rs6929249', 'rs834576', 'rs9381299', 'HLA-DRB3*01:01:02:01', 'rs2069514', 'rs1883112', 'rs1045642', 'rs724710', 'rs2241843', 'rs2032582', 'rs1128503', 'rs7439366', 'rs13058338', 'rs274558', 'rs683369', 'rs36029', 'rs1861647', 'rs2231142', 'CYP2C9*1, CYP2C9*2, CYP2C9*3', 'rs589046', 'rs7668282', 'rs5186', 'rs2070959', 'HLA-A*33:03', 'rs2734583', 'rs2233678', 'CYP2D6*1, CYP2D6*10, CYP2D6*12, CYP2D6*14A, CYP2D6*14B, CYP2D6*17, CYP2D6*18, CYP2D6*22, CYP2D6*23, CYP2D6*24, CYP2D6*25, CYP2D6*26, CYP2D6*27, CYP2D6*28, CYP2D6*29, CYP2D6*30, CYP2D6*31, CYP2D6*32, CYP2D6*33, CYP2D6*36, CYP2D6*37, CYP2D6*40, CYP2D6*43, CYP2D6*45, CYP2D6*46, CYP2D6*47, CYP2D6*49, CYP2D6*50, CYP2D6*51, CYP2D6*52, CYP2D6*54, CYP2D6*55, CYP2D6*57, CYP2D6*61, CYP2D6*62, CYP2D6*63, CYP2D6*64, CYP2D6*65, CYP2D6*7, CYP2D6*70, CYP2D6*71, CYP2D6*9', 'CYP2D6*1, CYP2D6*10, CYP2D6*87, CYP2D6*89, CYP2D6*90, CYP2D6*93, CYP2D6*95, CYP2D6*97, CYP2D6*98', 'rs351855', 'rs2228130', 'rs2032582', 'rs2108622', 'rs7439366', 'rs9923231', 'rs150688309', 'rs79430272', 'rs58695150', 'rs8110364', 'rs74743371', 'rs112783657', 'SLC6A4 HTTLPR long form (L allele), SLC6A4 HTTLPR short form (S allele)', 'rs12208357', 'CYP3A5*1A, CYP3A5*3A', 'rs237025', 'rs9906827', 'rs2032582', 'rs1045642', 'CYP3A4*1, CYP3A4*22', 'rs9943291', 'TPMT*1, TPMT*3A, TPMT*3C, TPMT*3D, TPMT*3E', 'rs6912029', 'rs4149056', 'rs11574077', 'rs186983396', 'rs115457081', 'rs112242273', 'rs299293', 'rs299314', 'rs3805945', 'rs78428806', 'rs117101815', 'rs9402944', 'rs9389568', 'rs117458836', 'rs118088833', 'rs149212925', 'rs144991623', 'rs181501757', 'rs142244113', 'rs41412545', 'rs118129530', 'rs56022120', 'rs117951771', 'rs148235907', 'rs138602176', 'rs5219', 'rs757110', 'rs1803274', 'rs12459996', 'rs200707504', 'rs1056854', 'rs75041078', 'rs710446', 'rs2289252', 'rs4379368', 'rs56392308', 'rs11568626', 'rs11568634', 'rs367398', 'rs767263838', 'rs767263838', 'rs767263838', 'rs767263838', 'rs757573592', 'rs757573592', 'rs757573592', 'rs757573592', 'rs776817009', 'rs776817009', 'rs1128503', 'CYP2D6*2xN', 'rs776817009', 'rs1293732453', 'rs12094644', 'rs6700741', 'rs4971678', 'rs78482393', 'rs78615940', 'rs17724494', 'rs12233719', 'rs113993960', 'rs141084494', 'CYP2D6*1, CYP2D6*10, CYP2D6*87, CYP2D6*88, CYP2D6*89, CYP2D6*90, CYP2D6*91, CYP2D6*93, CYP2D6*94, CYP2D6*95, CYP2D6*97, CYP2D6*98', 'rs7439366', 'rs2233678', 'HLA-B*39:10:01', 'HLA-B*38:02:01', 'HLA-B*39:01:01:01', 'HLA-B*15:24', 'rs15524', 'rs9879065', 'rs10771997', 'rs10771998', 'rs7439366', 'rs1045642', 'rs1057910', 'CYP2C9*1, CYP2C9*13, CYP2C9*14, CYP2C9*16, CYP2C9*19, CYP2C9*27, CYP2C9*31, CYP2C9*33, CYP2C9*36, CYP2C9*37, CYP2C9*39, CYP2C9*40, CYP2C9*41, CYP2C9*42, CYP2C9*43, CYP2C9*45, CYP2C9*47, CYP2C9*49, CYP2C9*50, CYP2C9*51, CYP2C9*52, CYP2C9*53, CYP2C9*54, CYP2C9*55, CYP2C9*56, CYP2C9*8', 'rs6853', 'rs717620', 'HLA-B*44:03:01', 'HLA-A*02:07:01', 'rs9263726', 'CYP2D6*1, CYP2D6*10, CYP2D6*87, CYP2D6*88, CYP2D6*89, CYP2D6*90, CYP2D6*91, CYP2D6*93, CYP2D6*94, CYP2D6*95, CYP2D6*97, CYP2D6*98', 'rs61824877', 'rs6151031', 'rs1690924', 'rs1051266', 'HLA-A*24:02:01:01', 'HLA-DRB1*15:01:01:01, HLA-DRB1*16:02:01', 'rs927650', 'rs2585428', 'rs2248359', 'rs3212986', 'rs11940694', 'rs299313', 'rs1128503', 'rs34550074', 'rs10040363', 'rs201929247', 'SLC22A1*1', 'rs193922764', 'rs193922832', 'rs193922843', 'rs1876828', 'rs11739136', 'rs1801272', 'rs1024323', 'rs37973', 'rs12979860', 'CYP3A5*1A, CYP3A5*3A', 'rs121918596', 'rs7270101', 'rs2273359', 'rs12046844', 'CYP3A5*1A, CYP3A5*3A', 'rs2032582', 'CYP3A4*1, CYP3A4*1G', 'rs1128503', 'rs2229109', 'rs10841753', 'rs2838958', 'rs41303343', 'rs10264272', 'CYP3A5*1A, CYP3A5*3A', 'rs1000940', 'rs1128503', 'rs1335150891', 'CYP2C9*1, CYP2C9*13, CYP2C9*3', 'rs6977820', 'rs6920220', 'G6PD A- 202A_376G, G6PD B (wildtype)', 'G6PD B (wildtype), G6PD Mediterranean Haplotype', 'rs10501087', 'rs6265', 'CYP1A2*1A, CYP1A2*1F', 'rs3745274', 'SLC6A4 HTTLPR long form (L allele), SLC6A4 HTTLPR short form (S allele)', 'rs1801274', 'rs9394992', 'rs716274', 'rs6427528', 'rs3732218', 'rs267606723', 'SLC6A4 HTTLPR long form (L allele), SLC6A4 HTTLPR short form (S allele)', 'G6PD A- 202A_376G, G6PD B (wildtype)', 'rs7311358', 'rs699947', 'rs80338792', 'SLC6A4 HTTLPR long form (L allele), SLC6A4 HTTLPR short form (S allele)', 'SLC6A4 HTTLPR long form (L allele), SLC6A4 HTTLPR short form (S allele)', 'CYP2A6*15, CYP2A6*1A, CYP2A6*21, CYP2A6*22', 'rs2234693', 'rs9340799', "G6PD B (wildtype), G6PD Mediterranean, Dallas, Panama' Sassari, Cagliari, Birmingham", "G6PD B (wildtype), G6PD Mediterranean, Dallas, Panama' Sassari, Cagliari, Birmingham", 'rs2108622', 'rs2279343', 'rs71486745', 'rs118192170', 'rs74503330', 'rs1801280', 'rs121908757', 'rs121909005', 'rs121909041', 'rs368234815', 'SLC6A4 HTTLPR long form (L allele), SLC6A4 HTTLPR short form (S allele)', 'rs6749447', 'rs699947', 'rs8099917', 'rs80282562', 'rs5522', 'rs1799752', 'rs698', 'rs1142345', 'rs10497203', 'rs717620', 'rs6759892', 'rs121908755', 'rs1052536', 'rs13429709', 'rs2268639', 'UGT1A6*1a, UGT1A6*2a, UGT1A6*3a, UGT1A6*4a, UGT1A6*8', 'CYP2D6*1, CYP2D6*1xN, CYP2D6*3, CYP2D6*4, CYP2D6*5, CYP2D6*6', 'rs3824662', 'G6PD A- 202A_376G, G6PD B (wildtype)', 'rs729147', 'rs3732219', 'rs658903', 'rs6151031', 'rs7319981', 'rs6072262', 'rs12979860', 'rs3219484', 'rs1051740', 'rs264588', 'rs717620', 'rs717620', 'rs264631', 'rs274618', 'rs1990040', 'rs13242038', 'rs724226', 'rs2189814', 'G6PD B (wildtype), G6PD Canton, Taiwan-Hakka, Gifu-like, Agrigento-like', 'rs4694362', 'rs11211524', 'rs1045642', 'rs1128503', 'rs121909013', 'rs11030104', 'rs2232228', 'rs7779029', 'rs56040400', 'CYP2C19*1, CYP2C19*17, CYP2C19*2, CYP2C19*3', 'rs934635', 'rs1048977', 'rs2108622', 'rs2306744', 'rs16964189', 'rs7851395', 'rs3785161', 'rs193922525', 'NAT2*12, NAT2*13, NAT2*4, NAT2*5, NAT2*6, NAT2*7', 'rs41271330', 'HLA-DRB1*14:01:01', 'TPMT*1, TPMT*2, TPMT*3A, TPMT*3B, TPMT*3C, TPMT*4', 'TPMT*1, TPMT*2, TPMT*3A, TPMT*3C', 'TPMT*1, TPMT*10, TPMT*13, TPMT*15, TPMT*19, TPMT*1A, TPMT*24, TPMT*25, TPMT*26, TPMT*27, TPMT*28, TPMT*30, TPMT*31, TPMT*32, TPMT*33, TPMT*34, TPMT*37, TPMT*3D, TPMT*5', 'TPMT*1, TPMT*11, TPMT*12, TPMT*14, TPMT*16, TPMT*17, TPMT*18, TPMT*1S, TPMT*20, TPMT*21, TPMT*22, TPMT*23, TPMT*6, TPMT*7, TPMT*8, TPMT*9', 'rs8175347', 'rs9934438', 'rs723685', 'rs747199', 'rs1799807', 'rs1803274', 'rs28933389', "G6PD B (wildtype), G6PD Mediterranean, Dallas, Panama' Sassari, Cagliari, Birmingham", 'rs80143932', 'rs116855232', 'rs7582141', 'rs6432512', 'rs264663', 'rs264651', 'rs7176005', 'rs9936750', 'SLC6A4 HTTLPR long form (L allele), SLC6A4 HTTLPR short form (S allele)', "G6PD B (wildtype), G6PD Mediterranean, Dallas, Panama' Sassari, Cagliari, Birmingham", 'rs11598702', 'rs28933390', 'rs699', 'rs1045642', 'rs7325568', 'rs11226', 'rs17655', 'rs760370', 'rs7867504', 'rs2108622', 'rs1045642', 'CYP2B6*1, CYP2B6*6', 'rs3842', 'SLC6A4 HTTLPR long form (L allele), SLC6A4 HTTLPR short form (S allele)', 'rs7740004', 'rs7186128', 'rs6702335', 'rs121918592', 'rs28933397', 'rs121918595', 'rs121918594', 'rs887829', 'rs726501', 'rs2279345', 'G6PD A- 202A_376G, G6PD B (wildtype)', 'rs118192162', 'rs7853758', "G6PD B (wildtype), G6PD Mediterranean Haplotype, G6PD Mediterranean, Dallas, Panama' Sassari, Cagliari, Birmingham", 'rs11574077', 'rs1800497', 'rs3099844', 'rs118192161', 'rs118192172', 'rs118192177', 'rs121918593', 'rs1800544', 'rs118192167', "G6PD A- 202A_376G, G6PD B (wildtype), G6PD Mediterranean Haplotype, G6PD Mediterranean, Dallas, Panama' Sassari, Cagliari, Birmingham", 'rs61742245', 'rs6907567', 'G6PD A- 202A_376G, G6PD B (wildtype)', 'rs6269', 'rs4633', 'rs4818', 'rs4680', 'CYP2C9*1, CYP2C9*3', 'rs2562456', 'rs10258429', 'CYP2D6*1, CYP2D6*4', 'rs2235040', 'rs1051660', 'rs397508256', 'rs121909011', 'rs74551128', 'rs397508602', 'rs121909047', 'rs75527207', 'CYP2D6*1, CYP2D6*4', 'rs8103142', 'rs118192175', 'rs6311', 'rs118192163', 'rs118192176', 'rs2010963', 'rs115232898', 'CYP2C19*1, CYP2C19*10, CYP2C19*11, CYP2C19*13, CYP2C19*14, CYP2C19*15, CYP2C19*16, CYP2C19*18, CYP2C19*19, CYP2C19*22, CYP2C19*23, CYP2C19*24, CYP2C19*25, CYP2C19*26, CYP2C19*5, CYP2C19*6, CYP2C19*8, CYP2C19*9', 'HLA-C*03:02', 'HLA-C*08:01', 'HLA-DRB1*09:01:02', 'CYP2C19*1, CYP2C19*8, CYP2C19*9', 'CYP2D6*1, CYP2D6*100, CYP2D6*101, CYP2D6*13, CYP2D6*2, CYP2D6*31, CYP2D6*4, CYP2D6*5, CYP2D6*69', 'rs10747673', 'rs2631367', 'rs2274567', 'rs1801274', 'rs396991', 'CYP2C19*1, CYP2C19*2, CYP2C19*3, CYP2C19*5, CYP2C19*6, CYP2C19*7, CYP2C19*8', 'rs2231142', 'rs2231137', 'rs12768009', 'rs16947', 'rs1800469', 'rs1799752', 'rs1799978', 'rs1800477', 'rs4982133', 'rs2242480', 'rs11942466', 'rs11615', 'rs1799983', 'rs806378', 'rs699664', 'rs776746', 'HLA-A*02:01:01:01', 'HLA-B*51:01:01', 'rs2230345', 'rs20575', 'rs13064411', 'rs1353411', 'rs1800795', 'rs1801252', 'rs342293', 'rs307826', 'rs307821', 'rs3212198', 'rs2472297', 'rs4410790', 'rs4132670', 'rs4133101', 'rs12979860', 'rs193922876', 'rs1800559', 'rs1570360', 'rs2291767', 'rs2295632', 'rs662', 'rs2236861', 'rs948854', 'rs2291078', 'rs3772809', 'rs3772810', 'rs1778929', 'rs1042713', 'rs10465180', 'rs1360780', 'rs11030918', 'rs11078659', 'rs376817657', 'rs140471703', 'rs143690364', 'rs1886629', 'rs2070744', 'rs5182', 'rs809736', 'rs7294', 'rs1799983', 'rs4646994', 'rs1128503', 'rs151264360', 'rs1128503', 'rs2229109', 'rs846908', 'rs4844880', 'rs846910', 'CYP2C19*1, CYP2C19*10, CYP2C19*11, CYP2C19*13, CYP2C19*14, CYP2C19*15, CYP2C19*16, CYP2C19*18, CYP2C19*19, CYP2C19*26, CYP2C19*9', 'rs1799971', 'rs6280', 'rs11628713', 'rs11719165', 'rs2071197', 'rs2075797', 'rs2108622', 'rs2189784', 'rs2216711', 'rs2650972', 'rs3740065', 'rs578427', 'rs34834489', 'rs4149081', 'rs4984241', 'rs3836790', 'rs11264359', 'rs193922747', 'rs1611115', 'rs1801160', 'rs113095083', 'rs12505746', 'rs7706429', 'CYP2C19*1, CYP2C19*17, CYP2C19*2', 'rs12346562', 'rs12346562', 'rs1104514', 'rs10739150', 'rs4742610', 'rs1127354', 'rs7270101', 'rs2297480', 'rs2032582', 'rs1800896', 'rs2003569', 'rs5030952', 'rs1800872', 'rs1800871', 'CYP2C9*1, CYP2C9*59', 'rs1799983', 'rs4240803', 'rs112563513', 'rs28933396', 'rs1056515', 'rs6313', 'rs4680', 'rs144336148', 'rs10929302', 'rs699947', 'rs144854329', 'rs529520', 'rs581111', 'rs4704559', 'rs2592551', 'rs1045642', 'rs5443', 'rs6051702', 'rs2279343', 'rs2302821', 'rs2306168', 'rs2973049', 'rs193922803', 'rs118192124', 'rs11959113', 'ABCB1*1, ABCB1*2(PMID:11503014)', 'rs71647871', 'HLA-B*15:02:01', 'HLA-B*38:02:01', 'CYP2C9*1, CYP2C9*2, CYP2C9*3', 'rs6265', 'rs2032582', 'rs1364805', 'rs7794356', 'rs6475448', 'rs953977', 'rs2073618', 'rs7984870', 'rs1128503', 'rs2032582', 'CYP2D6*1, CYP2D6*4', 'CYP2B6*1, CYP2B6*6', 'rs776746', 'rs17885382', 'rs1061472', 'rs6021191', 'rs1045642', 'rs889895', 'CYP2C9*1, CYP2C9*2, CYP2C9*3, CYP2C9*6', 'rs12721646', 'rs4532', 'CYP1A2*1A, CYP1A2*1F', 'rs3213239', 'rs13181', 'rs1799793', 'rs2900478', 'rs10455872', 'rs445925', 'rs368234815', 'rs11692021', 'rs2070959', 'rs2231142', 'rs11265572', 'rs2231142', 'rs1800871', 'rs1160351', 'rs3758785', 'rs3740066', 'rs3758785', 'rs3764043', 'rs11231809', 'rs246240', 'rs3784864', 'rs12979860', 'rs9923231', 'rs9923231', 'rs9923231', 'rs9934438', 'rs111888148', 'rs193922809', 'rs10046', 'rs9852', 'rs17431184', 'rs2236722', 'rs45605536', 'rs58818712', 'rs41282401', 'rs1061018', 'rs6313', 'rs6313', 'rs3750117', 'rs495828', 'rs2306719', 'rs1024323', 'rs10279545', 'STAT3 CTA, STAT3 TCG, STAT3 TTA', 'rs1045280', 'rs11677416', 'rs1880676', 'rs2734842', 'rs3810950', 'rs4436578', 'rs63749869', 'rs1801131', 'rs11563250', 'rs11563250', 'rs1934969', 'CYP2D6*10, CYP2D6*14B, CYP2D6*3, CYP2D6*4, CYP2D6*5, CYP2D6*6, CYP2D6*7', 'rs9346455', 'GSTM1 non-null, GSTM1 null', 'rs371194629', 'rs9380142', 'rs17179108', 'rs4646', 'rs2289105', 'rs700518', 'rs56061981', 'rs717620', 'rs4148323', 'rs8187710', 'rs4803419', 'rs889299', 'rs2429427', 'rs2242480', 'rs7254579', 'rs4802101', 'APOE E2, APOE E3, APOE E4', 'rs2231142', 'rs3738948', 'rs1800975', 'rs1799801', 'rs4413407', 'rs35864111', 'rs112561475', 'rs1126510', 'rs113165732', 'rs4570625', 'rs12044852', 'rs1143634', 'rs1059751', 'CYP2C19*1, CYP2C19*17, CYP2C19*2', 'rs78015114', 'rs75222709', 'CYP3A5*1A, CYP3A5*3A, CYP3A5*6, CYP3A5*7', 'rs2010963', 'rs717620', 'rs10140457', 'rs1801133', 'rs2298805', 'rs3917412', 'rs201279313', 'rs9322335', 'rs4870061', 'rs3793790', 'rs2177370', 'rs1065852', 'rs2269577', 'rs58425034', 'rs3957357', 'CYP3A4*1, CYP3A4*20, CYP3A4*8', 'rs887829', 'rs2273697', 'rs1047626', 'rs1495741', 'rs4149036', 'rs3087879', 'rs12979860', 'rs2306283', 'rs9282564', 'rs4688040', 'rs4825476', 'rs5443', 'rs6166', 'rs6277', 'rs8192709', 'rs944050', 'rs1800566', 'rs79663003', 'rs2239702', 'rs1570360', 'rs1045642', 'rs1967309', 'rs11313667', 'rs11313667', 'rs11313667', 'rs1045642', 'rs1076560', 'rs13250975', 'rs1367094', 'rs1045642', 'rs1045642', 'rs138337', 'rs678849', 'rs678849', 'rs4646437', 'rs683369', 'rs3806598', 'rs34231037', 'rs2741049', 'rs4149570', 'rs12248560', 'rs4431329', 'rs9285669', 'rs11993031', 'rs16944', 'rs4849127', 'rs2231142', 'CYP2C9*1, CYP2C9*13, CYP2C9*2, CYP2C9*3', 'CYP2C9*1, CYP2C9*2, CYP2C9*3', 'CYP2C9*1, CYP2C9*2, CYP2C9*3', 'CYP2C9*1, CYP2C9*11, CYP2C9*2, CYP2C9*3, CYP2C9*5, CYP2C9*6', 'rs118192178', 'rs193922818', 'rs193922878', 'rs193922753', 'rs118192116', 'rs193922807', 'rs1042713', 'rs1946518', 'rs1799853', 'rs3745274', 'rs36056065', 'rs2734841', 'rs8099917', 'rs3759811', 'rs4775936', 'rs1008805', 'HLA-DRB1*01:02:01', 'rs1800497', 'SLC22A1*1, SLC22A1*2, SLC22A1*3, SLC22A1*4, SLC22A1*5, SLC22A1*6', 'CYP2B6*1, CYP2B6*6', 'rs1056836', 'rs2229109', 'rs396991', 'rs12817819', 'rs6465084', 'rs1468412', 'rs12467557', 'rs10490162', 'rs17671591', 'rs10490924', 'CYP2E1*1A, CYP2E1*5B', 'rs1001179', 'rs1295686', 'rs1805015', 'rs3753380', 'rs3766355', 'rs10306114', 'rs11568658', 'rs6494223', 'rs3761422', 'rs1563828', 'rs1056836', 'rs749292', 'rs1062033', 'rs2177370', 'rs2177370', 'rs5443', 'rs5443', 'rs6280', 'rs1045642', 'rs1128503', 'rs1128503', 'rs1079597', 'rs138335', 'rs1449683', 'rs1544938', 'rs17716295', 'rs1741981', 'rs4702484', 'rs4149056', 'rs4329505', 'rs446112', 'rs4506565', 'rs4654327', 'rs4680', 'rs3792269', 'rs776746', 'rs776746', 'rs4646437', 'rs2276707', 'rs4251961', 'rs4848306', 'rs7438135', 'rs7317112', 'rs11023197', 'rs2669429', 'rs3217164', 'rs2244614', 'rs2244613', 'rs11861118', 'rs7187684', 'rs3745274', 'rs2430561', 'rs4680', 'rs4680', 'rs1045642', 'rs7439366', 'rs9939609', 'rs7903146', 'CYP2C19*1, CYP2C19*2, CYP2C19*3', 'rs6265', 'rs2242446', 'rs9361233', 'rs324420', 'rs646776', 'rs776746', 'rs2032582', 'rs10485828', 'rs2058878', 'HLA-B*38:01:01', 'HLA-B*38:02:01', 'HLA-B*44:02:01:01', 'rs1045642', 'rs4793665', 'rs4253728', 'rs1045642', 'rs2832407', 'rs28399499', 'rs1057868', 'rs352139', 'rs4696480', 'rs1816702', 'rs3763980', 'rs6064463', 'rs642990', 'HLA-DRB3*02:02:01:01', 'G6PD A- 202A_376G', 'rs2237895', 'rs2032582', 'rs1800896', 'HLA-B*44:03:01', 'rs77876672', 'rs9590353', 'rs9915451', 'rs4889606', 'CYP2C19*1, CYP2C19*17, CYP2C19*2', 'rs1128503', 'rs2279343', 'rs3732759', 'rs4141964', 'rs3766246', 'rs113993960', 'rs2277984', 'CYP2D6*1, CYP2D6*38, CYP2D6*4, CYP2D6*5, CYP2D6*9', 'CYP2D6*1, CYP2D6*15, CYP2D6*4', 'rs4823613', 'SLC6A4 HTTLPR long form (L allele), SLC6A4 HTTLPR short form (S allele)', 'SLC6A4 HTTLPR long form (L allele), SLC6A4 HTTLPR short form (S allele)', 'SLC6A4 HTTLPR long form (L allele), SLC6A4 HTTLPR short form (S allele)', 'SLC6A4 HTTLPR long form (L allele), SLC6A4 HTTLPR short form (S allele)', 'SLC6A4 HTTLPR long form (L allele), SLC6A4 HTTLPR short form (S allele)', 'rs35599367', 'HLA-B*39:01:01:01', 'HLA-B*13:01:01', 'HLA-B*15:05:01', 'rs478437', 'rs310786', 'rs310786', 'rs57098334', 'CYP3A5*1A, CYP3A5*3A', 'TPMT*1, TPMT*3A, TPMT*3C', 'UGT1A1*1, UGT1A1*28', 'rs628031', 'rs6295', 'rs4073', 'rs11572076', 'rs1799963', 'rs5443', 'CYP2C19*1, CYP2C19*16, CYP2C19*2', 'rs316019', 'rs76228616', 'rs12083537', 'rs9516519', 'rs1705772', 'rs1703794', 'rs5744247', 'rs4680', 'rs4675690', 'rs4986893', 'rs301434', 'rs301435', 'rs1387923', 'SLCO1B1*15, SLCO1B1*1B', 'rs75017182', 'rs724710', 'rs9535828', 'rs1045642', 'rs10267099', 'SLC6A4 HTTLPR long form (L allele), SLC6A4 HTTLPR short form (S allele)', 'rs776746', 'rs776746', 'rs806368', 'rs6454674', 'rs1229984', 'rs72552763', 'rs1799782', 'rs1042927', 'rs267606617', 'rs1353295', 'rs13104811', 'rs4880', 'rs1799752', 'rs1045642', 'rs11938228', 'rs3804099', 'rs2569190', 'rs2275913', 'rs6927172', 'rs10499563', 'rs5030728', 'rs1554973', 'rs12054895', 'rs1799722', 'rs1799722', 'rs1045642', 'rs1045642', 'rs10848635', 'rs10975641', 'rs2270007', 'rs25531', 'rs585719', 'rs6127921', 'rs11045872', 'rs11045821', 'CYP2B6*1, CYP2B6*18, CYP2B6*2, CYP2B6*22, CYP2B6*4, CYP2B6*5, CYP2B6*6', 'rs3211371', 'rs1135989', 'SLCO1B1*15, SLCO1B1*1A, SLCO1B1*1B, SLCO1B1*5', 'rs2844665', 'rs3099844', 'rs9479757', 'CYP2C19*1, CYP2C19*2', 'rs2501873', 'rs3768142', 'rs4948496', 'rs28364032', 'rs520210', 'rs1074373', 'rs1045642', 'HLA-DQB1*06:02:01', 'rs45445694', 'rs3770102', 'HLA-DQB1*02:02', 'rs4648287', 'rs10157410', 'rs2144297', 'rs2144300', 'rs3213619', 'rs776746', 'rs396991', 'rs1126757', 'rs712829', 'UGT1A7*3', 'UGT1A6*2a', 'rs2241766', 'rs776746', 'rs4291', 'rs3775291', 'rs2734833', 'rs2433320', 'rs2279238', 'rs2289669', 'rs2290271', 'rs6313', 'rs6966038', 'rs3087374', 'rs9370867', 'CYP2D6*1, CYP2D6*10, CYP2D6*12, CYP2D6*14A, CYP2D6*14B, CYP2D6*17, CYP2D6*18, CYP2D6*27, CYP2D6*29, CYP2D6*36, CYP2D6*37, CYP2D6*39, CYP2D6*40, CYP2D6*47, CYP2D6*48, CYP2D6*49, CYP2D6*50, CYP2D6*51, CYP2D6*53, CYP2D6*54, CYP2D6*55, CYP2D6*57, CYP2D6*62, CYP2D6*7, CYP2D6*71, CYP2D6*72, CYP2D6*75, CYP2D6*87, CYP2D6*88, CYP2D6*89, CYP2D6*90, CYP2D6*91, CYP2D6*92, CYP2D6*93, CYP2D6*94, CYP2D6*95, CYP2D6*96, CYP2D6*97, CYP2D6*98', 'rs11479', 'rs9351963', 'rs7196161', 'rs1927907', 'rs9535826', 'rs3814058', 'HLA-B*27:09', 'HLA-B*35:01:01:01', 'HLA-B*35:05:01', 'rs2273697', 'HLA-DRB1*01:01:01', 'rs472660', 'rs2076828', 'CYP2C9*1, CYP2C9*2, CYP2C9*3', 'rs2011425', 'SLC6A4 HTTLPR long form (L allele), SLC6A4 HTTLPR short form (S allele)', 'HLA-B*48:04', 'HLA-B*15:18:01, HLA-B*40:01:01', 'HLA-DRB1*07:01:01:01', 'HLA-DQA1*02:01', 'rs12762549', 'rs6759892', 'rs2032582', 'rs1799971', 'rs6311', 'rs442767', 'rs4149056', 'GSTM1 non-null, GSTM1 null', 'rs12046844', 'rs11141915', 'rs6822844', 'rs9996584', 'rs11942466', 'rs6467136', 'rs1801133', 'rs1650697', 'rs11545078', 'rs61734430', 'rs1051298', 'rs3788189', 'rs914232', 'rs12708954', 'rs2032582', 'rs2032582', 'HLA-B*46:01:01', 'rs1142345', 'rs7387065', 'rs11189015', 'rs1128503', 'rs1799853', 'rs8176719', 'rs6350', 'rs8094439', 'rs17446819', 'HLA-C*01:02:01, HLA-C*02:02:01, HLA-C*03:02, HLA-C*04:01:01:01, HLA-C*05:01:01:01, HLA-C*06:02:01:01, HLA-C*07:01:01, HLA-C*08:01, HLA-C*12:02:01, HLA-C*14:02:01, HLA-C*15:02:01, HLA-C*16:01:01, HLA-C*17:01:01:01', 'rs7574865', 'rs12459249', 'rs1071816', 'rs2233945', 'rs199564443', 'CYP3A5*1A, CYP3A5*3A', 'HLA-B*08:01:01', 'HLA-B*27:05:02', 'CYP2D6*1, CYP2D6*5, CYP2D6*8', 'rs2276706', 'rs1063320', 'CYP2D6*1, CYP2D6*4', 'HLA-DPB1*03:01:01', 'HLA-DPB1*04:01:01:01', 'HLA-DRB1*11:01:01', 'rs2250242', 'rs5051', 'rs2606345', 'rs762551', 'rs2470890', 'rs1042151', 'rs3129294', 'rs3130100', 'rs1045642', 'rs924607', 'rs8187707', 'rs7917983', 'rs5050', 'rs2412459', 'rs2412459', 'rs7518660', 'rs7438135', 'rs6506569', 'HLA-C*01:02:01', 'rs2472304', 'rs1476413', 'rs17421511', 'rs16853826', 'rs10197559', 'rs1643650', 'SLC6A4 HTTLPR long form (L allele), SLC6A4 HTTLPR short form (S allele)', 'HLA-B*58:01', 'HLA-B*59:01:01:01', 'rs396991', 'rs2293347', 'CYP2C9*1, CYP2C9*3, CYP2C9*8', 'rs28360521', 'rs3097671', 'rs1042136', 'rs1051730', 'rs10792367', 'rs1155463', 'rs11568817', 'rs6311', 'CYP2D6*1, CYP2D6*10, CYP2D6*5', 'rs4244285', 'rs1736557', 'rs1877724', 'rs1901440', 'rs1901633', 'rs1061622', 'rs3397', 'rs1061631', 'rs1006737', 'rs10121600', 'rs1045642', 'rs11849538', 'rs1044397', 'SLCO1B1*15, SLCO1B1*18, SLCO1B1*1A, SLCO1B1*1B, SLCO1B1*5, SLCO1B1*9', 'SLCO1B1*12, SLCO1B1*13, SLCO1B1*1A', 'HLA-C*03:02', 'CYP2D6*1, CYP2D6*29', 'rs3094188', 'rs3130501', 'rs3130931', 'HLA-B*15:18:01', 'HLA-B*15:19', 'HLA-B*15:27:01', 'HLA-B*56:02', 'HLA-B*58:01', 'HLA-B*58:01', 'HLA-B*59:01:01:01', 'HLA-B*59:01:01:01', 'rs1045642', 'rs7643645', 'rs1061170', 'rs1799735', 'rs1800497', 'CYP2D6*1, CYP2D6*1xN, CYP2D6*3, CYP2D6*4, CYP2D6*41, CYP2D6*5, CYP2D6*6', 'rs1176744', 'rs3785143', 'rs1045642', 'rs2252281', 'CYP2B6*1, CYP2B6*6', 'rs7124442', 'rs7103411', 'rs12022243', 'rs2612091', 'rs2741171', 'rs12132152', 'rs1126442', 'rs1786929', 'rs967676', 'rs1047840', 'rs3818822', 'rs7862221', 'rs11819745', 'rs2760118', 'rs3828913', 'rs489693', 'rs10517', 'rs6838116', 'rs7675300', 'rs16870989', 'rs145489027', 'rs1495509', 'CYP3A4*1, CYP3A4*22', 'rs9825762', 'rs6900017', 'rs9369421', 'rs879825', 'rs3594', 'rs1801249', 'rs9369421', 'rs6785049', 'rs17109924', 'rs4550690', 'rs6901146', 'rs1611115', 'rs6265', 'rs6275', 'HLA-B*15:02:01', 'rs7200749', 'rs61742245', 'rs55894764', 'rs17878544', 'rs3815087', 'rs9469003', 'HLA-B*15:11:01', 'rs2472677', 'rs12819505', 'HLA-DRB1*03:01:01:01', 'HLA-DQB1*05:01:01:01', 'rs10878232', 'rs11868547', 'rs4541111', 'rs1052555', 'rs1045642', 'rs1045642', 'rs1045642', 'rs4244285', 'rs396991', 'rs35599367', 'rs402007', 'rs3745274', 'rs4986790', 'rs8175347', 'rs17143212', 'rs35303484', 'rs2010963', 'HLA-C*06:02:01:01', 'rs76387818', 'UGT1A1*60', 'rs1045642', 'rs17160359', 'rs2289310', 'rs3761847', 'rs1045642', 'rs1045642', 'rs1138272', 'rs2835859', 'rs699947', 'rs2789047', 'rs1872328', 'rs34548976', 'rs56113850', 'rs12461964', 'rs113288603', 'rs7541245', 'rs11623866', 'rs4124874', 'rs10929302', 'rs8175347', 'CYP3A5*1A, CYP3A5*3A', 'rs1044396', 'rs1051730', 'rs10937158', 'rs2292997', 'rs225440', 'rs11122576', 'rs11122576', 'rs3749438', 'rs12746200', 'rs1805034', 'rs2228246', 'rs3025039', 'CYP2C19*1, CYP2C19*2', 'rs1045642', 'CYP2D6*20, CYP2D6*4', 'CYP2D6*1, CYP2D6*10, CYP2D6*18, CYP2D6*2, CYP2D6*21, CYP2D6*44, CYP2D6*5', 'HLA-DRB1*15:02:01', 'HLA-DQB1*05:02:01', 'HLA-DRB1*13:02:01', 'CYP2D6*1, CYP2D6*3, CYP2D6*36, CYP2D6*4, CYP2D6*40, CYP2D6*42, CYP2D6*4xN, CYP2D6*56', 'rs12595985', 'rs9940629', 'rs6305', 'rs4680', 'rs2647087', 'HLA-DRB1*07:01:01:01', 'HLA-DQA1*02:01', 'rs784892', 'rs3218592', 'rs2683511', 'rs149711321', 'rs1128503', 'rs1529927', 'rs4680', 'rs212091', 'rs13207351', 'rs1570360', 'rs12248560', 'rs1059288', 'rs2071888', 'rs10871454', 'rs4086116', 'rs10912675', 'rs7877', 'rs10931910', 'rs10306135', 'rs1042580', 'rs10711', 'rs10771973', 'rs11125035', 'rs1799983', 'rs1800629', 'SLCO1B1*14, SLCO1B1*1A', 'CYP2D6*1, CYP2D6*11, CYP2D6*12, CYP2D6*4, CYP2D6*41, CYP2D6*5, CYP2D6*59, CYP2D6*62, CYP2D6*7, CYP2D6*8', 'rs2266782', 'rs2266780', 'HLA-B*57:01:01', 'rs1801274', 'rs13266634', 'rs2054675', 'rs3786547', 'rs3787429', 'rs3787430', 'rs1800470', 'rs12221497', 'rs267606619', 'rs267606618', 'rs1801086', 'rs10210302', 'rs1042713', 'rs1137101', 'rs1800497', 'rs1934951', 'rs1113129', 'rs13181', 'rs4728709', 'CYP2C19*1, CYP2C19*10, CYP2C19*11, CYP2C19*13, CYP2C19*14, CYP2C19*15, CYP2C19*16, CYP2C19*18, CYP2C19*19, CYP2C19*22, CYP2C19*23, CYP2C19*24, CYP2C19*25, CYP2C19*26, CYP2C19*28, CYP2C19*9', 'rs7200749', 'CYP2A6*10, CYP2A6*19, CYP2A6*1A, CYP2A6*1B1, CYP2A6*1X2B, CYP2A6*2, CYP2A6*20, CYP2A6*24A, CYP2A6*26, CYP2A6*27, CYP2A6*4A, CYP2A6*7, CYP2A6*9A', 'rs8175347', 'GSTT1 non-null, GSTT1 null', 'rs7699188', 'rs1061170', 'rs1799964', 'rs12979860', 'rs193922772', 'rs193922802', 'rs193922816', 'rs13253389', 'rs10161126', 'rs2229774', 'rs408626', 'rs1126647', 'rs1800925', 'rs776746', 'HLA-DRB1*03:01', 'HLA-B*13:01:01', 'HLA-B*13:02:01', 'rs776746', 'rs10929303', 'rs1042640', 'rs8330', 'rs12505410', 'rs13120400', 'rs2725252', 'rs12806698', 'rs1544410', 'rs1611115', 'rs4586', 'rs2857657', 'rs4795893', 'rs1800795', 'rs4460839', 'rs3742106', 'rs7917432', 'rs757639', 'rs7912580', 'rs7912580', 'rs7624766', 'rs7551789', 'rs4292', 'rs296766', 'rs760761', 'rs118192122', 'rs10752271', 'rs10737062', 'rs4880', 'rs3212986', 'rs3212986', 'rs11615', 'rs776746', 'rs1057868', 'rs1128503', 'rs6295', 'ABCB1*1, ABCB1*2(PMID:11503014)', 'ABCB1*1, ABCB1*2(PMID:11503014)', 'rs1933437', 'rs10305420', 'rs6923761', 'rs2965667', 'rs4796793', 'rs316019', 'rs2831440', 'rs2942857', 'rs181781', 'rs57731889', 'rs2032582', 'rs1128503', 'CYP2B6*1, CYP2B6*6', 'rs11209026', 'rs3087243', 'rs651630', 'rs10782001', 'rs75995567', 'rs3731722', 'rs11678615', 'HLA-A*11:01:01', 'HLA-B*38:01:01', 'HLA-C*08:01', 'HLA-C*08:01', 'rs11265618', 'rs3761548', 'rs7512462', 'rs4149056', 'rs11126740', 'rs96844', 'rs1045642', 'rs149104283', 'rs1045642', 'rs2032582', 'rs2032582', 'rs544027339', 'rs1029359343', 'rs56005131', 'rs1184321568', 'rs6280', 'rs1799732', 'rs2032582', 'rs1045642', 'rs4986893', 'rs1048977', 'rs2266782', 'rs2266780', 'rs2254638', 'rs77010898', 'rs7968606', 'rs727479', 'HLA-B*35:05:01', 'rs1801252', 'rs2306283', 'rs10741657', 'rs2032582', 'rs1045642', 'NUDT15*1, NUDT15*2, NUDT15*3, NUDT15*4, NUDT15*5, NUDT15*6', 'rs13144136', 'rs1022563', 'rs1997794', 'rs1131882', 'HLA-B*15:13:01', 'rs72800847', 'rs3826041', 'rs2304429', 'rs738409', 'rs746071566', 'rs3745274', 'GSTM1 non-null, GSTM1 null', 'rs17495520', 'rs1419555', 'rs1128503', 'rs3754446', 'rs4292394', 'rs374150125', 'rs5370', 'rs3025039', 'rs2546890', 'rs6908425', 'rs12191877', 'rs9304742', 'rs2242480', 'rs1884613', 'rs6493497', 'rs4149056', 'rs2032582', 'rs1801253', 'rs3740065', 'rs130072', 'rs2073724', 'rs8105790', 'rs1057868', 'rs34993780', 'rs1076560', 'rs2031920', 'rs6551665', 'rs7091672', 'rs11649514', 'rs72551330', 'rs1695', 'rs2307424', 'rs3003596', 'rs3814055', 'rs2461817', 'rs7643645', 'rs28365063', 'rs4803381', 'rs1128503', 'rs2740574', 'rs4803381', 'rs2291075', 'rs1799732', 'rs7248668', 'rs4803217', 'rs2229109', 'rs11568658', 'rs776746', 'rs11125', 'rs261316', 'rs11124945', 'rs2295632', 'rs7604115', 'UGT1A3*1, UGT1A3*2', 'rs704212', 'CYP2C8*1A, CYP2C8*3, CYP2C8*4', 'rs1045642', 'rs2032582', 'rs1128503', 'rs7583431', 'rs4646450', 'CYP3A5*1A, CYP3A5*3A', 'rs12248560', 'rs4278350', 'rs10494227', 'rs760316', 'rs1128503', 'rs1544410', 'rs8175347', 'rs705379', 'rs1128503', 'rs4244285', 'CYP2B6*27, CYP2B6*28', 'rs292449', 'rs4341', 'rs3789243', 'rs1041983', 'rs1947275', 'rs4148740', 'rs4673', 'rs2234693', 'rs316019', 'rs2305364', 'rs41301394', 'rs77010898', 'rs1540339', 'rs75039782', 'rs13431554', 'rs1042713', 'rs1448673', 'rs5186', 'rs72551344', 'rs688', 'rs1800497', 'HLA-DRB1*16:01:01', 'rs2231142', 'rs2010963', 'rs4604006', 'rs2070744', 'rs1799983', 'rs1045642', 'rs3745274', 'rs11947402', 'rs61361928', 'rs1128503', 'rs1799964', 'rs637137', 'rs684513', 'rs1695', 'rs10877012', 'rs3806596', 'rs13120400', 'rs8113007', 'rs2498804', 'CYP2C19*1, CYP2C19*2, CYP2C19*3', 'rs11549465', 'rs1801133', 'rs17701271', 'rs5443', 'rs113993960', 'rs78655421', 'rs1355368', 'rs4271002', 'rs370457585', 'rs17021408', 'rs10853728', 'rs28416813', 'rs746647', 'rs2011425', 'CYP3A5*1A, CYP3A5*3A', 'rs4818', 'HLA-DRB1*04:01:01', 'HLA-B*15:01:01:01', 'rs17602729', 'rs2231135', 'rs1650723', 'rs1053129', 'rs183484', 'rs4344', 'rs4359', 'rs5186', 'rs3780126', 'rs712830', 'rs878567', 'rs8175347', 'rs4986910', 'rs662', 'rs7142143', 'rs800292', 'rs11200638', 'rs6600879', 'rs6600880', 'rs4554144', 'rs11940316', 'rs7438135', 'rs7662029', 'rs2231142', 'CYP3A5*1A, CYP3A5*3A', 'rs4148739', 'rs875858', 'HNF4ATATTT, HNF4ATGCGC', 'RXRAAG, RXRAGA', 'rs80223967', 'rs72552713', 'rs2112460', 'rs16969968', 'rs1051730', 'rs5275', 'rs12364283', 'rs11788456', 'rs2070995', 'rs578776', 'rs615470', 'rs684513', 'rs4402960', 'rs1470579', 'rs2975226', 'rs1205', 'rs2808630', 'rs1125394', 'rs1127354', 'rs17863783', 'rs1149222', 'rs4148808', 'rs2019604', 'rs2108623', 'rs4149056', 'rs50872', 'rs7170924', 'rs1128503', 'rs6108160', 'rs183205964', 'rs6314', 'rs7958904', 'rs2513265', 'rs619586', 'rs2839698', 'rs1800544', 'rs6983267', 'rs2075572', 'rs1799971', 'rs2813543', 'rs1875705', 'rs4135385', 'rs4533622', 'rs2069062', 'rs4880', 'rs10819043', 'rs2291858', 'rs1045642', 'rs8192719', 'rs111033610', 'rs4986910', 'rs2869950', 'rs2854744', 'rs62621365', 'rs11253043', 'rs3750920', 'rs7772821', 'rs76088846', 'rs750996195', 'rs745746329', 'rs2396185', 'rs28399504', 'rs16969968', 'rs57064725', 'rs7170068', 'rs10851907', 'CYP2D6*1, CYP2D6*1xN', 'rs5443', 'rs3814055', 'rs6279', 'rs6275', 'rs9934438', 'rs2298383', 'rs179008', 'rs4646437', 'rs2070744', 'rs2242046', 'rs719235', 'rs5186', 'rs699', 'rs2125739', 'rs1265112', 'rs1800588', 'rs1800588', 'rs11716445', 'rs8192725', 'rs8192720', 'rs28399433', 'rs10916852', 'rs7543016', 'rs35687416', 'rs12507552', 'rs274717', 'rs274713', 'rs12143842', 'rs1800012', 'rs200148', 'rs2070296', 'rs2819742', 'rs1045642', 'CYP2C9*1, CYP2C9*13, CYP2C9*3', 'rs117648444', 'rs35599367', 'rs1523130', 'rs2276707', 'rs17501331', 'rs1057868', 'CYP3A4*1, CYP3A4*22', 'rs7439366', 'rs1042714', 'rs1061170', 'rs578776', 'HLA-DQB1*05:02:01', 'rs3735451', 'CYP2D6*1, CYP2D6*4, CYP2D6*5', 'rs762551', 'rs77107237', 'rs7754840', 'rs699947', 'rs232043', 'rs720106', 'rs16935279', 'rs9725457', 'rs11045819', 'rs2299939', 'rs2523864', 'rs3873352', 'rs1042718', 'rs8450', 'HLA-DRB1*01:01:01, HLA-DRB1*04:06:01', 'rs12718541', 'rs265976', 'rs324420', 'rs7973796', 'rs1128503', 'rs113993960', 'rs4646440', 'rs4646437', 'rs2246709', 'rs16909440', 'rs11869731', 'rs16973410', 'rs1800012', 'UGT1A4*1a, UGT1A4*2', 'UGT1A4*1a, UGT1A4*3a', 'rs28371706', 'rs77010898', 'rs3759467', 'rs34650714', 'rs4386686', 'CYP2C19*1, CYP2C19*2, CYP2C19*3', 'rs6296', 'rs12621220', 'rs1143623', 'rs2306283', 'rs1870377', 'HLA-B*51:01:01', 'rs1061781', 'rs1800544', 'rs3087403', 'rs12118636', 'rs2036657', 'rs1801058', 'rs2727786', 'rs320', 'rs1801282', 'rs705379', 'CYP2A6*10, CYP2A6*11, CYP2A6*18A, CYP2A6*19, CYP2A6*1A, CYP2A6*4A, CYP2A6*4C, CYP2A6*7, CYP2A6*9A', 'rs72549303', 'rs72549309', 'rs1801266', 'DPYD*9B', 'rs1801268', 'rs72549306', 'DPYD*12', 'rs115632870', 'rs56038477', 'rs72728438', 'rs2847153', 'rs2072658', 'rs10948059', 'rs4273729', 'rs5993883', 'rs6269', 'rs17268282', 'rs776746', 'rs887829', 'rs193922770', 'rs1060896', 'rs2283265', 'rs699', 'rs4646244', 'rs6813183', 'rs1803274', 'rs717620', 'rs2306283', 'rs3806596', 'rs8192675', 'rs247616', 'rs15524', 'rs10485058', 'rs1042713', 'rs1045642', 'rs1048101', 'rs17661089', 'rs451774', 'rs5186', 'rs2562519', 'rs6545803', 'rs778293', 'rs73748206', 'rs2740574', 'rs594709', 'rs4752219', 'rs4752220', 'rs1045642', 'rs4148386', 'rs2108622', 'rs11676382', 'rs11678615', 'rs2228014', 'rs397508139', 'rs77409459', 'rs121908753', 'rs74551128', 'rs397508288', 'rs1800100', 'rs397508435', 'rs397508442', 'rs1800111', 'rs150212784', 'rs397508510', 'rs397508513', 'rs121909019', 'rs121909020', 'rs186045772', 'rs75541969', 'rs34911792', 'rs11971167', 'rs397508453', 'rs8187725', 'rs2056527', 'rs2032582', 'rs1805094', 'rs2290573', 'rs2240017', 'rs4790694', 'rs36118214', 'rs1045642', 'rs1799931', 'rs777560972', 'rs2571598', 'rs12806698', 'rs2229959', 'rs3743078', 'rs10494366', 'rs2235047', 'rs3025040', 'rs17180299', 'HLA-DRB1*04:03:01', 'rs1800469', 'rs3087465', 'rs1801253', 'rs11568482', 'rs2740574', 'rs199695765', 'rs699664', 'rs12436663', 'rs1439050', 'rs1334802', 'rs363341', 'rs1124491', 'rs9567733', 'CYP2C9*1, CYP2C9*2, CYP2C9*3', 'rs12720066', 'rs6498588', 'rs3743527', 'rs2239179', 'rs2199939', 'rs10760397', 'rs3133084', 'rs4341', 'rs10934498', 'rs75114882', 'rs187238', 'rs1946518', 'rs1805128', 'rs6280', 'rs1799752', 'rs11881222', 'rs5569', 'rs3213094', 'rs610604', 'TPMT*1, TPMT*3A', 'rs12119882', 'rs4149178', 'rs121909011', 'rs77932196', 'rs12566888', 'rs12041331', 'rs4661012', 'rs3957356', 'rs6295', 'rs11710163', 'rs11854484', 'rs16886403', 'rs17309872', 'rs2960436', 'rs1799930', 'rs2032582', 'rs1057910', 'rs639174', 'rs2284449', 'rs4492666', 'rs3093105', 'rs2413739', 'rs324650', 'rs10994982', 'CYP2D6*1, CYP2D6*10', 'CYP2B6*1, CYP2B6*6', 'rs10514475', 'rs1042714', 'rs2293347', 'rs881152', 'rs734644', 'rs1409314', 'rs10510050', 'ABCB1*1, ABCB1*2(PMID:11503014)', 'rs1433099', 'rs2699887', 'rs17645700', 'rs4148350', 'rs2071559', 'rs11676382', 'rs4819554', 'rs1008805', 'CYP2C19*1, CYP2C19*17, CYP2C19*2', 'rs10511905', 'rs1663330', 'rs1663332', 'rs518350', 'rs6002674', 'rs3812718', 'rs5925', 'rs351855', 'rs61886492', 'rs7756992', 'rs11580409', 'rs885036', 'rs3832043', 'rs1803274', 'rs6277', 'rs1804645', 'rs10509373', 'rs2717162', 'rs2717162', 'rs2269879', 'rs1544410', 'rs4516035', 'rs11568820', 'rs2413739', 'rs368234815', 'rs7958375', 'rs10946739', 'rs10946737', 'rs320003', 'rs319952', 'rs1045642', 'GSTM1 non-null, GSTM1 null', 'GSTT1 non-null, GSTT1 null', 'rs1045642', 'rs41273215', 'HLA-C*06:02:01:01', 'rs766023281', 'rs340874', 'rs113646094', 'rs5186', 'rs2234693', 'rs6962291', 'rs1799978', 'rs7439366', 'rs367543000', 'rs895819', 'rs11854484', 'rs4261716', 'rs462779', 'rs7668258', 'rs4655226', 'rs3750117', 'rs28365062', 'rs784888', 'rs11543791', 'rs628031', 'rs10995', 'rs1805054', 'rs696692', 'rs3957357', 'rs671', 'rs2228570', 'rs4877847', 'rs35621', 'rs1611255', 'rs3761548', 'rs9282564', 'rs1799808', 'rs5186', 'rs1044457', 'rs35350960', 'rs6600893', 'rs4148157', 'rs7311358', 'rs1799853', 'rs510432', 'rs1076560', 'rs10945919', 'rs2283265', 'rs2585428', 'rs2231142', 'rs3114020', 'rs2071197', 'rs6923761', 'rs2514036', 'rs9282564', 'rs3740066', 'rs4148738', 'rs8192935', 'rs4958381', 'rs557881', 'rs2228075', 'rs622342', 'rs12042763', 'rs676210', 'rs16969968', 'rs660652', 'rs2072660', 'rs2072661', 'rs760370', 'rs3813567', 'rs4803219', 'rs2010963', 'rs2302489', 'rs7301582', 'rs8192950', 'rs2740574', 'rs2273697', 'rs1021737', 'rs2741049', 'rs308395', 'rs4553808', 'rs3834939', 'rs10774053', 'rs1060467', 'rs2645400', 'rs4841588', 'rs11168292', 'rs11168293', 'rs4760658', 'rs2072671', 'rs2279199', 'rs12050587', 'rs1051740', 'rs1799732', 'rs1799732', 'rs2853826', 'rs72558187', 'rs118204423', 'rs4532', 'rs686', 'rs17587100', 'rs2071303', 'rs2738466', 'rs6092', 'rs1800795', 'SLC6A4 HTTLPR long form (L allele), SLC6A4 HTTLPR short form (S allele)', 'rs3814637', 'rs3765534', 'rs28365063', 'rs56324128', 'rs62471956', 'rs4149056', 'rs113681054', 'rs12201199', 'rs17839843', 'rs3931660', 'rs1415744', 'rs13393173', 'rs1130864', 'rs9373839', 'rs14158', 'rs7586110', 'rs17868323', 'rs17863778', 'rs2535629', 'HLA-B*15:01:01:01', 'rs2228000', 'rs9394992', 'rs760370', 'rs12979860', 'rs2740574', 'rs2306283', 'rs10898815', 'rs588076', 'rs1891059', 'rs117532069', 'rs11868035', 'SLC22A1*1, SLC22A1*2, SLC22A1*3, SLC22A1*4, SLC22A1*5, SLC22A1*6', 'rs2032582', 'rs1330344', 'rs2046934', 'rs17126068', 'rs2288344', 'rs4379440', 'rs1042597', 'HLA-B*15:27:01', 'rs10846744', 'CYP3A4*1, CYP3A4*22', 'rs1045642', 'rs2032582', 'rs11506105', 'rs708272', 'APOE E2, APOE E3, APOE E4', 'rs717620', 'rs567606867', 'rs4149117', 'rs371793722', 'rs138417770', 'rs201045130', 'rs1695', 'rs6924995', 'rs10494366', 'HLA-B*40:02:01', 'rs393994', 'rs3814055', 'rs1065634', 'rs1143634', 'rs442767', 'rs713729', 'rs521093', 'rs49411', 'rs231775', 'rs672170', 'rs16873129', 'rs2299267', 'rs4737771', 'rs10997242', 'rs2532560', 'rs9315310', 'rs6493497', 'rs2257212', 'rs717620', 'rs361525', 'rs3814995', 'rs12979860', 'CYP2D6*1, CYP2D6*10, CYP2D6*14A, CYP2D6*2, CYP2D6*3, CYP2D6*4, CYP2D6*41, CYP2D6*4xN, CYP2D6*5, CYP2D6*6', 'rs2070762', 'rs1611131', 'rs1019385', 'rs1799929', 'rs992160', 'rs846664', 'rs5985', 'CYP2C8*1A, CYP2C8*3', 'rs4149056', 'rs113993959', 'rs6500843', 'rs141059755', 'rs79085477', 'rs2032582', 'rs2273618', 'rs3746574', 'rs6130615', 'rs2502815', 'rs28738963', 'rs2501873', 'rs10538494', 'rs3732359', 'rs3732360', 'rs3814058', 'rs11185647', 'rs2234753', 'rs1536475', 'rs6413517', 'rs12613732', 'rs1801157', 'rs12980275', 'rs776746', 'rs2227983', 'rs11636687', 'rs35112940', 'rs2228171', 'rs3957357', 'rs4305746', 'rs1870377', 'HLA-B*67:01:01', 'rs2916205', 'rs8099917', 'HLA-B*35:10', 'HLA-C*04:01:01:01', 'rs3077', 'rs4910008', 'rs11052877', 'CYP1A1*1, CYP1A1*2A', 'rs57098334', 'rs1800896', 'rs1800896', 'rs4788863', 'rs6785049', 'rs2032582', 'rs3828743', 'rs7937567', 'rs10964552', 'rs244898', 'rs11572080', 'rs10929302', 'rs9606186', 'rs2010851', 'rs1937840', 'rs12800734', 'rs4918758', 'rs20455', 'rs20455', 'CYP2C9*1, CYP2C9*13, CYP2C9*3, CYP2C9*5, CYP2C9*6, CYP2C9*8', 'rs34130495', 'rs11144870', 'rs1049353', 'rs7856096', 'SLCO1B1*1, SLCO1B1*2', 'CYP3A5*1A, CYP3A5*3A, CYP3A5*6, CYP3A5*7', 'HLA-A*24:02:01:01', 'HLA-B*18:01:01', 'rs2770150', 'rs4646', 'rs2279343', 'rs11155012', 'rs7661530', 'CYP2D6*1, CYP2D6*10, CYP2D6*17, CYP2D6*29, CYP2D6*3, CYP2D6*31, CYP2D6*35, CYP2D6*4, CYP2D6*41, CYP2D6*45, CYP2D6*46, CYP2D6*5, CYP2D6*6, CYP2D6*9', 'rs74795342', 'rs1045642', 'rs1059150', 'rs1072388', 'rs1264457', 'rs112445441', 'rs3135506', 'rs2291073', 'rs4149032', 'rs4363657', 'CYP2C9*1, CYP2C9*2, CYP2C9*3', 'HLA-C*14:03', 'UGT1A1*1, UGT1A1*28, UGT1A1*37, UGT1A1*6', 'rs1128503', 'rs1137101', 'rs4880', 'rs885036', 'rs16973225', 'rs11185648', 'rs62576288', 'rs2291075', 'rs766127', 'rs1799852', 'rs7349683', 'rs1800629', 'rs274622', 'rs11676382', 'rs2606345', 'rs4291', 'CYP2C19*1, CYP2C19*2, CYP2C19*3', 'rs1045642', 'rs79206939', 'rs1045642', 'rs2270860', 'rs4646316', 'rs9332377', 'rs717620', 'rs699517']
+
+			/*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
+			autocomplete(document.getElementById("myInput"), countries);
+			</script>
+
+
+			</head>
+			</html>
+
+
+
+
+			<!DOCTYPE html>
+			<html>
+			<head>
+				<script type="text/javascript" language="javascript" src="https://reactome.org/DiagramJs/diagram/diagram.nocache.js"></script>
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<style>
+			body {font-family: Arial;}
+			/* Style the tab */
+			.tab {
+			  overflow: hidden;
+			  border: 10px solid #ccc;
+			  background-color: #ffffff;
+			}
+			p {
+			  ;
+			}
+			/* Style the buttons inside the tab */
+			.tab button {
+			  background-color: #abb5b5;
+			  float: left;
+			  border: outset;
+			  outline: none;
+			  cursor: pointer;
+			  padding: 14px 53.5px;
+			  transition: 1s;
+			  font-size: 20px;
+			}
+			/* Change background color of buttons on hover */
+			.tab button:hover {
+			}
+			/* Create an active/current tablink class */
+			.tab button.active {
+			}
+			/* Style the tab content */
+			.tabcontent {
+			  display: none;
+			  padding: 6px 12px;
+			  -webkit-animation: fadeEffect 1s;
+			  animation: fadeEffect 1s;
+			}
+			/* Fade in tabs */
+			@-webkit-keyframes fadeEffect {
+			  from {opacity: 0;}
+			  to {opacity: 1;}
+			}
+			@keyframes fadeEffect {
+			  from {opacity: 0;}
+			  to {opacity: 1;}
+			}
+			.collapsible {
+			  background-color: #777;
+			  color: white;
+			  cursor: pointer;
+			  padding: 18px;
+			  width: 100%;
+			  border: none;
+			  text-align: left;
+			  outline: none;
+			  font-size: 15px;
+			}
+			.active, .collapsible:hover {
+			  background-color: #555;
+			}
+			.collapsible:after {
+			  content: '\002B';
+			  color: white;
+			  font-weight: bold;
+			  float: right;
+			  margin-left: 5px;
+			}
+			.active:after {
+			  content: "\2212";
+			}
+			.content {
+			  padding: 0 18px;
+			  max-height: 0;
+			  overflow: hidden;
+			  transition: max-height 0.2s ease-out;
+			  background-color: #f1f1f1;
+			}
+
+			p.round1 {
+			border: 8px solid black;
+			border-radius: 4px;
+			background: black;
+			color: white;
+			font-size: large;
+
+			}
+			<style>
+
+
+			</style>
+			</head>
+			<body>
+
+			<div class="tab">
+				<button class="tablinks" onclick="openCity(event, 'Gene')">NCBI Record</button>
+				<button class="tablinks" onclick="openCity(event, 'SNP')">SNP Record</button>
+			    <button class="tablinks" onclick="openCity(event, 'Annotations')">Annotations</button>
+			    <button class="tablinks" onclick="openCity(event, 'Statistics')"> Gene Statistics</button>
+				<button class="tablinks" onclick="openCity(event, 'Pathway')">Pathway</button>
+			    <button class="tablinks" onclick="openCity(event, 'enstrans')">Transcripts</button>
+			    <button class="tablinks" onclick="openCity(event, 'Tokyo')">Splice Variants</button>
+			</div>
+
+			{% for clinical_annotation_ID, Location, Gene, level_of_evidence, Clinical_Annotation_Types, Genotype_Phenotype_IDs, annotation_text, Variant_Annotations_IDs, Variant_Annotations, Evidence_Count, Related_Chemicals, Related_Diseases, Race, Chromosome, pMID,num in clinical %}
+			<div id="Gene" class="tabcontent">
+
+				<div style="display: inline" >
+					<p class="round1">{{Gene}} General information</p>
+					<p class="animate-this" data-animate="fadeInLeft" ><h5>Gene:<a href="http://127.0.0.1:8000/genes/?genes={{Gene}}"> {{Gene}}</h5></a></p>
+					<p style="font-size:15px;" class="animate-this" data-animate="fadeInRight" ><h5>Nomenclature: {{nomenclature}}</h5></p>
+					<p style="font-size:15px;" class="animate-this" data-animate="fadeInRight" ><h5>Name: {{apiname}}</h5></p>
+					<p style="font-size:15px;" class="animate-this" data-animate="fadeInRight" ><h5>Chromosome Acc: {{chracc}}</h5></p>
+				</div>
+
+				<div style="display: inline" >
+					<p class="round1">{{Gene}} Alternatives</p>
+					<p style="font-size:15px;" class="animate-this" data-animate="fadeInRight" ><h5>Alternate Names: {{Alternate_Names}}</h5></p>
+					<p style="font-size:15px;" class="animate-this" data-animate="fadeInLeft" ><h5>Alternate Symbols: {{Alternate_Symbols}}</h5></p>
+					<p style="font-size:15px;" class="animate-this" data-animate="fadeInRight" ><h5>Aliases: {{otherAliases}}</h5></p>
+					<p style="font-size:15px;" class="animate-this" data-animate="fadeInRight" ><h5>Other Designations: {{designation}}</h5></p>
+				</div>
+
+				<div style="display: inline" >
+					<p class="round1">{{Gene}} Chromosmal Location</p>
+					<p style="font-size:15px;" class="animate-this" data-animate="fadeInRight" ><h5>Chromosome: {{chrloc}}</h5></p>
+					<p style="font-size:15px;" class="animate-this" data-animate="fadeInRight" ><h5>Gene Starts From: {{chrstart}}</h5></p>
+					<p style="font-size:15px;" class="animate-this" data-animate="fadeInRight" ><h5>Gene Ends From: {{chrend}}</h5></p>
+				</div>
+
+				<div style="display: inline" >
+					<p class="round1">{{Gene}} information</p>
+					<p style="font-size:15px;" class="animate-this" data-animate="fadeInRight" ><h5>Nomenclature: {{nomenclature}}</h5></p>
+					<p style="font-size:15px;" class="animate-this" data-animate="fadeInRight" ><h5>Name: {{apiname}}</h5></p>
+					<p style="font-size:15px;" class="animate-this" data-animate="fadeInRight" ><h5>Exon Count: {{exoncount}}</h5></p>
+					<p style="font-size:15px;" class="animate-this" data-animate="fadeInRight" ><h5>Gene Weight: {{geneweight}}</h5></p>
+					<iframe src="https://genecardsdata.blob.core.windows.net/genomic-location-v480/{{genename}}-gene.png" height="150" width="750" style="border: #fefefe" ></iframe>
+					<iframe src="https://www.ncbi.nlm.nih.gov/gutils/geneneighb.fcgi?geneid={{ncbiid}}" height="150" width="750" style="border: #fefefe" ></iframe>
+				</div>
+
+
+				<div style="display: inline" >
+					<p class="round1">{{Gene}} Summary</p>
+					<p style="font-size:15px;" class="animate-this" data-animate="fadeInRight" ><h5>Description: {{description}}</h5></li>
+					<p style="font-size:15px;" class="animate-this" data-animate="fadeInRight" ><h5>Summary: {{summary}}</h5></p>
+				</div>
+
+			</div>
+
+
+			<div id="SNP" class="tabcontent">
+				<h4>SNP ID: {{Location}}</h4>
+				<h4>Race: {{Race}}</h4>
+				<h4>Related Chemicals: {{Related_Chemicals}}</h4>
+				<h4>involved in diseases:</h4>
+				{% for disease in other_diseases %}
+				<h4>{{disease}}</h4>
+				{% endfor %}
+				<h4>level of evidence: {{level_of_evidence}}</h4>
+			</div>
+
+
+			<div id="Annotations" class="tabcontent">
+				<p>Clinical Annotation: {{annotation_text}}</p>
+				<br>
+				<p>Variants Annotation: {{Variant_Annotations}}</p>
+			</div>
+
+			<div id="Statistics" class="tabcontent">
+				<label for="Gene_Expression_Profile" ><h1>Gene Expression Profile</h1></label>
+				<iframe name="Gene_Expression_Profile" src="https://genecardsdata.blob.core.windows.net/rna-expression-v480/gene_expression_{{genename}}.png" height="900" width="900" ></iframe>
+				<br></br>
+				<label for="Protein_Expression_Profile"><h1>Protein Expression Profile</h1></label>
+
+				<iframe name="Protein_Expression_Profile" src="https://genecardsdata.blob.core.windows.net/protein-expression-v480/protein_expression_{{genename}}.png" height="900" width="950" ></iframe>
+				<!--<iframe src="https://www.ncbi.nlm.nih.gov/gutils/geneneighb.fcgi?geneid=1080&n0={{genename}}" height="900" width="950" ></iframe>-->
+			</div>
+
+			<div id="Pathway" class="tabcontent">
+				<iframe src="https://reactome.org/PathwayBrowser/#/{{reactomid}}" height="800" width="2000" style="margin-left: -290px;margin-bottom: 100px;margin-right: 290px;" align="middle"></iframe>
+				<br>
+				<h3>{{Gene}} also involved in other pathways:</h3>
+				{% for reactom_id_option,reactom_id_info in reactome_list %}
+				<button class="collapsible">{{reactom_id_info}}</button>
+				<div class="content">
+					<!--<iframe src="https://reactome.org/PathwayBrowser/#/{{reactom_id_option}}" height="800" width="1200" style="margin-left: -290px;margin-bottom: 100px;margin-right: 290px;" align="middle"></iframe>-->
+				</div>
+				{% endfor %}
+
+				<!--<h3>{{Gene}} involved in following pathways:</h3>-->
+				<!--{% for id in reactom_id_option %}-->
+				<!--<h5> {{id}} </h5>-->
+				<!--{% endfor %}-->
+				<!--<iframe src="https://reactome.org/PathwayBrowser/#/{{reactomid}}" height="800" width="1200" style="margin-left: -290px;margin-bottom: 100px;margin-right: 290px;" align="middle"></iframe>-->
+			</div>
+			<br>
+			<div id="enstrans" class="tabcontent">
+				<label><h2>Location</h2></label>
+				<div style="border: 3px solid rgb(255, 255, 255); overflow: hidden; margin: 0px auto; max-width: 2000px;">
+					<iframe scrolling="no" src="https://www.ensembl.org/Homo_sapiens/Location/View?db=core;g={{ensid}}" style="border: 0px none; margin-left: -225px; height: 2300px; margin-top: -130px; margin-bottom: -130px;  width: 1850px;"></iframe>
+				</div>
+				<br>
+				<label><h2>Compare Tree</h2></label>
+			  <div style="border: 3px solid rgb(255, 255, 255); overflow: hidden; margin: 0px auto; max-width: 1900px;">
+				  <iframe scrolling="no" src="https://www.ensembl.org/Homo_sapiens/Gene/Compara_Tree?db=core;g={{ensid}}" style="border: 0px none; margin-left: -225px; margin-right: 7px; height: 1200px; margin-top: -533px; width: 1900px;"></iframe>
+			  </div>
+			</div>
+
+			<div id="Tokyo" class="tabcontent">
+			  <div style="border: 3px solid rgb(201, 0, 1); overflow: hidden; margin: 0px auto; max-width: 1900px;">
+				  <iframe scrolling="no" src="https://www.ensembl.org/Homo_sapiens/Gene/Splice?db=core;g={{ensid}}" style="border: 0px none; margin-left: -225px; height: 4000px; margin-top: -400px; margin-bottom: -150px;  width: 1930px;">
+				  </iframe>
+			  </div>
+				<div id="diagramHolder">
+					<h3>123</h3>
+				</div>
+			</div>
+			{% endfor %}
+
+			<script>
+			function openCity(evt, cityName) {
+			  var i, tabcontent, tablinks;
+			  tabcontent = document.getElementsByClassName("tabcontent");
+			  for (i = 0; i < tabcontent.length; i++) {
+				tabcontent[i].style.display = "none";
+			  }
+			  tablinks = document.getElementsByClassName("tablinks");
+			  for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].className = tablinks[i].className.replace(" active", "");
+			  }
+			  document.getElementById(cityName).style.display = "block";
+			  evt.currentTarget.className += " active";
+			}
+
+			 //Creating the Reactome Diagram widget
+			//Take into account a proxy needs to be set up in your server side pointing to www.reactome.org
+			function onReactomeDiagramReady(){  //This function is automatically called when the widget code is ready to be used
+				var diagram = Reactome.Diagram.create({
+					"placeHolder" : "diagramHolder",
+					"width" : 900,
+					"height" : 500
+				});
+
+				//Initialising it to the "Hemostasis" pathway
+				diagram.loadDiagram("R-HSA-5678895");
+
+				//Adding different listeners
+
+				diagram.onDiagramLoaded(function (loaded) {
+					console.info("Loaded ", loaded);
+					diagram.flagItems("FYN");
+					if (loaded == "R-HSA-5678895") diagram.selectItem("R-HSA-5678895");
+				});
+
+				diagram.onObjectHovered(function (hovered){
+					console.info("Hovered ", hovered);
+				});
+
+				diagram.onObjectSelected(function (selected){
+					console.info("Selected ", selected);
+				});
+			 }
+
+			var coll = document.getElementsByClassName("collapsible");
+			var i;
+
+			for (i = 0; i < coll.length; i++) {
+			  coll[i].addEventListener("click", function() {
+				this.classList.toggle("active");
+				var content = this.nextElementSibling;
+				if (content.style.maxHeight){
+				  content.style.maxHeight = null;
+				} else {
+				  content.style.maxHeight = content.scrollHeight + "px";
+				}
+			  });
+			}
+
+			</script>
+
+			</body>
+			</html>
+
+		</section> <!-- /features -->
+
+
+		<!-- stats
+   	================================================== -->
+
+		<!-- pricing
+   	================================================== -->
+
+
+	   <!-- testimonials
+   	================================================== -->
+
+	   <!-- download
+   	================================================== -->
+
+	   <!-- subscribe
+   	================================================== -->
+
+   <!-- footer
+	================================================== -->
+	<footer id="main-footer">
+
+   	<div class="footer-social-wrap">
+   		<div class="row">
+
+	         <ul class="footer-social-list">
+	            <li><a href="#">
+	             	<i class="fa fa-facebook-square"></i>
+	            </a></li>
+	            <li><a href="#">
+	              	<i class="fa fa-twitter"></i>
+	            </a></li>
+              <li><a href="#">
+	              	<i class="fa fa-google-plus"></i>
+	            </a></li>
+	            <li><a href="#">
+	              	<i class="fa fa-pinterest"></i>
+	            </a></li>
+	            <li><a href="#">
+	              	<i class="fa fa-instagram"></i>
+	            </a></li>
+	            <li><a href="#">
+	              	<i class="fa fa-dribbble"></i>
+	            </a></li>
+	         </ul>
+
+			</div>
+   	</div> <!-- /footer-social-wrap -->
+
+	   <div class="footer-info-wrap">
+
+	   	<div class="row footer-info">
+
+		  		<div class="col-four tab-full">
+		  			<h4><i class="icon-location-map-1"></i> Where to Find Us</h4>
+
+		  			<p>
+		         El-motamize District<br>
+		         6th of October, Giza<br>
+		         P.O BOX xxxx giza
+		         </p>
+		  		</div>
+
+		   	<div class="col-four tab-full collapse">
+	   			<h4><i class="icon-phone-incoming"></i> Get In Touch</h4>
+
+	   			<p>someone@elevatewebsite.com<br>
+				   	P.Habib911@gmail.com <br>
+				   	Phone: (+20) 0155 0539 179
+				   </p>
+	   		</div>
+
+	   		<div class="col-four tab-full">
+	   			<h4><i class="icon-organization-hierarchy-3"></i> Company Links</h4>
+
+				   <ul class="footer-link-list">
+				   	<li><a href="#">Company Journal</a></li>
+				   	<li><a href="#">Product Support</a></li>
+				   	<li><a href="#">Privacy Policy</a></li>
+				   </ul>
+	   		</div>
+
+		  	</div>
+	   </div> <!-- /footer-info-wrap -->
+
+	   <div class="footer-bottom">
+
+	   	<div class="copyright">
+		     	<span>© Copyright Pharmosome 2018.</span>
+		   </div>
+   	</div>
+
+   </footer>
+
+   <div id="go-top">
+		<a class="smoothscroll" title="Back to Top" href="#top"><i class="fa fa-long-arrow-up"></i></a>
+	</div>
+
+   <!-- preloader
+   ================================================== -->
+   <div id="preloader">
+    	<div id="loader"></div>
+   </div>
+
+   <!-- Java Script
+   ================================================== -->
+   <script src="/database/static/js/jquery-2.1.3.min.js"></script>
+   <script src="/database/static/js/plugins.js"></script>
+   <script src="/database/static/js/main.js"></script>
+
+</body>
+
+</html>
